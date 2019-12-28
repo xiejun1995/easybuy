@@ -6,9 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="87af1898-20ae-49ba-b3cd-6b6f4933dddf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="87af1898-20ae-49ba-b3cd-6b6f4933dddf" name="Default Changelist" comment="" />
+>>>>>>> 06da67e... maven ssm
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -34,6 +39,8 @@
       </set>
     </option>
   </component>
+=======
+>>>>>>> 06da67e... maven ssm
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -58,7 +65,10 @@
     <option name="jreName" value="12" />
   </component>
   <component name="ProjectId" id="1VYiMOJem5ziBv6YXDwjmYlEEYO" />
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+>>>>>>> 06da67e... maven ssm
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -211,6 +221,7 @@
       <workItem from="1577496722066" duration="8954000" />
       <workItem from="1577506071299" duration="9458000" />
       <workItem from="1577518814874" duration="987000" />
+<<<<<<< HEAD
       <workItem from="1577519908830" duration="1131000" />
     </task>
     <task id="LOCAL-00001" summary="maven ssm">
@@ -221,15 +232,21 @@
       <updated>1577520149431</updated>
     </task>
     <option name="localTasksCounter" value="2" />
+=======
+    </task>
+>>>>>>> 06da67e... maven ssm
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="maven ssm" />
     <option name="LAST_COMMIT_MESSAGE" value="maven ssm" />
   </component>
+=======
+>>>>>>> 06da67e... maven ssm
   <component name="WindowStateProjectService">
     <state x="261" y="0" key="#Project_Structure" timestamp="1577518946912">
       <screen x="0" y="0" width="1536" height="824" />
@@ -255,10 +272,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="536" y="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1577503032213" />
+<<<<<<< HEAD
     <state x="269" y="0" key="CommitChangelistDialog2" timestamp="1577520145085">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="269" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577520145085" />
+=======
+>>>>>>> 06da67e... maven ssm
     <state x="499" y="92" key="FileChooserDialogImpl" timestamp="1577519996664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -347,10 +367,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="172" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577518671068" />
+<<<<<<< HEAD
     <state x="261" y="65" key="Vcs.Push.Dialog.v2" timestamp="1577520502280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="261" y="65" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577520502280" />
+=======
+>>>>>>> 06da67e... maven ssm
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1577517471473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
