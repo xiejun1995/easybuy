@@ -1,16 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>后台管理 - 易买网</title>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="com.easybuy.pojo.EasyBuy_Comment" %>
+<%@ page import="java.util.List" %>
+<%@ page import="com.easybuy.util.PageSuppore" %>
+<%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
+<%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../scripts/function.js"></script>
+<html>
+<head>
+	<title>后台管理 - 易买网</title>
 </head>
 <body>
 <div id="header" class="wrap">
 	<div id="logo"><img src="../images/logo.gif" /></div>
-	<div class="help"><a href="../index.html">返回前台页面</a></div>
+	<div class="help">
+		<a href="../index.jsp">返回前台页面</a>
+	</div>
 	<div class="navbar">
 		<ul class="clearfix">
 			<li><a href="index.jsp">首页</a></li>
@@ -18,13 +27,19 @@
 			<li><a href="product.jsp">商品</a></li>
 			<li><a href="order.jsp">订单</a></li>
 			<li class="current"><a href="guestbook.jsp">留言</a></li>
-			<li><a href="news.html">新闻</a></li>
+			<li><a href="news.jsp">新闻</a></li>
 		</ul>
 	</div>
 </div>
+<%--获取当前时间--%>
+<%
+	Date data = new Date();
+	SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	String now = time.format(data);
+%>
 <div id="childNav">
 	<div class="welcome wrap">
-		管理员pillys您好，今天是2012-12-21，欢迎回到管理后台。
+		管理员您好，当前时间：<%=now %>，欢迎回到管理后台。
 	</div>
 </div>
 <div id="position" class="wrap">
@@ -36,7 +51,7 @@
 			<dl>
 				<dt>用户管理</dt>
 				<dd><a href="user.jsp">用户管理</a></dd>
-			  <dt>商品信息</dt>
+				<dt>商品信息</dt>
 				<dd><em><a href="productClass-add.jsp">新增</a></em><a href="productClass.jsp">分类管理</a></dd>
 				<dd><em><a href="product-add.jsp">新增</a></em><a href="product.jsp">商品管理</a></dd>
 				<dt>订单管理</dt>
@@ -44,7 +59,7 @@
 				<dt>留言管理</dt>
 				<dd><a href="guestbook.jsp">留言管理</a></dd>
 				<dt>新闻管理</dt>
-				<dd><em><a href="news-add.jsp">新增</a></em><a href="news.html">新闻管理</a></dd>
+				<dd><em><a href="news-add.jsp">新增</a></em><a href="news.jsp">新闻管理</a></dd>
 			</dl>
 		</div>
 	</div>
@@ -53,44 +68,76 @@
 		<div class="manage">
 			<table class="list">
 				<tr>
-					<th>ID</th>
-					<th>姓名</th>
+					<th>编号</th>
+					<th>昵称</th>
 					<th>留言内容</th>
-					<th>状态</th>
+					<th>留言时间</th>
+					<th>回复内容</th>
+					<th>回复时间</th>
 					<th>操作</th>
 				</tr>
+				<%//分页查询
+					// 当前页码
+					String currentPage = request.getParameter("pageNo");
+					if(currentPage == null){
+						//用户首次访问
+						currentPage="1";
+					}
+					int pageNo =Integer.parseInt(currentPage);
+					ServiceMassageDao service = new ServiceMassageDaoImpl();
+					int totalCount = service.totalCount();
+					//每页显示的商品数量 ，页容量
+					int pageSize = 5;
+					//获取总页数
+					PageSuppore pageSuppore = new PageSuppore();
+					pageSuppore.setCurrentPageNo(pageNo);   //设置当前页
+					pageSuppore.setPageSize(pageSize);		//设置页容量
+					pageSuppore.setTotalPageCount(totalCount);	//计算总页数
+					//获得总页数
+					int totalPage = pageSuppore.getTotalPageCount();
+					//控制首页和尾页
+					if(pageNo<1){
+						pageNo = 1;
+					}else if(pageNo>totalPage){
+						pageNo=totalPage;
+					}
+					List<EasyBuy_Comment> lists = service.commodityListById(pageNo,pageSize);
+					// System.out.println(lists.size());
+					for(EasyBuy_Comment con : lists) {
+				%>
 				<tr>
-					<td class="first w4 c">1</td>
-					<td class="w1 c">张三丰</td>
-					<td>高老庄的货发了没？</td>
-					<td class="w1 c">已回复</td>
-					<td class="w1 c"><a href="guestbook-modify.jsp">修改</a> <a class="manageDel" href="javascript:void(0)">删除</a></td>
+					<td><%=con.getEc_id()%></td>
+					<td><%=con.getEc_nick_name()%></td>
+					<td><%=con.getEc_content()%></td>
+					<td><%=con.getEc_create_time()%></td>
+					<td><%=con.getEc_reply()%></td>
+					<td><%=con.getEc_reply_time()%></td>
+					<td>
+						<a href="guestbook-selectid.jsp?ec_id=<%=con.getEc_id()%>">&nbsp;回复&nbsp;</a><a href="guestt-book-del.jsp?ec_id=<%=con.getEc_id()%>">删除</a>
+					</td>
 				</tr>
-				<tr>
-					<td class="first w4 c">1</td>
-					<td class="w1 c">张三丰</td>
-					<td>北京的货发了没？</td>
-					<td class="w1 c"></td>
-					<td class="w1 c"><a href="guestbook-modify.jsp">回复</a> <a class="manageDel" href="javascript:void(0)">删除</a></td>
-				</tr>
+				<%}%>
+				<div class="clear"></div>
 			</table>
-			<div class="pager">
-				<ul class="clearfix">
-					<li><a >首页</a></li>
-					<li>...</li>
-					<li><a >4</a></li>
-					<li class="current">5</li>
-                    <li><a >6</a></li>
-                    <li>...</li>
-					<li><a >尾页</a></li>
-				</ul>
-			</div>
 		</div>
+		<div class="clear"></div>
 	</div>
-	<div class="clear"></div>
-</div>
-<div id="footer">
-	Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
+	<div class="pager">
+		<ul class="clearfix">
+			<%
+				if(pageNo>1){
+			%>
+			<li><a href="guestbook.jsp?pageNo = 1">首页</a></li>
+			<li><a href="guestbook.jsp?pageNo=<%=pageNo-1%>">上一页</a></li>
+			<%} if(pageNo<totalPage){%>
+			<li><a href="guestbook.jsp?pageNo=<%=pageNo+1%>">下一页</a></li>
+			<li><a href="guestbook.jsp?pageNo=<%=totalPage %>">尾页</a></li>
+			<%} %>
+		</ul>
+	</div>
+	<div id="footer">
+		Copyright &copy; 2010 北大青鸟 All Rights Reserved. 京ICP证1000001号
+	</div>
 </div>
 </body>
 </html>

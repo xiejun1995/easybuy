@@ -61,6 +61,17 @@ function goBuy2(id){
 }
 //dom加载完后运行
 $(function(){
+    //在进行结算时绑定一个事件用于获取订单总金额
+    //获取订单总金额的值
+    var amount=totalPrice();
+    //通过ajax异步请求获取订单金额
+    $("#totalAmount").click(function () {
+        $.ajax({
+            url:"getOrderAmount",
+            type:"GET",
+            data:{"amount":amount}
+        })
+    });
     //获取焦点方法
     function focusItem(dom){
         $(dom).parent().parent().addClass("current");
@@ -333,7 +344,7 @@ $(function(){
         var $tds=$(this).parent().parent().children("td");
         var $price= $($tds[1]);
         var $number=$($tds[2]);
-        var price = $price.find("input[type='hidden']").val();//存值
+        var price = $price.find("input[class='price']").val();//存值
         var $priceBox =$price.find("span");//现实价钱
         var $number= $number.find("input");//得到存储input对象
         var opr=$(this).attr("name");//判断增减
@@ -357,7 +368,7 @@ $(function(){
     //计算总价
     function totalPrice(){
         var totalPrice=0;
-        $("#shopping").find(".price").find("input[type='hidden']").each(function(i,d){
+        $("#shopping").find(".price").find("input[class='price']").each(function(i,d){
             var p= parseFloat($(d).val());
             var n = $(d).parent().parent().find("input[name='number']").val();
             totalPrice=totalPrice+p*n;
@@ -377,14 +388,14 @@ $(function(){
     });
     $("#shopping").find("#total").text("总计：￥"+totalPrice());
     //注销
-    $("#logout").click(function(){
+   /* $("#logout").click(function(){
         if(confirm("购物车中尚有未结算的商品，是否结账？")) {
             location.href="shopping.jsp";
         }else{
             location.href="index.jsp";
             return false;
         }
-    });
+    });*/
     //轮换广告
     var index=0;
     setInterval(function(){
@@ -445,4 +456,4 @@ $(function(){
         $(this).find("span").addClass("error").html("留言不得多于100字");
         return false;
     });
-})
+});
