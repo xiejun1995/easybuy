@@ -18,7 +18,7 @@
             <span>欢迎您:${userName}</span>
             <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
         </c:if>
-        <a href="shopping.jsp" id="shoppingBag" class="shopping">购物车X件</a><a href="guestbook.jsp">留言</a><a href="manage/index.jsp">后台管理</a></div>
+        <a href="${pageContext.request.contextPath}/statics/shopping.jsp" id="shoppingBag" class="shopping">购物车X件</a><a href="guestbook.jsp">留言</a><a href="manage/index.jsp">后台管理</a></div>
     <div class="navbar">
         <ul class="clearfix">
             <li class="current"><a href="../index.jsp">首页</a></li>
