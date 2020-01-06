@@ -1,4 +1,4 @@
-package com.easybuy.pojo;
+package cn.kgc.easybuy.pojo;
 
 /**
  * @author 曹译

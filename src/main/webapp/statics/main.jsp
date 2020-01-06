@@ -2,8 +2,8 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_News" %>
+<%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
+<%@ page import="com.easybuy.pojo.EasyBuyNews" %>
 <%@ page import="com.easybuy.service.news.ServiceNewsDao" %>
 <%@ page import="com.easybuy.service.news.ServiceNewsDaoImpl" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -87,15 +87,15 @@
                     //获取总页数
                     int totalPage=pageSupport.getTotalPageCount();
 
-                    List<EasyBuy_Product> list2= service2.commodityListById(epc_id,pageIndex,pageSize);;
+                    List<EasyBuyProduct> list2= service2.commodityListById(epc_id,pageIndex,pageSize);;
 
-                    for (EasyBuy_Product buy :list2) {
+                    for (EasyBuyProduct buy :list2) {
                 %>
                 <li>
                     <dl>
-                        <dt><a href="manage/product-careful.jsp?id=<%=buy.getEp_id()%>" target="_self"><img src="images/upload/<%=buy.getEp_file_name()%>" /></a></dt>
-                        <dd class="title"><a href="manage/product-careful.jsp?id=<%=buy.getEp_id()%>" target="_self"><%=buy.getEp_name()%></a></dd>
-                        <dd class="price">￥<%=buy.getEp_price()%></dd>
+                        <dt><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><img src="images/upload/<%=buy.getEpFileName()%>" /></a></dt>
+                        <dd class="title"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><%=buy.getEpName()%></a></dd>
+                        <dd class="price">￥<%=buy.getEpPrice()%></dd>
                     </dl>
                 </li>
                 <%}%>
@@ -108,10 +108,10 @@
                 <ul>
                     <%
                         ServiceNewsDao serviceNewsDao = new ServiceNewsDaoImpl();
-                        List<EasyBuy_News> list = serviceNewsDao.commodityList(pageIndex,pageSize);
-                        for (EasyBuy_News easyBuy_news : list) {
+                        List<EasyBuyNews> list = serviceNewsDao.commodityList(pageIndex,pageSize);
+                        for (EasyBuyNews easyBuy_news : list) {
                     %>
-                    <li><a href="news-view.jsp?id=<%=easyBuy_news.getEn_id()%>"  target="_self"><%=easyBuy_news.getEn_title()%></a></li>
+                    <li><a href="news-view.jsp?id=<%=easyBuy_news.getEnId()%>"  target="_self"><%=easyBuy_news.getEnTitle()%></a></li>
                     <%}%>
                 </ul>
             </div>

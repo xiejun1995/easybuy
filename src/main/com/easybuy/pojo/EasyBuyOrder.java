@@ -1,4 +1,6 @@
-package cn.kgc.easybuy.pojo;
+package com.easybuy.pojo;
+
+import cn.kgc.easybuy.pojo.EasyBuyOrderDetail;
 
 import java.util.Date;
 import java.util.List;

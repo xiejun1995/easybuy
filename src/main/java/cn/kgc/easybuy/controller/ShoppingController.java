@@ -46,7 +46,7 @@ public class ShoppingController {
         request.removeAttribute("product");
         request.setAttribute("product",product);
         logger.debug("################查询成功!");
-        return "shopping";
+        return "/statics/shopping.jsp";
     }
 
     /**

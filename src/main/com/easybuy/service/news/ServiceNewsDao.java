@@ -1,6 +1,6 @@
 package com.easybuy.service.news;
 
-import com.easybuy.pojo.EasyBuy_News;
+import com.easybuy.pojo.EasyBuyNews;
 
 import java.util.List;
 
@@ -11,17 +11,17 @@ import java.util.List;
  */
 public interface ServiceNewsDao {
     //添加新闻
-    int addCommodity(EasyBuy_News news);
+    int addCommodity(EasyBuyNews news);
     //删除新闻
-    int delete(EasyBuy_News news);
+    int delete(EasyBuyNews news);
     //修改新闻
-    int update(EasyBuy_News news);
+    int update(EasyBuyNews news);
     //查询总数据
     int totalCount();
     //分页获取新闻
-    List<EasyBuy_News> commodityList(int pageNo, int pageSize);
+    List<EasyBuyNews> commodityList(int pageNo, int pageSize);
     //查询特定新闻编号
-    EasyBuy_News getProdusById(int id);
+    EasyBuyNews getProdusById(int id);
 
 }
 

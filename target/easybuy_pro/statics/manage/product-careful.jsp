@@ -34,7 +34,7 @@
     <div class="help"><a href="../shopping.jsp" class="shopping">购物车X件</a><a href="../login.jsp">登录</a><a href="../register.jsp">注册</a><a href="../guestbook.jsp">留言</a><a href="index.jsp">后台管理</a></div>
     <div class="navbar">
         <ul class="clearfix">
-            <li class="current"><a href="../index.jsp?name=" +首页 >首页</a></li>
+            <li class="current"><a href="../../index.jsp?name=" +首页 >首页</a></li>
             <li><a href="../product-list.jsp?name=" +图书>图书</a></li>
             <li><a href="../product-list.jsp?name=" +百货>百货</a></li>
             <li><a href="../product-list.jsp?name=" +品牌>品牌</a></li>
@@ -70,7 +70,7 @@
 %>
 
 <div id="position" class="wrap">
-    您现在的位置：<a href="../index.jsp">易买网</a> &gt; <a href="../product-list.jsp">图书音像</a> &gt;<%=name%>
+    您现在的位置：<a href="../../index.jsp">易买网</a> &gt; <a href="../product-list.jsp">图书音像</a> &gt;<%=name%>
 </div>
 <div id="main" class="wrap">
     <div class="lefter">

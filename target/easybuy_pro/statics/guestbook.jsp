@@ -25,7 +25,7 @@
     <div class="navbar">
         <ul class="clearfix">
             <li class="current">
-                <a href="index.jsp?name=首页">首页</a></li>
+                <a href="../index.jsp?name=首页">首页</a></li>
             <li><a href="product-list.jsp?name=图书">图书</a></li>
             <li><a href="product-list.jsp?name=百货">百货</a></li>
             <li><a href="product-list.jsp?name=品牌">品牌</a></li>
@@ -57,7 +57,7 @@
     </div>
 </div>
 <div id="position" class="wrap">
-    您现在的位置：<a href="index.jsp">易买网</a> &gt; 在线留言
+    您现在的位置：<a href="../index.jsp">易买网</a> &gt; 在线留言
 </div>
 <div id="main" class="wrap">
     <div class="lefter">

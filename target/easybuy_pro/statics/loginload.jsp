@@ -13,7 +13,7 @@
 <body>
 <script>
     alert("登录成功");
-    window.location="${pageContext.request.contextPath }/statics/index.jsp";
+    window.location="../index.jsp";
 </script>
 </body>
 </html>

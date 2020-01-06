@@ -1,6 +1,6 @@
 package com.easybuy.servlet.massage;
 
-import com.easybuy.pojo.EasyBuy_Comment;
+import com.easybuy.pojo.EasyBuyComment;
 import com.easybuy.service.massage.ServiceMassageDao;
 import com.easybuy.service.massage.ServiceMassageDaoImpl;
 
@@ -38,18 +38,18 @@ public class addServlet extends HttpServlet {
         }
 
         //System.out.println(ec_content+ec_nick_name);
-        EasyBuy_Comment easyBuy_Comment = new EasyBuy_Comment();
-        easyBuy_Comment.setEc_id(ec_id);
-        easyBuy_Comment.setEc_nick_name(ec_nick_name);
-        easyBuy_Comment.setEc_content(ec_content);
+        EasyBuyComment easyBuyComment = new EasyBuyComment();
+        easyBuyComment.setEcId(ec_id);
+        easyBuyComment.setEcNickName(ec_nick_name);
+        easyBuyComment.setEcContent(ec_content);
         Date ec_create_time = new Date();
-        easyBuy_Comment.setEc_create_time(ec_create_time);
-        easyBuy_Comment.setEc_reply(ec_reply);
+        easyBuyComment.setEcCreateTime(ec_create_time);
+        easyBuyComment.setEcReply(ec_reply);
         Date ec_reply_time = new Date();
-        easyBuy_Comment.setEc_reply_time(ec_reply_time);
+        easyBuyComment.setEcReplyTime(ec_reply_time);
 
         ServiceMassageDao serviceMassageDao=new ServiceMassageDaoImpl();
-        serviceMassageDao.addCommodity1(easyBuy_Comment);
+        serviceMassageDao.addCommodity1(easyBuyComment);
 
         response.sendRedirect("../guestbook.jsp");
     }

@@ -17,7 +17,7 @@
 <div id="header" class="wrap">
     <div id="logo"><img src="images/logo.gif" /></div>
     <div class="help">
-        <a href="manage/shopping.jsp" class="shopping">购物车X件</a>
+        <a href="shopping.jsp" class="shopping">购物车X件</a>
         <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
         <a href="guestbook.jsp">留言</a>
         <a href="manage/index.jsp">后台管理</a></div>
@@ -55,7 +55,7 @@
     </div>
 </div>
 <div id="position" class="wrap">
-    您现在的位置：<a href="index.jsp">易买网</a> &gt; <a href="product-list.jsp">图书音像</a> &gt; 图书
+    您现在的位置：<a href="../index.jsp">易买网</a> &gt; <a href="product-list.jsp">图书音像</a> &gt; 图书
 </div>
 <div id="main" class="wrap">
     <div class="lefter">

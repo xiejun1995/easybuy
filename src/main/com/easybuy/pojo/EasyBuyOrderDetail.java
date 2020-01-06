@@ -1,4 +1,4 @@
-package cn.kgc.easybuy.pojo;
+package com.easybuy.pojo;
 
 /**
  * 存放订单具体信息类
@@ -11,7 +11,7 @@ public class EasyBuyOrderDetail {
     private int epId;//商品ID
     private int eoQuantity;//数量
     private float eodCost;//金额
-    private EasyBuy_Product product;//商品基本信息类
+    private EasyBuyProduct product;//商品基本信息类
 
     public int getEodId() {
         return eodId;
@@ -53,18 +53,18 @@ public class EasyBuyOrderDetail {
         this.eodCost = eodCost;
     }
 
-    public EasyBuy_Product getProduct() {
+    public EasyBuyProduct getProduct() {
         return product;
     }
 
-    public void setProduct(EasyBuy_Product product) {
+    public void setProduct(EasyBuyProduct product) {
         this.product = product;
     }
 
     public EasyBuyOrderDetail() {
     }
 
-    public EasyBuyOrderDetail(int eodId, int eoId, int epId, int eoQuantity, float eodCost, EasyBuy_Product product) {
+    public EasyBuyOrderDetail(int eodId, int eoId, int epId, int eoQuantity, float eodCost, EasyBuyProduct product) {
         this.eodId = eodId;
         this.eoId = eoId;
         this.epId = epId;
