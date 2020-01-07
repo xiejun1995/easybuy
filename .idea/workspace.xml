@@ -6,54 +6,34 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="">
+    <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="fix order manage part function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/OrderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/order.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/orderList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/orderList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/easybuy_pro.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/resources/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/scripts/orderList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/orderList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,7 +328,7 @@
       <workItem from="1578271082600" duration="3153000" />
       <workItem from="1578275260812" duration="2229000" />
       <workItem from="1578277585139" duration="12300000" />
-      <workItem from="1578356426981" duration="7690000" />
+      <workItem from="1578356426981" duration="23803000" />
     </task>
     <task id="LOCAL-00001" summary="hebing">
       <created>1578278250398</created>
@@ -378,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578285392893</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix order manage part function">
+      <created>1578365528725</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578365528725</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +374,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hebing" />
     <MESSAGE value="merge everyone file" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge everyone file" />
+    <MESSAGE value="fix order manage part function" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix order manage part function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="0" key="#Inspections" timestamp="1578016435947">
@@ -406,10 +394,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="319" y="0" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1578048669237" />
-    <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578291764217">
+    <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578387904217">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578291764217" />
+    <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578387904217" />
     <state x="530" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1578281559917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -434,62 +422,62 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578275131048" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1578285385138">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1578365515853">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578285385138" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578365515853" />
     <state x="524" y="65" key="FileChooserDialogImpl" timestamp="1578360000498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="524" y="65" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578360000498" />
-    <state width="1252" height="134" key="GridCell.Tab.0.bottom" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.0.bottom" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.0.center" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.0.center" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.0.left" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.0.left" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.0.right" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.0.right" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.1.bottom" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.1.bottom" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.1.center" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.1.center" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.1.left" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.1.left" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.1.right" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.1.right" timestamp="1578388808625">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.2.bottom" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578388808625" />
+    <state width="1252" height="362" key="GridCell.Tab.2.bottom" timestamp="1578388810609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.2.center" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578388810609" />
+    <state width="1252" height="362" key="GridCell.Tab.2.center" timestamp="1578388810609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.2.left" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578388810609" />
+    <state width="1252" height="362" key="GridCell.Tab.2.left" timestamp="1578388810609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
-    <state width="1252" height="134" key="GridCell.Tab.2.right" timestamp="1578365361391">
+    <state width="1252" height="362" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578388810609" />
+    <state width="1252" height="362" key="GridCell.Tab.2.right" timestamp="1578388810609">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="134" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="362" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578388810609" />
     <state width="1252" height="478" key="GridCell.Tab.3.bottom" timestamp="1578271270579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -543,10 +531,10 @@
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578278030741" />
     <state x="151" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578030977186" />
-    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1578365391294">
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1578365543378">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578365391294" />
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578365543378" />
     <state x="554" y="176" key="chooseDestDirectoryDialog" timestamp="1577528483601">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -579,10 +567,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1578362632111" />
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1578272738055">
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1578387748955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1578272738055" />
+    <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1578387748955" />
     <state x="606" y="43" width="638" height="755" key="spring file set editor" timestamp="1578275302756">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

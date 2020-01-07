@@ -2,15 +2,18 @@
 <%@ page import="cn.kgc.easybuy.service.impl.OrderServiceImpl" %>
 <%@ page import="cn.kgc.easybuy.util.Constants" %>
 <%@ page import="cn.kgc.easybuy.service.OrderService" %>
+<%@ page import="org.apache.commons.lang3.StringUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
 	float cost=0;
 	request.setAttribute("cost",cost);
+	//将ajax请求使用session存储的值获取到并存储到request当中用于EL表达式
+	Object fuzzyList=request.getSession().getAttribute("fuzzyOrderList");
+	if(fuzzyList!=null){
+		request.setAttribute("fuzzyList",fuzzyList);
+	}
 %>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
-<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/orderList.js"></script>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -119,7 +122,6 @@
 						</c:forEach>
 						</tr>
 					</c:if>
-
 				</c:forEach>
 			</table>
 			<div class="pager">
@@ -145,5 +147,8 @@
 <div id="footer">
 	Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
 </div>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/orderList.js"></script>
 </body>
 </html>
