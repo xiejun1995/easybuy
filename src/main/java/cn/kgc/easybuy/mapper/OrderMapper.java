@@ -42,16 +42,22 @@ public interface OrderMapper {
     /**
      * 根据模糊查询条件查询该条件下的总记录条数
      * @param entityId  订单Id
-     * @param userName  订单人姓名
+     * @param status  订单人状态
+     * @param phone  订单人电话
      * @return  该条件下的总记录条数
      */
     public Integer getNumberOfRecordsByFuzzyQuery(@Param("entityId")Integer entityId,
-                                                  @Param("userName")String userName);
+                                                  @Param("status")Integer status,
+                                                  @Param("phone")String phone);
 
     /**
      * 根据当前页码及页码大小查询当前页所对应的订单Id集合
+     * @param entityId  订单Id
+     *@param status  订单人状态
+     * @param phone  订单人电话
      * @return 订单Id集合
      */
     public List<Integer> getOrderListOfPaginationByFuzzyQuery(@Param("entityId")Integer entityId,
-                                                              @Param("userName")String userName);
+                                                              @Param("status")Integer status,
+                                                              @Param("phone")String phone);
 }

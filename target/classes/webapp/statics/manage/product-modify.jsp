@@ -1,4 +1,4 @@
-<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
+<%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
@@ -52,23 +52,23 @@
 		<h2>修改商品</h2>
 		<div class="manage">
 			<%
-				EasyBuy_Product buy=(EasyBuy_Product)request.getAttribute("comm");
+				EasyBuyProduct buy=(EasyBuyProduct)request.getAttribute("comm");
 				if (buy==null){
-					buy=new EasyBuy_Product();
+					buy=new EasyBuyProduct();
 				}
 			%>
 			<form action="register-update.jsp" method="post" enctype="multipart/form-data">
 				<table class="form">
 					<tr>
-						<td><input type="hidden" class="text" name="ep_id" value="<%=buy.getEp_id()%>" /></td>
+						<td><input type="hidden" class="text" name="ep_id" value="<%=buy.getEpId()%>" /></td>
 					</tr>
 					<tr>
 						<td class="field">商品名称(*)：</td>
-						<td><input type="text" class="text" name="productName" value="<%=buy.getEp_name()%>" /></td>
+						<td><input type="text" class="text" name="productName" value="<%=buy.getEpName()%>" /></td>
 					</tr>
                     <tr>
 						<td class="field">描述：</td>
-						<td><input type="text" class="text" name="productDetail" value="<%=buy.getEp_description()%>" /></td>
+						<td><input type="text" class="text" name="productDetail" value="<%=buy.getEpDescription()%>" /></td>
 					</tr>
 					<tr>
 						<td class="field">所属分类：</td>
@@ -97,17 +97,23 @@
 					</tr>
 					<tr>
 						<td class="field">商品价格(*)：</td>
-						<td><input type="text" class="text tiny" name="productPrice" value="<%=buy.getEp_price()%>"/> 元</td>
+						<td><input type="text" class="text tiny" name="productPrice" value="<%=buy.getEpPrice()%>"/> 元</td>
 					</tr>
 
 					<tr>
 						<td class="field">库存(*)：</td>
-						<td><input type="text" class="text tiny" name="productNumber" value="<%=buy.getEp_stock()%>"/></td>
+						<td><input type="text" class="text tiny" name="productNumber" value="<%=buy.getEpStock()%>"/></td>
 					</tr>
 					<tr>
 						<td class="field">商品图片：</td>
+						<td><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"></td>
+					</tr>
+					<tr>
+						<td class="field">修改商品图片：</td>
 						<td><input type="file" class="text" name="photo"/></td>
 					</tr>
+
+
 					<tr>
 						<td></td>
 						<td><label class="ui-blue"><input type="submit" name="submit" value="确定" /></label></td>

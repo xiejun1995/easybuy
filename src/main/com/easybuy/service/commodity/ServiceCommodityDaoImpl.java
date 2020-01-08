@@ -55,7 +55,7 @@ public class ServiceCommodityDaoImpl implements ServiceCommodityDao {
         return dao.totalCountById(epc_id);
     }
 
-    @Override
+    //查询特定编号商品信息
     public EasyBuyProduct getProdusById(int id) {
         return dao.getProdusById(id);
     }
