@@ -6,7 +6,6 @@
 <%@ page import="com.easybuy.pojo.EasyBuyUser" %>
 
 <%@ page import="java.util.List" %>
-<%@ page import="" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -115,15 +114,15 @@
 				</tr>
 				<c:forEach var="user" items="${list}">
 					<tr>
-						<td class="first w4 c">${user.eu_user_id}</td>
-						<td class="w1 c">${user.eu_user_name}</td>
-						<td class="w2 c">${user.eu_sex}</td>
-						<td>${user.eu_email}</td>
-						<td class="w4 c">${user.eu_mobile}</td>
+						<td class="first w4 c">${user.userId}</td>
+						<td class="w1 c">${user.userName}</td>
+						<td class="w2 c">${user.sex}</td>
+						<td>${user.email}</td>
+						<td class="w4 c">${user.mobile}</td>
 						<td class="w1 c">
-						<a href="${pageContext.request.contextPath}/servlet/seekservlet?id=${user.eu_user_id}">修改</a>
-						<c:if test="${user.eu_status<2}">
-						<a class="manageDel" href="${pageContext.request.contextPath}/servlet/deleteuser?id=${user.eu_user_id}">删除</a>
+						<a href="${pageContext.request.contextPath}/servlet/seekservlet?id=${user.userId}">修改</a>
+						<c:if test="${user.statuss<2}">
+						<a class="manageDel" href="${pageContext.request.contextPath}/servlet/deleteuser?id=${user.userId}">删除</a>
 						</c:if>
 						</td>
 					</tr>
