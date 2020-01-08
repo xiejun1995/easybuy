@@ -19,7 +19,6 @@ public interface CommodityDao {
     EasyBuyProduct selectCommodityById(int id);
     //修改商品
     int updateCommodity(EasyBuyProduct buy);
-
     //查询总条数
     int totalCount();
     //分页查询商品

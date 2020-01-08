@@ -173,12 +173,11 @@
                     int totalPage=pageSupport.getTotalPageCount();
 
                     List<EasyBuyProduct> list2= service2.commodityListById(epcId,pageIndex,pageSize);;
-
                     for (EasyBuyProduct buy :list2) {
                 %>
                 <li>
                     <dl>
-                        <dt><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><img src="<%=request.getContextPath()%>/images/upload/<%=buy.getEpFileName()%>" /></a></dt>
+                        <dt><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>" /></a></dt>
                         <dd class="title"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
                         <dd class="price">￥<%=buy.getEpPrice()%></dd>
                     </dl>

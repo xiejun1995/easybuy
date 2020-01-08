@@ -121,7 +121,7 @@ public class CommodityDaoImpl implements CommodityDao {
     @Override
     public List<EasyBuyProduct> commodityListById(int epcId,int pageNo, int pageSize) {
         List<EasyBuyProduct> list=new ArrayList<>();
-        String sql="SELECT * FROM EasybuyProduct WHERE epc_id=? LIMIT ?,?";
+        String sql="SELECT * FROM EasybuyProduct WHERE epcId=? LIMIT ?,?";
         Object[] objects={epcId,(pageNo-1)*pageSize,pageSize};
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
