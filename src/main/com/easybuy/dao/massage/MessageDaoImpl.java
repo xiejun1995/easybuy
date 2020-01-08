@@ -107,14 +107,14 @@ public class MessageDaoImpl implements MessageDao {
         try {
             while (rs.next()){
 
-                Integer ec_id=rs.getInt("ecId");
-                String ec_content=rs.getString("ecContent");
-                Date ec_create_time=rs.getDate("ecCreateTime");
-                String price=rs.getString("ecReply");
-                Date ec_reply_time=rs.getDate("ecReplyTime");
-                String ec_nick_name=rs.getString("ecNickName");
+                Integer ecId=rs.getInt("ecId");
+                String ecContent=rs.getString("ecContent");
+                Date ecCreateTime=rs.getDate("ecCreateTime");
+                String ecReply=rs.getString("ecReply");
+                Date ecReplyTime=rs.getDate("ecReplyTime");
+                String ecNickName=rs.getString("ecNickName");
 
-                EasyBuyComment comment=new EasyBuyComment(ec_id,ec_content,ec_create_time,price,ec_reply_time,ec_nick_name);
+                EasyBuyComment comment=new EasyBuyComment(ecId,ecContent,ecCreateTime,ecReply,ecReplyTime,ecNickName);
                 list.add(comment);
             }
         } catch (SQLException e) {
@@ -130,14 +130,15 @@ public class MessageDaoImpl implements MessageDao {
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
             while (rs.next()){
-                Integer id=rs.getInt("ecId");
-                String ec_content=rs.getString("ecContent");
-                Date ec_create_time=rs.getDate("ecCreateTime");
-                String price=rs.getString("ecReply");
-                Date ec_reply_time=rs.getDate("ecReplyTime");
-                String ec_nick_name=rs.getString("ecNickName");
 
-                EasyBuyComment comment=new EasyBuyComment(id,ec_content,ec_create_time,price,ec_reply_time,ec_nick_name);
+                Integer ecId=rs.getInt("ecId");
+                String ecContent=rs.getString("ecContent");
+                Date ecCreateTime=rs.getDate("ecCreateTime");
+                String ecReply=rs.getString("ecReply");
+                Date ecReplyTime=rs.getDate("ecReplyTime");
+                String ecNickName=rs.getString("ecNickName");
+
+                EasyBuyComment comment=new EasyBuyComment(ecId,ecContent,ecCreateTime,ecReply,ecReplyTime,ecNickName);
                 list.add(comment);
             }
         } catch (SQLException e) {
@@ -169,12 +170,12 @@ public class MessageDaoImpl implements MessageDao {
         try {
             while (rs.next()){
                 Integer id2=rs.getInt("ecId");
-                String ec_content=rs.getString("ecContent");
-                Date ec_create_time=rs.getDate("ecCreateTime");
-                String price=rs.getString("ecReply");
-                Date ec_reply_time=rs.getDate("ecReplyTime");
-                String ec_nick_name=rs.getString("ecNickName");
-                comment=new EasyBuyComment(id2,ec_content,ec_create_time,price,ec_reply_time,ec_nick_name);
+                String ecContent=rs.getString("ecContent");
+                Date ecCreateTime=rs.getDate("ecCreateTime");
+                String ecReply=rs.getString("ecReply");
+                Date ecReplyTime=rs.getDate("ecReplyTime");
+                String ecNickName=rs.getString("ecNickName");
+                comment=new EasyBuyComment(id2,ecContent,ecCreateTime,ecReply,ecReplyTime,ecNickName);
                 //验证是否接受
                 //System.out.println(comment.getEcId()+"1111"+comment.getEcNickName());
             }

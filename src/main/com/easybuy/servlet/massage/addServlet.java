@@ -16,37 +16,37 @@ import java.util.Date;
 public class addServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        int ec_id = Integer.parseInt(request.getParameter("Id"));
-        String ec_nick_name = request.getParameter("guestName");
-        String ec_content = request.getParameter("guestContent");
+        int ecId = Integer.parseInt(request.getParameter("Id"));
+        String ecNickName = request.getParameter("guestName");
+        String ecContent = request.getParameter("guestContent");
        //获取
-        String time= request.getParameter("guestTime");
+        String guestTime= request.getParameter("guestTime");
         SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd");
         try {
-            Date ec_create_time = simpleDateFormat.parse(time);
+            Date ecCreateTime = simpleDateFormat.parse(guestTime);
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        String ec_reply = request.getParameter("guestReply");
+        String ecReply = request.getParameter("guestReply");
         //获取
         String day = request.getParameter("replyTime");
         SimpleDateFormat simpleDateFormat1=new SimpleDateFormat("yyyy-MM-dd");
         try {
-            Date ec_reply_time = simpleDateFormat.parse(day);
+            Date ecCreateTime = simpleDateFormat.parse(day);
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
         //System.out.println(ec_content+ec_nick_name);
         EasyBuyComment easyBuyComment = new EasyBuyComment();
-        easyBuyComment.setEcId(ec_id);
-        easyBuyComment.setEcNickName(ec_nick_name);
-        easyBuyComment.setEcContent(ec_content);
-        Date ec_create_time = new Date();
-        easyBuyComment.setEcCreateTime(ec_create_time);
-        easyBuyComment.setEcReply(ec_reply);
-        Date ec_reply_time = new Date();
-        easyBuyComment.setEcReplyTime(ec_reply_time);
+        easyBuyComment.setEcId(ecId);
+        easyBuyComment.setEcNickName(ecNickName);
+        easyBuyComment.setEcContent(ecContent);
+        Date ecCreateTime = new Date();
+        easyBuyComment.setEcCreateTime(ecCreateTime);
+        easyBuyComment.setEcReply(ecReply);
+        Date ecReplyTime = new Date();
+        easyBuyComment.setEcReplyTime(ecReplyTime);
 
         ServiceMassageDao serviceMassageDao=new ServiceMassageDaoImpl();
         serviceMassageDao.addCommodity1(easyBuyComment);

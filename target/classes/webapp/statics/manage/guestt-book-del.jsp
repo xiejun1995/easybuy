@@ -8,8 +8,9 @@
     int id= Integer.parseInt(request.getParameter("ecId"));
     //调用方法
     ServiceMassageDao service=new ServiceMassageDaoImpl();
-    EasyBuyComment comm=new EasyBuyComment(id);
-    service.deleteCommodity(comm);
+    EasyBuyComment easyBuyComment=new EasyBuyComment();
+    easyBuyComment.setEcId(id);
+    service.deleteCommodity(easyBuyComment);
     //返回结果到留言界面
     response.sendRedirect("guestbook.jsp");
 %>

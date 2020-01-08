@@ -7,7 +7,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%--留言的添加操作--%>
 <%  //获取编号，昵称，回复内容
-    String id= request.getParameter("Id");
+    int id= Integer.parseInt(request.getParameter("Id"));
     String guestName= request.getParameter("guestName");
     String guestReply =request.getParameter("guestReply");
     //获取回复时间
@@ -20,7 +20,12 @@
         e.printStackTrace();
     }
     //调用方法
-    EasyBuyComment easyBuycomment=new EasyBuyComment(Integer.parseInt(id),guestReply,ecCreateTime,guestName);
+    EasyBuyComment easyBuycomment=new EasyBuyComment();
+    easyBuycomment.setEcId(id);
+    easyBuycomment.setEcReply(guestReply);
+    easyBuycomment.setEcCreateTime(ecCreateTime);
+    easyBuycomment.setEcNickName(guestName);
+
     ServiceMassageDao service=new ServiceMassageDaoImpl();
     service.updateCommodity(easyBuycomment);
     //将结果返回到留言界面
