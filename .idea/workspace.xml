@@ -2,55 +2,66 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="easybuy_pro:war exploded" />
+      <artifact name="easybuy:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/easybuy_pro_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/dao/massage/MessageDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/dao/massage/MessageDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/pojo/EasyBuyComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/pojo/EasyBuyComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/jdbc/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/dao/news/NewsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/dao/news/NewsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/pojo/EasyBuyNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/pojo/EasyBuyNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/news-view.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/ShoppingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/ShoppingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/AlipayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/AlipayConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/ClassifyDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/ClassifyDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/CommodityDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/CommodityDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/massage/MessageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/massage/MessageDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/news/NewsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/news/NewsDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyNews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/service/news/ServiceNewsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/service/news/ServiceNewsDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/massage/addServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/massage/addServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/AddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/AddUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/GetUserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/GetUserList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/LogInvalidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/LogInvalidate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UpdateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UpdateUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/util/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/util/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/src/main/webapp/WEB-INF/lib/mybatis-spring-2.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/.idea/libraries/jsp_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/webapp/statics/images/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/resources/jdbc/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-selectById.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-add.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/statics/manage/alipay.trade.close.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/src/main/webapp/statics/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/scripts/My97DatePicker/lang/en.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/webapp/WEB-INF/lib/spring-expression-5.2.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/images/product/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/webapp/statics/images/upload/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/webapp/statics/scripts/My97DatePicker/calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/css/alipay.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/src/main/webapp/statics/images/product/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/src/main/webapp/statics/manage/productClass-do-add.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/webapp/WEB-INF/lib/log4j-api-2.13.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/webapp/statics/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/webapp/statics/images/product/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/src/main/webapp/statics/address.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/images/upload/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/classes/target/easybuy_pro/statics/delete.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/orderList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/ShoppingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/ShoppingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/AlipayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/AlipayConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/orderList.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +84,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -99,16 +109,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="easybuy" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/easybuy_pro/statics/manage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -116,24 +122,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics\manage" />
-      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\resources\cn\kgc\easybuy\mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.kgc.easybuy.util" />
-      <recent name="cn.kgc.easybuy.mapper" />
-      <recent name="cn.kgc.easybuy.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp\statics" />
       <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp" />
@@ -141,15 +135,37 @@
       <recent name="G:\easybuy\easybuy_pro\web\manage" />
       <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.kgc.easybuy.util" />
+      <recent name="cn.kgc.easybuy.mapper" />
+      <recent name="cn.kgc.easybuy.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\easybuy\target\easybuy_pro\statics\manage" />
+      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics\manage" />
+      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics" />
+      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
+      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.50" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="easybuy_pro:war exploded">
+        <artifact name="easybuy:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/easybuy" />
           </settings>
@@ -215,7 +231,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="easybuy_pro:war" />
-          <artifact name="easybuy_pro:war exploded" />
+          <artifact name="easybuy:war exploded" />
         </option>
       </method>
     </configuration>
@@ -290,33 +306,10 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="easybuy_pro:war exploded" />
           <artifact name="easybuy_pro:war" />
-          <artifact name="easybuy:war exploded" />
+          <artifact name="easybuy:war" />
         </option>
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.13466851" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -349,9 +342,10 @@
       <workItem from="1578270849346" duration="31000" />
       <workItem from="1578271082600" duration="3153000" />
       <workItem from="1578275260812" duration="2229000" />
-      <workItem from="1578277585139" duration="7573000" />
-      <workItem from="1578462763966" duration="2342000" />
-      <workItem from="1578465123896" duration="957000" />
+      <workItem from="1578277585139" duration="12300000" />
+      <workItem from="1578356426981" duration="7690000" />
+      <workItem from="1578368748725" duration="6865000" />
+      <workItem from="1578443874109" duration="8553000" />
     </task>
     <task id="LOCAL-00001" summary="hebing">
       <created>1578278250398</created>
@@ -375,31 +369,30 @@
       <updated>1578284226894</updated>
     </task>
     <task id="LOCAL-00004" summary="merge everyone file">
-      <created>1578452340376</created>
+      <created>1578285392893</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1578452340376</updated>
+      <updated>1578285392893</updated>
     </task>
-    <task id="LOCAL-00005" summary="merge everyone file">
-      <created>1578454829292</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1578454829292</updated>
-    </task>
-    <task id="LOCAL-00006" summary="merge everyone file">
-      <created>1578455873385</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1578455873385</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hebing" />
@@ -423,15 +416,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="319" y="0" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1578048669237" />
-    <state x="353" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578462937613">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578291764217">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578280618841" />
-    <state x="353" y="2" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578462937613" />
-    <state x="649" y="329" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1578462368531">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="649" y="329" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578462368531" />
+    <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578291764217" />
     <state x="530" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1578281559917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -448,83 +436,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="547" y="309" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1536.824@0.0.1536.824" timestamp="1578031636803" />
+    <state x="443" y="330" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578359982674">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="443" y="330" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1578359982674" />
     <state x="436" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578275131048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578275131048" />
-    <state x="242" y="0" key="CommitChangelistDialog2" timestamp="1578455871140">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578284213884" />
-    <state x="242" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578455871140" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1578452385042">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578452385042" />
-    <state x="524" y="65" key="FileChooserDialogImpl" timestamp="1578278472002">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1578285385138">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="524" y="65" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578278472002" />
-    <state width="1568" height="215" key="GridCell.Tab.0.bottom" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578285385138" />
+    <state x="524" y="65" key="FileChooserDialogImpl" timestamp="1578360000498">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578284995911" />
-    <state width="1568" height="215" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1568" height="215" key="GridCell.Tab.0.center" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="524" y="65" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578360000498" />
+    <state width="1252" height="134" key="GridCell.Tab.0.bottom" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578284995911" />
-    <state width="1568" height="215" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1568" height="215" key="GridCell.Tab.0.left" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.0.center" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578284995910" />
-    <state width="1568" height="215" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1568" height="215" key="GridCell.Tab.0.right" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.0.left" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578284995911" />
-    <state width="1568" height="215" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1568" height="215" key="GridCell.Tab.1.bottom" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.0.right" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578284995912" />
-    <state width="1568" height="215" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1568" height="215" key="GridCell.Tab.1.center" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.1.bottom" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578284995912" />
-    <state width="1568" height="215" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1568" height="215" key="GridCell.Tab.1.left" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.1.center" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578284995912" />
-    <state width="1568" height="215" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1568" height="215" key="GridCell.Tab.1.right" timestamp="1578465107083">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.1.left" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578284995912" />
-    <state width="1568" height="215" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578465107083" />
-    <state width="1410" height="233" key="GridCell.Tab.2.bottom" timestamp="1578462714834">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.1.right" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578284995913" />
-    <state width="1410" height="233" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578462714834" />
-    <state width="1410" height="233" key="GridCell.Tab.2.center" timestamp="1578462714834">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.2.bottom" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578284995913" />
-    <state width="1410" height="233" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578462714834" />
-    <state width="1410" height="233" key="GridCell.Tab.2.left" timestamp="1578462714834">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.2.center" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578284995913" />
-    <state width="1410" height="233" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578462714834" />
-    <state width="1410" height="233" key="GridCell.Tab.2.right" timestamp="1578462714834">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1252" height="134" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.2.left" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1252" height="282" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578284995913" />
-    <state width="1410" height="233" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578462714834" />
+    <state width="1252" height="134" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
+    <state width="1252" height="134" key="GridCell.Tab.2.right" timestamp="1578365361391">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1252" height="134" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578365361391" />
     <state width="1252" height="478" key="GridCell.Tab.3.bottom" timestamp="1578271270579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -565,11 +540,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1578278093939" />
-    <state x="513" y="71" key="MultipleFileMergeDialog" timestamp="1578452434753">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="410" y="56" key="MultipleFileMergeDialog" timestamp="1578278093955">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="56" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1578278093955" />
-    <state x="513" y="71" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578452434753" />
     <state x="378" y="44" width="790" height="735" key="NewModule_or_Project.wizard" timestamp="1577528277769">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -579,30 +553,18 @@
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578278030741" />
     <state x="151" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578030977186" />
-    <state x="674" y="170" key="VCS.ChangeListViewerDialog" timestamp="1578452379247">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="674" y="170" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578452379247" />
-    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1578285141375">
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1578365391294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578285141375" />
+    <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578365391294" />
     <state x="554" y="176" key="chooseDestDirectoryDialog" timestamp="1577528483601">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="554" y="176" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1577528483601" />
-    <state x="408" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1578277585113">
+    <state x="408" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1578356469654">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="408" y="194" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578277585113" />
-    <state x="745" y="192" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1578454849386">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="745" y="192" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578454849386" />
-    <state x="704" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578452393053">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="704" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578452393053" />
+    <state x="408" y="194" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578356469654" />
     <state x="257" y="109" width="1077" height="666" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578039776687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -615,18 +577,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="170" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1577525231226" />
-    <state x="441" y="170" key="git4idea.merge.GitPullDialog" timestamp="1577521469256">
+    <state x="441" y="170" key="git4idea.merge.GitPullDialog" timestamp="1578365383093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="441" y="170" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1577521469256" />
+    <state x="441" y="170" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578365383093" />
     <state x="121" y="46" key="new project wizard" timestamp="1577528262995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="121" y="46" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1577528262995" />
-    <state x="341" y="183" key="run.anything.popup" timestamp="1577676591440">
+    <state x="341" y="183" key="run.anything.popup" timestamp="1578362632111">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1577676591440" />
+    <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1578362632111" />
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1578272738055">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -106,9 +106,14 @@
 					</tr>
 					<tr>
 						<td class="field">商品图片：</td>
-						<td><input type="file" class="text" name="photo"/></td>
-						<td style="display: block"><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"></td>
+						<td><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"></td>
 					</tr>
+					<tr>
+						<td class="field">修改商品图片：</td>
+						<td><input type="file" class="text" name="photo"/></td>
+					</tr>
+
+
 					<tr>
 						<td></td>
 						<td><label class="ui-blue"><input type="submit" name="submit" value="确定" /></label></td>

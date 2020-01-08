@@ -1,4 +1,5 @@
 
+<%@ page import="com.easybuy.pojo.EasyBuyNews" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
@@ -48,6 +49,12 @@
 			</dl>
 		</div>
 	</div>
+	<%
+		EasyBuyNews news=(EasyBuyNews)request.getAttribute("news");
+		if (news==null){
+			news=new EasyBuyNews();
+
+	%>
 	<div class="main">
 		<h2>修改新闻</h2>
 		<div class="manage">
@@ -56,10 +63,12 @@
 					<tr>
 						<td class="field">新闻标题：</td>
 						<td><input type="text" class="text" name="title" value="" /></td>
+						<td><input type="text" class="text" name="title" value="${requestScope.news.enTitle}" /></td>
 					</tr>
 					<tr>
 						<td class="field">新闻内容：</td>
 						<td><textarea name="content"></textarea></td>
+						<td><input type="text" class="text tiny" name="productNumber" value="${requestScope.news.enContent}"/></td>
 					</tr>
 					<tr>
 						<td></td>
@@ -71,8 +80,9 @@
 	</div>
 	<div class="clear"></div>
 </div>
+</div>
 <div id="footer">
-	Copyright &copy; 2010 北大青鸟 All Rights Reserved. 京ICP证1000001号
+	Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
 </div>
 </body>
 </html>

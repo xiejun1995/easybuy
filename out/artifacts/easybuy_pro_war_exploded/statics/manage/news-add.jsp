@@ -54,16 +54,26 @@
 			<form id="newsAdd" action="manage-result.jsp">
 				<table class="form">
 					<tr>
-						<td class="field">新闻标题：</td>
-						<td><input type="text" class="text" name="title" value="" /><span></span></td>
+						<td class="field">编号：</td>
+						<td><input class="text" type="text" name="id"  value="${requestScope.news.enId}"/></td>
 					</tr>
 					<tr>
-						<td class="field">新闻内容：</td>
-						<td><textarea class="text" name="content"></textarea><span></span></td>
+						<td class="field">标题：</td>
+						<td><input type="text" class="text" name="title" value="${requestScope.news.enTitle}" /></td>
+					</tr>
+
+					<tr>
+						<td class="field">内容：</td>
+						<td><input class="text" type="text" name="content"  value="${requestScope.news.enContent}"/></td>
+					</tr>
+					<tr>
+						<td class="field">时间：</td>
+						<td><input class="text" type="date" name="time"  value="${requestScope.news.enCreateTime}"/></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><label class="ui-blue"><input type="submit" name="submit" value="添加" /></label></td>
+						<td><label class="ui-blue"><input type="submit" name="submit" value="添加新闻" /></label></td>
+
 					</tr>
 				</table>
 			</form>
