@@ -69,28 +69,50 @@ public class OrderListController {
     /**
      * 模糊查询的Ajax异步请求
      * @param entityId
-     * @param userName
+     * @param eoStatus
+     * @param phone
      * @param request
      * @return
      */
     @GetMapping("/fuzzyOrderList")
     @ResponseBody
     public String getOrderByOrdererAndOrderNumber(@RequestParam("entityId") String entityId,
-                                                  @RequestParam("userName")String userName,
+                                                  @RequestParam("eoStatus")String eoStatus,
+                                                  @RequestParam("phone")String phone,
                                                   HttpServletRequest request,
                                                   HttpSession session
                                                   ){
         //定义一个map集合用于存储多种类型的集合
         Map<String,Object> resultMap=new HashMap<>();
-            if(StringUtils.isNoneEmpty(entityId)||StringUtils.isNoneEmpty(userName)){
+            if(StringUtils.isNoneEmpty(entityId)||StringUtils.isNoneEmpty(eoStatus)||StringUtils.isNoneEmpty(phone)){
                 Integer id=null;
-                if(entityId==null ||"".equals(entityId) && userName==null){
+                if(StringUtils.isNoneEmpty(entityId)){
                     id=Integer.valueOf(entityId);
+                }
+                Integer status=null;
+                if(StringUtils.isNoneEmpty(eoStatus)){
+                    switch (eoStatus){
+                        case "待审核":
+                            status=1;
+                            break;
+                        case "审核通过":
+                            status=2;
+                            break;
+                        case "配货":
+                            status=3;
+                            break;
+                        case "发货":
+                            status=4;
+                            break;
+                        default:
+                            status=null;
+                            break;
+                    }
                 }
                 //查询总页码
                 logger.debug("#########################查询订单列表");
                 //如果没有记录则直接返回
-                Integer count=orderService.getNumberOfRecordsByFuzzyQuery(id,userName);
+                Integer count=orderService.getNumberOfRecordsByFuzzyQuery(id,status,phone);
                 if(count<1){
                     resultMap.put("messeage",0);
                     return JSONArray.toJSONString(resultMap);
@@ -98,7 +120,7 @@ public class OrderListController {
                 //如果有记录则查询记录集合
                 logger.info("################################进行查询");
                 //获取订单当前页的订单id集合
-                List<Integer> orderIds=orderService.getOrderListOfPaginationByFuzzyQuery(id,userName);
+                List<Integer> orderIds=orderService.getOrderListOfPaginationByFuzzyQuery(id,status,phone);
                 //根据订单集合查询当前页的订单详情列表
                 List<EasyBuyOrder> fuzzyOrderList=orderService.getOrderByOrdererAndOrderNumber(orderIds);
                 //存在request中便于使用EL表达式

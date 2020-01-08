@@ -38,12 +38,12 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public Integer getNumberOfRecordsByFuzzyQuery(Integer entityId, String userName) {
-        return orderMapper.getNumberOfRecordsByFuzzyQuery(entityId,userName);
+    public Integer getNumberOfRecordsByFuzzyQuery(Integer entityId,Integer status,String phone) {
+        return orderMapper.getNumberOfRecordsByFuzzyQuery(entityId,status,phone);
     }
 
     @Override
-    public List<Integer> getOrderListOfPaginationByFuzzyQuery(Integer entityId, String userName) {
-        return orderMapper.getOrderListOfPaginationByFuzzyQuery(entityId,userName);
+    public List<Integer> getOrderListOfPaginationByFuzzyQuery(Integer entityId,Integer status,String phone) {
+        return orderMapper.getOrderListOfPaginationByFuzzyQuery(entityId,status,phone);
     }
 }
