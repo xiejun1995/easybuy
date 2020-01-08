@@ -2,59 +2,66 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="easybuy_pro:war exploded" />
+      <artifact name="easybuy:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/easybuy_pro_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/orderList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/dao/news/NewsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/dao/news/NewsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/pojo/EasyBuyNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/pojo/EasyBuyNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/service/news/ServiceNewsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/ShoppingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/ShoppingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/AlipayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/AlipayConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/ClassifyDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/ClassifyDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/CommodityDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/commodity/CommodityDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/massage/MessageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/massage/MessageDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/news/NewsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/news/NewsDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyNews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/service/news/ServiceNewsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/service/news/ServiceNewsDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/massage/addServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/massage/addServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/AddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/AddUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/GetUserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/GetUserList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/LogInvalidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/LogInvalidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UpdateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UpdateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/util/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/util/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/resources/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/orderList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/ShoppingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/ShoppingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/AlipayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/AlipayConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/orderList.js" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +114,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="G:/myeclipse/workspace/news" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/easybuy_pro/statics/manage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -115,24 +122,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics\manage" />
-      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\resources\cn\kgc\easybuy\mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.kgc.easybuy.util" />
-      <recent name="cn.kgc.easybuy.mapper" />
-      <recent name="cn.kgc.easybuy.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp\statics" />
       <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp" />
@@ -140,15 +135,37 @@
       <recent name="G:\easybuy\easybuy_pro\web\manage" />
       <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.kgc.easybuy.util" />
+      <recent name="cn.kgc.easybuy.mapper" />
+      <recent name="cn.kgc.easybuy.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\easybuy\target\easybuy_pro\statics\manage" />
+      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics\manage" />
+      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics" />
+      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
+      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
-    <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.50" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.50" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="easybuy_pro:war exploded">
+        <artifact name="easybuy:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/easybuy" />
           </settings>
@@ -214,7 +231,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="easybuy_pro:war" />
-          <artifact name="easybuy_pro:war exploded" />
+          <artifact name="easybuy:war exploded" />
         </option>
       </method>
     </configuration>
@@ -289,32 +306,10 @@
         <option name="BuildArtifacts" enabled="true">
           <artifact name="easybuy_pro:war exploded" />
           <artifact name="easybuy_pro:war" />
+          <artifact name="easybuy:war" />
         </option>
       </method>
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <option name="contentProportion" value="0.13466851" />
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -349,6 +344,8 @@
       <workItem from="1578275260812" duration="2229000" />
       <workItem from="1578277585139" duration="12300000" />
       <workItem from="1578356426981" duration="7690000" />
+      <workItem from="1578368748725" duration="6865000" />
+      <workItem from="1578443874109" duration="8553000" />
     </task>
     <task id="LOCAL-00001" summary="hebing">
       <created>1578278250398</created>
@@ -383,6 +380,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hebing" />
