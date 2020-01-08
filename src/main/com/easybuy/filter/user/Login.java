@@ -26,8 +26,8 @@ public class Login implements Filter {
             HttpSession httpSession = request.getSession(false);
                 //判断是否登录
                 if (httpSession !=null) {
-                    String easyBuy_user = (String) httpSession.getAttribute("userName");
-                        if (easyBuy_user!=null) {
+                    String easyBuyuser = (String) httpSession.getAttribute("userName");
+                        if (easyBuyuser!=null) {
                             chain.doFilter(req,resp);
                         }else {
                             response.sendRedirect("../statics/login.jsp");

@@ -42,7 +42,12 @@ public class AddUser extends HttpServlet {
             easyBuyUser.setSex(sex);
             easyBuyUser.setBirthday(birthday);
             easyBuyUser.setIdentityCode(identityCode);
-            easyBuyUser.setEmail(email);
+            if (email.length()<20) {
+                easyBuyUser.setEmail(email);
+            }else {
+                response.sendRedirect("../statics/reg-fail.jsp");
+            }
+
             easyBuyUser.setMobile(mobile);
             easyBuyUser.setAddress(address);
             easyBuyUser.setLogin(login);
