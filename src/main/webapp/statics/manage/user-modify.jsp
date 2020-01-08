@@ -1,21 +1,20 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_User" %>
 <%@ page import="com.easybuy.service.user.ServiceUserDao" %>
 <%@ page import="com.easybuy.service.user.ServiceUserDaoImpl" %>
 <%@ page import="com.easybuy.pojo.EasyBuyUser" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link type="text/css" rel="stylesheet" href="../css/style.css" />
-<script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="../scripts/function.js"></script>
-<script type="text/javascript" src="../scripts/My97DatePicker/WdatePicker.js"></script>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/My97DatePicker/WdatePicker.js"></script>
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
 </head>
 <body>
 <div id="header" class="wrap">
-	<div id="logo"><img src="../images/logo.gif" /></div>
-	<div class="help"><a href="../../index.jsp">返回前台页面</a></div>
+	<div id="logo"><img src="${pageContext.request.contextPath}/statics/images/logo.gif" /></div>
+	<div class="help"><a href="${pageContext.request.contextPath}/index.jsp">返回前台页面</a></div>
 	<div class="navbar">
 		<ul class="clearfix">
 			<li><a href="index.jsp">首页</a></li>

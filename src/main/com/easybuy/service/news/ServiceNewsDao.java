@@ -21,7 +21,7 @@ public interface ServiceNewsDao {
     //分页获取新闻
     List<EasyBuyNews> commodityList(int pageNo, int pageSize);
     //查询特定新闻编号
-    EasyBuyNews getProdusById(int id);
+    EasyBuyNews getProdusById(int Id);
 
 }
 

@@ -1,12 +1,12 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="com.easybuy.util.PageSuppore" %>
 <%@ page import="com.easybuy.pojo.EasyBuyComment" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.easybuy.util.PageSuppore" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../scripts/function.js"></script>
@@ -18,14 +18,14 @@
 <div id="header" class="wrap">
 	<div id="logo"><img src="../images/logo.gif" /></div>
 	<div class="help">
-		<a href="../index.jsp">返回前台页面</a>
+		<a href="../../index.jsp">返回前台页面</a>
 	</div>
 	<div class="navbar">
 		<ul class="clearfix">
 			<li><a href="index.jsp">首页</a></li>
 			<li><a href="user.jsp">用户</a></li>
 			<li><a href="product.jsp">商品</a></li>
-			<li><a href="${pageContext.request.contextPath}/statics/manage/orderList">订单</a></li>
+			<li><a href="order.jsp">订单</a></li>
 			<li class="current"><a href="guestbook.jsp">留言</a></li>
 			<li><a href="news.jsp">新闻</a></li>
 		</ul>
@@ -55,7 +55,7 @@
 				<dd><em><a href="productClass-add.jsp">新增</a></em><a href="productClass.jsp">分类管理</a></dd>
 				<dd><em><a href="product-add.jsp">新增</a></em><a href="product.jsp">商品管理</a></dd>
 				<dt>订单管理</dt>
-				<dd><a href="${pageContext.request.contextPath}/statics/manage/orderList">订单管理</a></dd>
+				<dd><a href="order.jsp">订单管理</a></dd>
 				<dt>留言管理</dt>
 				<dd><a href="guestbook.jsp">留言管理</a></dd>
 				<dt>新闻管理</dt>
