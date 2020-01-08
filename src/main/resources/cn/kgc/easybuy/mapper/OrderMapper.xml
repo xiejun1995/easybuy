@@ -10,6 +10,7 @@
         <result property="eoCreateTime" column="eoCreateTime"/>
         <result property="eoStatus" column="eoStatus"/>
         <result property="eoCost" column="eoCost" />
+        <result property="eoUserName" column="eoUserName"/>
         <!--下面为订单详情类的映射-->
         <collection property="orderDetailList" ofType="EasyBuyOrderDetail" resultMap="detailMapper"></collection>
     </resultMap>
@@ -41,7 +42,7 @@
     </select>
     <!--根据当前订单Id集合进行联表查询查询该订单中的所有商品信息及订单详情信息-->
     <select id="getOrderDetailListbyOrderId" resultMap="orderAndPro">
-        SELECT o.eoId,o.eoCreateTime,o.eoStatus,o.eoCost,p.epName,p.epPrice,p.epFileName,d.eodQuantity,d.eodCost FROM easybuyorder o
+        SELECT o.eoId,o.eoCreateTime,o.eoStatus,o.eoCost,o.eoUserName,p.epId,p.epName,p.epPrice,p.epFileName,d.eodQuantity,d.eodCost FROM easybuyorder o
         INNER JOIN easybuyorderdetail d ON (o.eoId = d.eoId)
         INNER JOIN easybuyProduct p ON (d.epId=p.epId)
         <trim prefix="where" prefixOverrides="and | or">
@@ -56,7 +57,7 @@
     </select>
     <!--根据订单ID范围进行模糊查询并且联表查询该订单中的所有商品信息及订单详情信息-->
     <select id="getOrderByOrdererAndOrderNumber" resultMap="orderAndPro">
-        select o.eoId,o.eoCreateTime,o.eoStatus,o.eoCost,p.epName,p.epPrice,p.epFileName,d.eodQuantity,d.eodCost FROM easybuyorder o
+        select o.eoId,o.eoCreateTime,o.eoStatus,o.eoCost,o.eoUserName,p.epId,p.epName,p.epPrice,p.epFileName,d.eodQuantity,d.eodCost FROM easybuyorder o
         INNER JOIN easybuyorderdetail d ON (o.eoId = d.eoId)
         INNER JOIN easybuyproduct p ON (d.epId=p.epId)
         <if test="orderIds != null and orderIds.size()>0">
@@ -76,15 +77,15 @@
     <!--根据模糊查询条件查询该条件下的总记录条数-->
     <select id="getNumberOfRecordsByFuzzyQuery" resultType="Integer">
         select count(1) from easybuyorder o
-        <trim prefix="where" prefixOverrides="and | or">
+        <trim prefix="where" prefixOverrides="and|or">
             <if test="entityId !=null and entityId!=0">
                 and o.eoId=#{entityId}
             </if>
             <if test="status !=null">
-                or o.eoStatus=#{status}
+                and o.eoStatus=#{status}
             </if>
             <if test="phone !=null and phone !=''">
-                or o.eoPhone=#{phone}
+                and o.eoPhone=#{phone}
             </if>
         </trim>
     </select>
@@ -97,10 +98,10 @@
                 and o.eoId=#{entityId}
             </if>
             <if test="status !=null">
-                or o.eoStatus=#{status}
+                and o.eoStatus=#{status}
             </if>
             <if test="phone !=null and phone !=''">
-                or o.eoPhone=#{phone}
+                and o.eoPhone=#{phone}
             </if>
         </trim>
     </select>

@@ -1,5 +1,7 @@
 package cn.kgc.easybuy.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 import java.util.List;
 
@@ -17,6 +19,14 @@ public class EasyBuyOrder {
     private float eoCost;//金额
     private int eoStatus;//状态 1待审核 2审核通过 3配货 4卖家已发货 5已收货
     private List<EasyBuyOrderDetail> orderDetailList; //订单具体信息类
+    private String dateString; //格式化后的时间字符串
+    public String getDateString() {
+        return dateString;
+    }
+
+    public void setDateString(String dateString) {
+        this.dateString = dateString;
+    }
 
     public EasyBuyOrder() {
     }

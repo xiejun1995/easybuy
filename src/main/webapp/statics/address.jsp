@@ -1,4 +1,5 @@
 <%@ page import="org.apache.commons.lang3.StringUtils" %>
+<%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -7,6 +8,18 @@
     <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="scripts/function.js"></script>
 </head>
+<%
+    //通过传递的参数获取商品编号和对应的价格
+    Integer epId=null;
+    if(request.getParameter("epId")!=null){
+        epId=Integer.valueOf(request.getParameter("epId"));
+    }
+    Integer price=0;
+    if(request.getParameter("price")!=null){
+        price=Integer.valueOf(request.getParameter("price"));
+    }
+    request.setAttribute("amount",price);
+%>
 <body>
 <div id="header" class="wrap">
     <div id="logo"><img src="images/logo.gif" /></div>

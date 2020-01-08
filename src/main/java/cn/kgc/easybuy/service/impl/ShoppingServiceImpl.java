@@ -21,4 +21,19 @@ public class ShoppingServiceImpl implements ShoppingService {
     public EasyBuyProduct getProduct(Integer proId) {
         return shoppingMapper.getProduct(proId);
     }
+
+    @Override
+    public int addTempStock(Integer epId) {
+        return shoppingMapper.addTempStock(epId);
+    }
+
+    @Override
+    public int reduceTempStock(Integer epId) {
+        return shoppingMapper.reduceTempStock(epId);
+    }
+
+    @Override
+    public int reduceRealStock(Integer epId) {
+        return shoppingMapper.reduceRealStock(epId);
+    }
 }

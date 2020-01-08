@@ -1,6 +1,7 @@
 package cn.kgc.easybuy.controller;
 
 import cn.kgc.easybuy.pojo.EasyBuyOrder;
+import cn.kgc.easybuy.pojo.EasyBuyOrderDetail;
 import cn.kgc.easybuy.service.OrderService;
 import cn.kgc.easybuy.util.Constants;
 import cn.kgc.easybuy.util.PageUtil;
@@ -19,6 +20,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,6 +63,21 @@ public class OrderListController {
         List<Integer> orderIds=orderService.getOrderListOfPagination((curPage-1)*Constants.PAGE_SIZE, Constants.PAGE_SIZE);
         //根据订单集合查询当前页的订单详情列表
         List<EasyBuyOrder> orderList=orderService.getOrderDetailListbyOrderId(orderIds);
+        //计算订单总金额
+        for (int i = 0; i <orderList.size();i++) {
+            //定义一个订单总金额变量
+            float orderTotalAmounts=0;
+            List<EasyBuyOrderDetail> orderDetailList=orderList.get(i).getOrderDetailList();
+            for (int j = 0; j <orderDetailList.size();j++) {
+                //给单个商品的合计金额赋值
+                orderDetailList.get(j).setEodCost(orderDetailList.get(j).getEodQuantity()*orderDetailList.get(j).getProduct().getEpPrice());
+                //叠加订单的总金额
+                orderTotalAmounts+=orderDetailList.get(j).getEodQuantity()*orderDetailList.get(j).getProduct().getEpPrice();
+            }
+            //将订单总金额赋值给订单对象的订单金额属性
+            orderList.get(i).setEoCost(orderTotalAmounts);
+        }
+
         request.setAttribute("orderList",orderList);
         //存在request中便于使用EL表达式
         request.setAttribute("totalPage",totalPage);
@@ -90,6 +108,7 @@ public class OrderListController {
                     id=Integer.valueOf(entityId);
                 }
                 Integer status=null;
+                //根据用户输入的订单状态进行判断
                 if(StringUtils.isNoneEmpty(eoStatus)){
                     switch (eoStatus){
                         case "待审核":
@@ -114,7 +133,7 @@ public class OrderListController {
                 //如果没有记录则直接返回
                 Integer count=orderService.getNumberOfRecordsByFuzzyQuery(id,status,phone);
                 if(count<1){
-                    resultMap.put("messeage",0);
+                    resultMap.put("messeage",Constants.NO_RECORD);
                     return JSONArray.toJSONString(resultMap);
                 }
                 //如果有记录则查询记录集合
@@ -123,8 +142,23 @@ public class OrderListController {
                 List<Integer> orderIds=orderService.getOrderListOfPaginationByFuzzyQuery(id,status,phone);
                 //根据订单集合查询当前页的订单详情列表
                 List<EasyBuyOrder> fuzzyOrderList=orderService.getOrderByOrdererAndOrderNumber(orderIds);
-                //存在request中便于使用EL表达式
-                session.setAttribute("fuzzyOrderList",fuzzyOrderList);
+                for (int i = 0; i < fuzzyOrderList.size(); i++) {
+                    fuzzyOrderList.get(i).setDateString(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(fuzzyOrderList.get(i).getEoCreateTime()));
+                }
+                //计算订单总金额
+                for (int i = 0; i <fuzzyOrderList.size();i++) {
+                    //定义一个订单总金额变量
+                    float orderTotalAmounts=0;
+                    List<EasyBuyOrderDetail> orderDetailList=fuzzyOrderList.get(i).getOrderDetailList();
+                    for (int j = 0; j <orderDetailList.size();j++) {
+                        //给单个商品的合计金额赋值
+                        orderDetailList.get(j).setEodCost(orderDetailList.get(j).getEodQuantity()*orderDetailList.get(j).getProduct().getEpPrice());
+                        //叠加订单的总金额
+                        orderTotalAmounts+=orderDetailList.get(j).getEodQuantity()*orderDetailList.get(j).getProduct().getEpPrice();
+                    }
+                    //将订单总金额赋值给订单对象的订单金额属性
+                    fuzzyOrderList.get(i).setEoCost(orderTotalAmounts);
+                }
                 resultMap.put("fuzzyOrderList",fuzzyOrderList);
                 System.out.println("###########################"+JSONArray.toJSONString(resultMap));
                 return JSONArray.toJSONString(resultMap);

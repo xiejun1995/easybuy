@@ -10,10 +10,19 @@ public class EasyBuyProduct {
     private String epName;//商品名字
     private String epDescription;//商品描述
     private float epPrice;//商品价格
-    private int epStock;//商品库存
+    private int epStock;//商品临时
     private int epcId;//商品分类ID
     private int epcChildId;//商品二级分类
     private String epFileName;//上传的文件名
+    private int realStock; //商品的实际库存
+
+    public int getRealStock() {
+        return realStock;
+    }
+
+    public void setRealStock(int realStock) {
+        this.realStock = realStock;
+    }
 
     public int getEpId() {
         return epId;
@@ -83,7 +92,7 @@ public class EasyBuyProduct {
     }
 
 
-    public EasyBuyProduct(int epId, String epName, String epDescription, float epPrice, int epStock, int epcId, int epcChildId, String epFileName) {
+    public EasyBuyProduct(int epId, String epName, String epDescription, float epPrice, int epStock, int epcId, int epcChildId, String epFileName, int realStock) {
         this.epId = epId;
         this.epName = epName;
         this.epDescription = epDescription;
@@ -92,5 +101,6 @@ public class EasyBuyProduct {
         this.epcId = epcId;
         this.epcChildId = epcChildId;
         this.epFileName = epFileName;
+        this.realStock = realStock;
     }
 }

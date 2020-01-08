@@ -3,15 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:task="http://www.springframework.org/schema/task"
        xsi:schemaLocation="
 	        http://www.springframework.org/schema/beans
 	        http://www.springframework.org/schema/beans/spring-beans.xsd
 	        http://www.springframework.org/schema/context
 	        http://www.springframework.org/schema/context/spring-context.xsd
 	        http://www.springframework.org/schema/mvc
-	        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+            http://www.springframework.org/schema/task
+	        http://www.springframework.org/schema/task/spring-task.xsd">
     <!--配置自动扫描包  -->
-    <context:component-scan base-package="cn.kgc.easybuy.service,cn.kgc.easybuy.mapper,cn.kgc.easybuy.controller,cn.kgc.easybuy.pojo"/>
+    <context:component-scan base-package="cn.kgc.easybuy.service,cn.kgc.easybuy.mapper,cn.kgc.easybuy.controller,cn.kgc.easybuy.pojo,cn.kgc.easybuy.quartz"/>
     <!--  启动webconfig并设置内容协商管理-->
     <mvc:annotation-driven content-negotiation-manager="contentNegotiationManager" >
         <!--配置信息转换器  -->
@@ -127,4 +130,6 @@
         <property name="maxUploadSize" value="500000000"/>
         <property name="defaultEncoding" value="UTF-8"/>
     </bean>
+    <!-- 设置定时任务 -->
+    <task:annotation-driven/>
 </beans>

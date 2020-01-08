@@ -55,7 +55,7 @@ public class CommodityDaoImpl implements CommodityDao {
                 Integer epcId=rs.getInt("epcId");
                 Integer epcChildId=rs.getInt("epcChildId");
                 String fileName=rs.getString("epFileName");
-                buy=new EasyBuyProduct(id2,name,description,price,stock,epcId,epcChildId,fileName);
+                buy=new EasyBuyProduct(id2,name,description,price,stock,epcId,epcChildId,fileName,stock);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -108,7 +108,7 @@ public class CommodityDaoImpl implements CommodityDao {
                 Integer epcChildId=rs.getInt("epcChildId");
                 String fileName=rs.getString("epFileName");
 
-                EasyBuyProduct buy=new EasyBuyProduct(id,name,description,price,stock,epcId,epcChildId,fileName);
+                EasyBuyProduct buy=new EasyBuyProduct(id,name,description,price,stock,epcId,epcChildId,fileName,stock);
                 list.add(buy);
             }
         } catch (SQLException e) {
@@ -134,7 +134,7 @@ public class CommodityDaoImpl implements CommodityDao {
                 Integer epcId2=rs.getInt("epcId");
                 Integer epcChildId=rs.getInt("epcChildId");
                 String fileName=rs.getString("epFileName");
-                EasyBuyProduct buy=new EasyBuyProduct(id,name,description,price,stock,epcId2,epcChildId,fileName);
+                EasyBuyProduct buy=new EasyBuyProduct(id,name,description,price,stock,epcId2,epcChildId,fileName,stock);
                 list.add(buy);
             }
         } catch (SQLException e) {

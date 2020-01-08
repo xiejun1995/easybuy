@@ -17,18 +17,20 @@
     <link type="text/css" rel="stylesheet" href="../css/style.css" />
     <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="../scripts/function.js"></script>
+    <script type="text/javascript" src="../scripts/shopping.js"></script>
 </head>
 <body>
 <%
-    String id = request.getParameter("id");
+    String id = request.getParameter("epId");
     int id1=0;
     if(id != null && !id.equals("")){
-         id1 = Integer.parseInt(request.getParameter("id"));
+         id1 = Integer.parseInt(id);
     }
     ServiceCommodityDao service = new ServiceCommodityDaoImpl();
     EasyBuyProduct product = service.getProdusById(id1);
     request.setAttribute("product",product);
     request.setAttribute("price",product.getEpPrice());
+    request.setAttribute("epId",id1);
 %>
 <div id="header" class="wrap">
     <div id="logo"><img src="../images/logo.gif" /></div>
@@ -114,8 +116,8 @@
 
                    <%-- <input type="button" name="button" value="" onclick="proPrice();" />
                     <a href="${pageContext.request.contextPath}/statics/shopping?ep_id=<%=id%>">放入购物车 </a>--%>
-                    <input type="button" name="button" value="购买" onclick="proPrice();" />
-                    <input type="button" name="button" value="加入购物车" onclick="window.location='${pageContext.request.contextPath}/statics/shopping.jsp?ep_id=<%=id%>'" />
+                    <input type="button" name="button" value="购买" onclick="proPrice(${epId});" />
+                    <input type="button" name="button" value="加入购物车" onclick="shoppingCart(${epId})" />
                 </div>
             </div>
             <div class="clear"></div>
@@ -133,16 +135,44 @@
 <div id="footer">
     Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
 </div>
+</body>
 <script>
-    var price=$("#price").val();
-    function proPrice(){
+    function proPrice(epId){
         $.ajax({
-            url:"../getOrderAmount",
+            url:"getProduct",
             type:"GET",
-            data:{"amount":price}
+            data:{"epId":epId},
+            dataType:"Json",
+            success:function (data) {
+                if(data.product!=null && data.product!=undefined){
+                    window.location.href="../address.jsp?epId="+data.product.epId+"&price="+data.product.epPrice;
+                }else{
+                    alert(data.messeage);
+                }
+            },
+            error:function () {
+                alert("购买失败，请重试!");
+            }
+        });
+    };
+    function shoppingCart(epId){
+        $.ajax({
+            url:"addShoppingCart",
+            type:"GET",
+            data:{"epId":epId},
+            dataType:"Json",
+            success:function (data) {
+                if(data.product!=null && data.product!=undefined){
+                    window.location.href="../address.jsp?epId="+data.product.epId+"&price="+data.product.epPrice;
+                }else{
+                    alert(data.messeage);
+                }
+            },
+            error:function () {
+                alert("购买失败，请重试!");
+            }
         });
     };
 </script>
-</body>
 </html>
 

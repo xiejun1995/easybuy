@@ -2,6 +2,8 @@ package cn.kgc.easybuy.controller;
 
 import cn.kgc.easybuy.pojo.EasyBuyProduct;
 import cn.kgc.easybuy.service.ShoppingService;
+import cn.kgc.easybuy.util.Constants;
+import com.alibaba.fastjson.JSON;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
@@ -9,6 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author 谢军军
@@ -51,16 +55,48 @@ public class ShoppingController {
 
     /**
      * 用于处理异步请求获取订单总金额
-     * @param amount
+     * @param epId
      * @param request
      */
-    @GetMapping("/getOrderAmount")
-    public String getOrderAmount(@RequestParam("amount") String amount,
+    @GetMapping("/manage/getProduct")
+    @ResponseBody
+    public String getProduct(@RequestParam("epId") String epId,
                                 HttpServletRequest request){
-        if(StringUtils.isNoneEmpty(amount)){
+        //定义一个map集合用于存储多种类型的集合
+        Map<String,Object> resultMap=new HashMap<>();
+        if(StringUtils.isNoneEmpty(epId)){
             //将替换后的金额转换为整型并存储在request中
-            request.setAttribute("amount",Double.valueOf(amount));
+            EasyBuyProduct product=shoppingService.getProduct(Integer.valueOf(epId));
+            request.setAttribute("price",product.getEpPrice());
+            resultMap.put("product",product);
+            return JSON.toJSONString(resultMap);
+        }else{
+            resultMap.put("messeage", Constants.NO_EP_ID);
+            return JSON.toJSONString(resultMap);
         }
-        return "../address";
+
+    }
+    /**
+     * 用于处理将指定商品加入购物车的异步请求
+     * @param epId
+     * @param request
+     */
+    @GetMapping("/manage/addShoppingCart")
+    @ResponseBody
+    public String addShoppingCart(@RequestParam("epId") String epId,
+                                 HttpServletRequest request){
+        //定义一个map集合用于存储多种类型的集合
+        Map<String,Object> resultMap=new HashMap<>();
+        if(StringUtils.isNoneEmpty(epId)){
+            //将替换后的金额转换为整型并存储在request中
+            EasyBuyProduct product=shoppingService.getProduct(Integer.valueOf(epId));
+            request.setAttribute("price",product.getEpPrice());
+            resultMap.put("product",product);
+            return JSON.toJSONString(resultMap);
+        }else{
+            resultMap.put("messeage", Constants.NO_EP_ID);
+            return JSON.toJSONString(resultMap);
+        }
+
     }
 }
