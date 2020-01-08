@@ -148,7 +148,7 @@
     </filter>
     <filter-mapping>
         <filter-name>Loginfilter</filter-name>
-        <url-pattern>/manage/*</url-pattern>
+        <url-pattern>/statics/manage/*</url-pattern>
     </filter-mapping>
     <filter-mapping>
         <filter-name>CharEncodingFilter</filter-name>

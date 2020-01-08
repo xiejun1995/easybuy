@@ -9,9 +9,10 @@
 <html>
 <head>
     <title>易买网 - 首页</title>
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="scripts/function.js"></script>
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
+    <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/scripts/scripts/My97DatePicker/WdatePicker.js"></script>
 </head>
 <body>
 <div id="header" class="wrap">
