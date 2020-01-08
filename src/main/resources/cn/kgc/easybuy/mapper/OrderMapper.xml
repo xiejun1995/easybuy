@@ -80,8 +80,11 @@
             <if test="entityId !=null and entityId!=0">
                 and o.eoId=#{entityId}
             </if>
-            <if test="userName !=null and userName !=''">
-                or o.eoUserName like('%#{usrName}%')
+            <if test="status !=null">
+                or o.eoStatus=#{status}
+            </if>
+            <if test="phone !=null and phone !=''">
+                or o.eoPhone=#{phone}
             </if>
         </trim>
     </select>
@@ -93,8 +96,11 @@
             <if test="entityId !=null and entityId!=0">
                 and o.eoId=#{entityId}
             </if>
-            <if test="userName !=null and userName !=''">
-                or o.eoUserName like('%#{usrName}%')
+            <if test="status !=null">
+                or o.eoStatus=#{status}
+            </if>
+            <if test="phone !=null and phone !=''">
+                or o.eoPhone=#{phone}
             </if>
         </trim>
     </select>

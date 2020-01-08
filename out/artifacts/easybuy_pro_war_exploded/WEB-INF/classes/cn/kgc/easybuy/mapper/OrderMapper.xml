@@ -81,7 +81,7 @@
                 and o.eoId=#{entityId}
             </if>
             <if test="userName !=null and userName !=''">
-                or o.eoUserName like('%#{usrName}%')
+                or o.eoUserName like('%#{userName}%')
             </if>
         </trim>
     </select>

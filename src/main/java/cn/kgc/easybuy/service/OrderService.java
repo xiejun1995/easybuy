@@ -41,14 +41,15 @@ public interface OrderService {
     /**
      * 根据模糊查询条件查询该条件下的总记录条数
      *  entityId
-     *  userName
+     *  status
+     *  phone
      * @return
      */
-    public Integer getNumberOfRecordsByFuzzyQuery(Integer entityId,String userName);
+    public Integer getNumberOfRecordsByFuzzyQuery(Integer entityId,Integer status,String phone);
 
     /**
      * 根据当前页码及页码大小查询当前页所对应的订单Id集合
      * @return 订单Id集合
      */
-    public List<Integer> getOrderListOfPaginationByFuzzyQuery(Integer entityId,String userName);
+    public List<Integer> getOrderListOfPaginationByFuzzyQuery(Integer entityId,Integer status,String phone);
 }

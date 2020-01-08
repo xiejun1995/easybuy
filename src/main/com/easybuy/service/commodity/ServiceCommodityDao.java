@@ -32,10 +32,8 @@ public interface ServiceCommodityDao {
 
     //查询特定编号商品
     EasyBuyProduct getProdusById(int id);
-
     //获取商品的总数据量
     int getTotalCount();
-
     //分页查询所有商品信息
     List<EasyBuyProduct> getProductsList(int pageNo,int pageSize);
 

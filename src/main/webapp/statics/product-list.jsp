@@ -5,7 +5,7 @@
 <%@ page import="com.easybuy.service.commodity.ClassifyServiceImpl" %>
 <%@ page import="com.easybuy.util.PageSupport" %>
 
-<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
+<%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %><%--
   Created by IntelliJ IDEA.
@@ -82,24 +82,24 @@
                     ClassifyService service=new ClassifyServiceImpl();
                     List<Classify> list=list=service.ClassifyAll();
                     //父分类集合
-                    List<Classify> fids=new ArrayList<>();
+                    List<Classify> fids=new ArrayList<Classify>();
                     //子分类集合
-                    List<Classify> ids=new ArrayList<>();
+                    List<Classify> ids=new ArrayList<Classify>();
                     for (Classify clfy:list) {
-                        if (clfy.getEpc_parent_id()==0){
+                        if (clfy.getEpcParentId()==0){
                             fids.add(clfy);
-                        }else if (clfy.getEpc_parent_id()!=0){
+                        }else if (clfy.getEpcParentId()!=0){
                             ids.add(clfy);
                         }
                     }
                         for (Classify clfy:fids) {
                 %>
-                <dt><%=clfy.getEpc_name()%></dt>
+                <dt><%=clfy.getEpcName()%></dt>
                 <%
                     for (Classify clfy2:ids) {
-                        if (clfy.getEpc_id()==clfy2.getEpc_parent_id()){
+                        if (clfy.getEpcId()==clfy2.getEpcParentId()){
                 %>
-                <dd><a href="product-list.jsp?name=<%=clfy2.getEpc_name()%>&epc_id=<%=clfy2.getEpc_id()%>"><%=clfy2.getEpc_name()%></a></dd>
+                <dd><a href="product-list.jsp?name=<%=clfy2.getEpcName()%>&epc_id=<%=clfy2.getEpcId()%>"><%=clfy2.getEpcName()%></a></dd>
                 <%
                             }
                         }
@@ -150,20 +150,20 @@
                 <%
                     ServiceCommodityDao service2=new ServiceCommodityDaoImpl();
                     String index=request.getParameter("pageIndex");
-                    String cid=request.getParameter("epc_id");
+                    String cid=request.getParameter("epcId");
                     if (index==null){
                         index="1";
                     }
                     if (cid==null){
                         cid="3";
                     }
-                    int epc_id=Integer.parseInt(cid);
+                    int epcId=Integer.parseInt(cid);
                     //当前页码
                     int pageIndex=Integer.parseInt(index);
                     //页面容量
                     int pageSize=12;
                     //总条数
-                    int totalCount=service2.totalCountById(epc_id);
+                    int totalCount=service2.totalCountById(epcId);
 
                     PageSupport pageSupport=new PageSupport();
                     pageSupport.setPageNo(pageIndex);
@@ -172,95 +172,18 @@
                     //获取总页数
                     int totalPage=pageSupport.getTotalPageCount();
 
-                    List<EasyBuy_Product> list2= service2.commodityListById(epc_id,pageIndex,pageSize);;
+                    List<EasyBuyProduct> list2= service2.commodityListById(epcId,pageIndex,pageSize);;
 
-                    for (EasyBuy_Product buy :list2) {
+                    for (EasyBuyProduct buy :list2) {
                 %>
                 <li>
                     <dl>
-                        <dt><a href="manage/product-careful.jsp?id=<%=buy.getEp_id()%>" target="_self"><img src="<%=request.getContextPath()%>/images/upload/<%=buy.getEp_file_name()%>" /></a></dt>
-                        <dd class="title"><a href="manage/product-careful.jsp" target="_self"><%=buy.getEp_description()%></a></dd>
-                        <dd class="price">￥<%=buy.getEp_price()%></dd>
+                        <dt><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><img src="<%=request.getContextPath()%>/images/upload/<%=buy.getEpFileName()%>" /></a></dt>
+                        <dd class="title"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
+                        <dd class="price">￥<%=buy.getEpPrice()%></dd>
                     </dl>
                 </li>
                 <%}%>
-                <%--<li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/2.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">乐扣普通型保鲜盒圣诞7件套</a></dd>
-                        <dd class="price">￥69.90</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/3.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">欧珀莱均衡保湿四件套</a></dd>
-                        <dd class="price">￥279.0</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/4.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">联想笔记本电脑 高速独立显存</a></dd>
-                        <dd class="price">￥4199</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/5.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">法姿韩版显瘦彩边时尚牛仔铅笔裤</a></dd>
-                        <dd class="price">￥49.00</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/6.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">Genius925纯银施华洛世奇水晶吊坠</a></dd>
-                        <dd class="price">￥69.90</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/7.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">利仁2018M福满堂电饼铛 好用实惠</a></dd>
-                        <dd class="price">￥268.0</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/8.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">达派高档拉杆箱20寸 经典款式</a></dd>
-                        <dd class="price">￥198.0</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/9.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">爱国者MP4 全屏触摸多格式播放 4G</a></dd>
-                        <dd class="price">￥289.0</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/10.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">多美滋金装金盾3阶段幼儿配方奶粉</a></dd>
-                        <dd class="price">￥186.0</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view/product-careful.jsp" target="_self"><img src="images/product/1.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">法国德菲丝松露精品巧克力500g/盒</a></dd>
-                        <dd class="price">￥108.0</dd>
-                    </dl>
-                </li>
-                <li>
-                    <dl>
-                        <dt><a href="product-view.jsp   " target="_self"><img src="images/product/2.jpg" /></a></dt>
-                        <dd class="title"><a href="product-view.jsp" target="_self">乐扣普通型保鲜盒圣诞7件套</a></dd>
-                        <dd class="price">￥69.90</dd>
-                    </dl>
-                </li>--%>
             </ul>
             <div class="clear"></div>
             <div class="pager">
