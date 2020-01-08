@@ -1,10 +1,6 @@
 package com.easybuy.dao.massage;
-
 import com.easybuy.pojo.EasyBuyComment;
-import com.easybuy.pojo.EasyBuyProduct;
-
 import java.util.List;
-
 /**
  * 商品增删改查功能等接口
  * @author Allen
@@ -28,7 +24,7 @@ public interface MessageDao {
     //根据分类分页查询
     List<EasyBuyComment> commodityListById(int pageNo, int pageSize);
     //根据id查询分类总记录数
-    int totalCountById(int ec_id);
+    int totalCountById(int ecId);
 
     EasyBuyComment MrssageById(int id);
 

@@ -1,6 +1,6 @@
 <%@ page import="com.easybuy.service.news.ServiceNewsDao" %>
 <%@ page import="com.easybuy.service.news.ServiceNewsDaoImpl" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_News" %><%--
+<%@ page import="com.easybuy.pojo.EasyBuyNews" %><%--
   Created by IntelliJ IDEA.
   User: 29246
   Date: 2019/12/27
@@ -18,7 +18,7 @@
     String id1 = request.getParameter("id");
     int id = Integer.parseInt(id1);
     ServiceNewsDao serviceNewsDao = new ServiceNewsDaoImpl();
-    EasyBuy_News easyBuy_news = serviceNewsDao.getProdusById(id);
+    EasyBuyNews easyBuynews = serviceNewsDao.getProdusById(id);
 %>
 <div id="header" class="wrap">
     <div id="logo"><img src="images/logo.gif" /></div>
@@ -86,12 +86,12 @@
     </div>
 </div>
 <div id="news" class="right-main">
-    <h1><%=easyBuy_news.getEn_title()%></h1>
+    <h1><%=easyBuynews.getEnTitle()%></h1>
     <div class="content">
-        <%=easyBuy_news.getEn_content()%>
+        <%= easyBuynews.getEnContent()%>
     </div>
 </div>
-<div class="clear"></div>
+<div class=easyBuynews"clear"></div>
 </div>
 <div id="footer">
     Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
