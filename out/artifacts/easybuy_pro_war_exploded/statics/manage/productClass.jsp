@@ -90,24 +90,24 @@
 					//获取总页数
 					int totalPage=pageSupport.getTotalPageCount();
 					List<Classify> list=service.Classifylist(pageIndex,pageSize);
-					/*out.print(list.size());*/
+					out.print(list.size());
 
 
 					for (Classify clfy:list) {
-						if (clfy.getEpc_parent_id()==0) {
+						if (clfy.getEpcParentId()==0) {
 				%>
 				<tr>
-					<td class="first w4 c"><%=clfy.getEpc_id()%></td>
-					<td><%=clfy.getEpc_name()%></td>
-					<td class="w1 c"><a href="productClass-selectid.jsp?id=<%=clfy.getEpc_id()%>">修改</a> <a class="manageDel" href="javascript:del(<%=clfy.getEpc_id()%>)">删除</a></td>
+					<td class="first w4 c"><%=clfy.getEpcId()%></td>
+					<td><%=clfy.getEpcName()%></td>
+					<td class="w1 c"><a href="productClass-selectid.jsp?id=<%=clfy.getEpcId()%>">修改</a> <a class="manageDel" href="javascript:del(<%=clfy.getEpcId()%>)">删除</a></td>
 				</tr>
 				<%
 					}else{
 				%>
 				<tr>
-					<td class="first w4 c"><%=clfy.getEpc_id()%></td>
-					<td class="childClass"><%=clfy.getEpc_name()%></td>
-					<td class="w1 c"><a href="productClass-selectid.jsp?id=<%=clfy.getEpc_id()%>">修改</a> <a href="javascript:del(<%=clfy.getEpc_id()%>)">删除</a></td>
+					<td class="first w4 c"><%=clfy.getEpcId()%></td>
+					<td class="childClass"><%=clfy.getEpcName()%></td>
+					<td class="w1 c"><a href="productClass-selectid.jsp?id=<%=clfy.getEpcId()%>">修改</a> <a href="javascript:del(<%=clfy.getEpcId()%>)">删除</a></td>
 				</tr>
 				<%--<tr>
 					<td class="first w4 c">1</td>

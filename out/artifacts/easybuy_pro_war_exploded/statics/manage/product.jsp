@@ -93,7 +93,6 @@
 					List<EasyBuyProduct> list=service.commodityList(pageIndex,pageSize);
 					for (EasyBuyProduct buy :list) {
 				%>
-
 				<tr>
 					<td class="first w4 c"><%=buy.getEpId()%></td>
 					<td class="thumb"><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>" /><a href="../../../../jsp/product-view.jsp" target="_self"><%=buy.getEpName()%></a></td>
