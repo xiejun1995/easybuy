@@ -60,7 +60,7 @@
 						Classify clfy=(Classify)request.getAttribute("clfy");
 					%>
 					<tr>
-						<td><input type="hidden" name="id" value="<%=clfy.getEpcId()%>"></td>
+						<td><input type="hidden" name="id" value="<%=clfy.getEpc_id()%>"></td>
 					</tr>
 					<tr>
 						<td class="field">父分类：</td>
@@ -74,7 +74,7 @@
 									for (Classify clfy2:list) {
 										i++;
 								%>
-								<option value="<%=i%>"><%=clfy2.getEpcName() %></option>
+								<option value="<%=i%>"><%=clfy2.getEpc_name() %></option>
 								<%}%>
 								<%--<option value="1">电器</option>
 								<option value="2">衣服</option>--%>
@@ -83,7 +83,7 @@
 					</tr>
 					<tr>
 						<td class="field">分类名称：</td>
-						<td><input type="text" class="text" name="className" value="<%=clfy.getEpcName()%>"/></td>
+						<td><input type="text" class="text" name="className" value="<%=clfy.getEpc_name()%>"/></td>
 					</tr>
 					<tr>
 						<td></td>

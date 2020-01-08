@@ -69,8 +69,9 @@
 			</div>
 			<div class="spacer"></div>
             <form id="orderForm">
-                 订单号：<input type="text" class="text" name="entityId" id="entityId"/>
-                 订货人：<input type="text" class="text" name="userName" id="userName"/>
+                 订单号：<input type="text" class="text" name="entityId" id="entityId" placeholder="请输入订单号" type="number"/>
+                 状态：<input type="text" class="text" name="status" id="eoStatus" placeholder="请输入订单状态" />
+                 电话：<input type="text" class="text" name="phone" id="phone" placeholder="请输入电话" pattern="[0-9]{11}"/>
 				<label class="ui-blue"><input type="button" id="btn" name="btn" value="查询" /></label>
             </form>
 			<table class="list" id="orderList">

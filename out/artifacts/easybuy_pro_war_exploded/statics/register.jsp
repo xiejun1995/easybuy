@@ -59,7 +59,7 @@
                     <tr>
                         <td class="field">用户名(*)：</td>
                         <td>
-                            <input class="text" type="text" name="userId"  id="userId" maxlength="10"  /><span id="yanzheng"></span>
+                            <input class="text" type="text" name="userId" placeholder="请以数字或字母组合" id="userId" maxlength="10"  />
                             <span></span>
                         </td>
                     </tr>
@@ -78,10 +78,13 @@
                     <tr>
                         <td class="field">性别(*)：</td>
                         <td>
-                            <input class="radio" type="radio" name="sex" value="男" checked="checked">
-                            男性</input>
-                            <input class="radio" type="radio" name="sex" value="女"
-                            >女性</input>
+                            <label>
+                            <input class="radio" type="radio" name="sex" value="男" checked="checked">男性</input>
+                            </label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>
+                            <input class="radio" type="radio" name="sex" value="女">女性</input>
+                            </label>
                             <span></span></td>
                     </tr>
                     <tr>
@@ -102,7 +105,7 @@
                     </tr>
                     <tr>
                         <td class="field">收货地址(*)：</td>
-                        <td><input class="text" type="text" name="address" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="方便取件的地址" name="address" /><span></span></td>
                     </tr>
                     <tr>
                         <td></td>
