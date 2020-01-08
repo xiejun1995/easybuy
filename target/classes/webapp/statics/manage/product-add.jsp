@@ -97,6 +97,7 @@
 					</tr>
 					<tr>
 						<td class="field">商品图片(*)：</td>
+
 						<td><input type="file" class="text" name="photo" /><span></span></td>
 					</tr>
 					<tr>

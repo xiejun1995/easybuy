@@ -1,9 +1,11 @@
-<%@ page import="com.easybuy.service.commodity.*" %>
-<%@ page import="com.easybuy.util.PageSupport" %>
-<%@ page import="java.util.List" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
+
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
+<%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
+<%@ page import="com.easybuy.util.PageSupport" %>
+<%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
+<%@ page import="java.util.List" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
@@ -88,14 +90,14 @@
 					pageSupport.setTotalCount(totalCount);
 					//获取总页数
 					int totalPage=pageSupport.getTotalPageCount();
-					List<EasyBuy_Product> list=service.commodityList(pageIndex,pageSize);
-					for (EasyBuy_Product buy :list) {
+					List<EasyBuyProduct> list=service.commodityList(pageIndex,pageSize);
+					for (EasyBuyProduct buy :list) {
 				%>
 
 				<tr>
-					<td class="first w4 c"><%=buy.getEp_id()%></td>
-					<td class="thumb"><img src="<%=request.getContextPath()%>/images/upload/<%=buy.getEp_file_name()%>" /><a href="../../../../jsp/product-view.jsp" target="_self"><%=buy.getEp_name()%></a></td>
-					<td class="w1 c"><a href="product-selectById.jsp?id=<%=buy.getEp_id()%>">修改</a> <a class="del" href="javascript:del(<%=buy.getEp_id()%>)">删除</a></td>
+					<td class="first w4 c"><%=buy.getEpId()%></td>
+					<td class="thumb"><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>" /><a href="../../../../jsp/product-view.jsp" target="_self"><%=buy.getEpName()%></a></td>
+					<td class="w1 c"><a href="product-selectById.jsp?id=<%=buy.getEpId()%>">修改</a> <a class="del" href="javascript:del(<%=buy.getEpId()%>)">删除</a></td>
 				</tr>
 				<%}%>
 				<%--<tr>

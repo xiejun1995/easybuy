@@ -2,6 +2,7 @@ package com.easybuy.dao.user;
 
 import com.easybuy.pojo.EasyBuyUser;
 import com.easybuy.util.BaseDao;
+import com.easybuy.dao.user.UserDao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
