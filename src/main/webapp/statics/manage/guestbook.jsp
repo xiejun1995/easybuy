@@ -1,12 +1,12 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="com.easybuy.util.PageSuppore" %>
 <%@ page import="com.easybuy.pojo.EasyBuyComment" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.easybuy.util.PageSuppore" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../scripts/function.js"></script>

@@ -86,7 +86,7 @@ public class MessageDaoImpl implements MessageDao {
     //分页查询留言
     public int totalCount() {
         int count=0;
-        String sql="SELECT COUNT(1) FROM `EasyBuyComment`";
+        String sql="SELECT COUNT(1) FROM EasyBuyComment";
         Object[] objects={};
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
