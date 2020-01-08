@@ -1,6 +1,10 @@
 package com.easybuy.util;
 
-/*分页的工具类*/
+/**
+ * @author 齐宏伟
+ * 日期：2019-12-28
+ * desc：分页基类
+ */
 public class PageSuppore {
 	//当前页码
 	private int currentPageNo = 1;

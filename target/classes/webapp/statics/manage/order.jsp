@@ -2,16 +2,18 @@
 <%@ page import="cn.kgc.easybuy.service.impl.OrderServiceImpl" %>
 <%@ page import="cn.kgc.easybuy.util.Constants" %>
 <%@ page import="cn.kgc.easybuy.service.OrderService" %>
-<%@ page import="javax.annotation.Resource" %>
+<%@ page import="org.apache.commons.lang3.StringUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
 	float cost=0;
 	request.setAttribute("cost",cost);
+	//将ajax请求使用session存储的值获取到并存储到request当中用于EL表达式
+	Object fuzzyList=request.getSession().getAttribute("fuzzyOrderList");
+	if(fuzzyList!=null){
+		request.setAttribute("fuzzyList",fuzzyList);
+	}
 %>
-<link type="text/css" rel="stylesheet" href="../css/style.css" />
-<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/orderList.js"></script>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
@@ -21,7 +23,7 @@
 </head>
 <body>
 <div id="header" class="wrap">
-	<div id="logo"><img src="../images/logo.gif" /></div>
+	<div id="logo"><img src="${pageContext.request.contextPath}/statics/images/logo.gif" /></div>
 	<div class="help"><a href="${pageContext.request.contextPath}/webapp/index.jsp">返回前台页面</a></div>
 	<div class="navbar">
 		<ul class="clearfix">
@@ -67,47 +69,60 @@
 			</div>
 			<div class="spacer"></div>
             <form id="orderForm">
-                 订单号：<input type="text" class="text" name="entityId" id="entityId" />
-                 订货人：<input type="text" class="text" name="userName" id="userId"/>
+                 订单号：<input type="text" class="text" name="entityId" id="entityId" placeholder="请输入订单号" type="number"/>
+                 状态：<input type="text" class="text" name="status" id="eoStatus" placeholder="请输入订单状态" />
+                 电话：<input type="text" class="text" name="phone" id="phone" placeholder="请输入电话" pattern="[0-9]{11}"/>
 				<label class="ui-blue"><input type="button" id="btn" name="btn" value="查询" /></label>
             </form>
 			<table class="list" id="orderList">
 				<%--遍历订单列表集合--%>
 				<%--将遍历的订单嵌入到表格当中--%>
 				<c:forEach items="${orderList}" var="order" varStatus="index">
-					<tr>
-						<th colspan="2">
-							单号：${order.eo_id}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							时间：<fmt:formatDate value="${order.eo_create_time}" pattern="yyyy-MM-dd"></fmt:formatDate>
-						</th>
-						<th colspan="2">状态:
-							<select name="status">
-								<option value="1"  >待审核</option>
-								<option value="2"  >审核通过</option>
-								<option value="3"  >配货</option>
-								<option value="4" >发货</option>
-								<option value="5"  >收货确认</option>
-							</select>
-						</th>
-					</tr>
+					<c:if test="${order.eoStatus!=5}">
+						<tr>
+							<th colspan="2">
+								单号：${order.eoId}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								时间：<fmt:formatDate value="${order.eoCreateTime}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
+							</th>
+							<th colspan="2" id="status">状态:
+								<c:choose >
+									<c:when test="${order.eoStatus==1}">
+										<span><strong>待审核</strong></span>
+									</c:when>
+									<c:when test="${order.eoStatus==2}">
+										<span><strong>审核通过</strong></span>
+									</c:when>
+									<c:when test="${order.eoStatus==3}">
+										<span><strong>配货</strong></span>
+									</c:when>
+									<c:when test="${order.eoStatus==4}">
+										<span><strong>发货</strong></span>
+									</c:when>
+									<c:otherwise>
+										<span><strong>状态未知</strong></span>
+									</c:otherwise>
+								</c:choose>
+							</th>
+						</tr>
 						<c:forEach items="${order.orderDetailList}" var="orderDetail" varStatus="index">
 							<tr>
-								<td class="first w4 c">
-									<img src="../images/product/${orderDetail.product.ep_file_name}" /><a href="${pageContext.request.contextPath}/statics/product-view.jsp?ep_id=${orderDetail.product.ep_id}" >${orderDetail.product.ep_name}</a>
+							<td class="first w4 c">
+								<img src="${pageContext.request.contextPath}/statics/images/product/${orderDetail.product.epFileName}" /><a href="${pageContext.request.contextPath}/statics/product-view.jsp?epId=${orderDetail.product.epId}" >${orderDetail.product.epName}</a>
+							</td>
+							<td >
+									${orderDetail.product.epPrice}
+							</td>
+							<td>
+									${orderDetail.eodQuantity}
+							</td>
+							<c:if test="${index.first}">
+								<td class="w1 c" rowspan="${order.orderDetailList.size()}">
+									总计：${order.eoCost}
 								</td>
-								<td >
-										${orderDetail.product.ep_price}
-								</td>
-								<td>
-										${orderDetail.eod_quantity}
-								</td>
-								<c:if test="${index.first}">
-									<td class="w1 c" rowspan="${order.orderDetailList.size()}">
-										总计：${order.eo_cost}
-									</td>
-								</c:if>
-							</c:forEach>
+							</c:if>
+						</c:forEach>
 						</tr>
+					</c:if>
 				</c:forEach>
 			</table>
 			<div class="pager">
@@ -133,12 +148,8 @@
 <div id="footer">
 	Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
 </div>
-<script type="text/javascript">
-	//遍历select元素
-	$("select").each(function (index,element) {
-		var eo_status="${orderList[index]}";
-		$(this).find("option[value = '"+eo_status+"']").attr("selected","selected");
-	});
-</script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/orderList.js"></script>
 </body>
 </html>
