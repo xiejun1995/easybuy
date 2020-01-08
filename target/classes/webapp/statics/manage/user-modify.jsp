@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_User" %>
 <%@ page import="com.easybuy.service.user.ServiceUserDao" %>
 <%@ page import="com.easybuy.service.user.ServiceUserDaoImpl" %>
+<%@ page import="com.easybuy.pojo.EasyBuyUser" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
@@ -53,10 +53,10 @@
 		</div>
 	</div>
 	<%
-		EasyBuy_User easyBuy_user = new EasyBuy_User();
+		EasyBuyUser easyBuyuser = new EasyBuyUser();
 		ServiceUserDao serviceUserDao = new ServiceUserDaoImpl();
 		int id = Integer.parseInt(request.getParameter("id"));
-		easyBuy_user = serviceUserDao.getUser(id);
+		easyBuyuser = serviceUserDao.getUser(id);
 
 	%>
 	<div class="main">
@@ -66,19 +66,19 @@
 				<table class="form">
 					<tr>
 						<td class="field">用户名(*)：</td>
-						<td><input type="text" class="text" name="userName" value="<%=easyBuy_user.getEu_user_id()%>" readonly="readonly" /></td>
+						<td><input type="text" class="text" name="userName" value="<%=easyBuyuser.getUserId()%>" readonly="readonly" /></td>
 					</tr>
 					<tr>
 						<td class="field">真实姓名(*)：</td>
-						<td><input type="text" class="text" name="name" value="<%=easyBuy_user.getEu_user_name()%>" /></td>
+						<td><input type="text" class="text" name="name" value="<%=easyBuyuser.getUserName()%>" /></td>
 					</tr>
 					<tr>
 						<td class="field">登录密码(*)：</td>
-						<td><input type="text" class="text" name="passWord" value="<%=easyBuy_user.getEu_password()%>" /></td>
+						<td><input type="text" class="text" name="passWord" value="<%=easyBuyuser.getPassWords()%>" /></td>
 					</tr>
                     <tr>
 						<td class="field">确认密码(*)：</td>
-						<td><input type="text" class="text" name="passWord" value="<%=easyBuy_user.getEu_password()%>" /></td>
+						<td><input type="text" class="text" name="passWord" value="<%=easyBuyuser.getPassWords()%>" /></td>
 					</tr>
 					<tr>
 						<td class="field">性别(*)：</td>
@@ -90,11 +90,11 @@
 					</tr>
 					<tr>
 						<td class="field">手机(*)：</td>
-						<td><input type="text" class="text" name="mobile" value="<%=easyBuy_user.getEu_mobile()%>" /></td>
+						<td><input type="text" class="text" name="mobile" value="<%=easyBuyuser.getMobile()%>" /></td>
 					</tr>
 					<tr>
 						<td class="field">地址(*)：</td>
-						<td><input type="text" class="text" name="address" value="<%=easyBuy_user.getEu_addresss()%>" /></td>
+						<td><input type="text" class="text" name="address" value="<%=easyBuyuser.getAddress()%>" /></td>
 					</tr>					
 					<tr>
 						<td></td>
