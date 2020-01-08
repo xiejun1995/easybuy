@@ -68,7 +68,7 @@
 									for (Classify clfy:list) {
 										i++;
 								%>
-								<option value="<%=i%>"><%=clfy.getEpcName() %></option>
+								<option value="<%=i%>"><%=clfy.getEpc_name() %></option>
 								<%--<option value="<%=i+%>">衣服</option>--%>
 								<%}%>
 							</select>

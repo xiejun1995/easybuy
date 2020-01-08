@@ -11,12 +11,13 @@ $(function () {
 //给查询按钮绑定一个click事件
     $btn.click(function() {
         var $entityId=$("#entityId");
-        var $userName=$("#userName");
+        var $eoStatus=$("#eoStatus");
+        var $phone=$("#phone");
         //借助ajax请求用于给order.jsp页面中java代码块中需要用到的entityId，userName传值
         $.ajax({
             url:"fuzzyOrderList",
             type:"GET",
-            data:{entityId:$entityId.val(),userName:$userName.val()},
+            data:{entityId:$entityId.val(),eoStatus:$eoStatus.val(),phone:$phone.val()},
             dataType:"Json",
             success:function (data) {
                 //判断是否输入了订单id或者订单人姓名

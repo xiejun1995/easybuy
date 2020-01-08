@@ -126,7 +126,7 @@ a:hover, a:active { color:#3a52a8; text-decoration:underline; }
 ul.product li { width:110px; line-height:18px; height:160px; float:left; display:inline; margin:9px; }
 ul.product li dl dt { text-align:center; }
 ul.product li dl dt img { width:100px; height:100px; }
-ul.product li dl dd.title { word-wrap:no-wrap; word-break:break-all; height:36px; overflow:hidden; }
+ul.product li dl dd.title { word-wrap:normal; word-break:break-all; height:36px; overflow:hidden; }
 ul.product li dl dd.title a { color:#666; }
 ul.product li dl dd.price { color:#c30; font-weight:bold; }
 
@@ -157,7 +157,10 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #product .infos .buy { float:right; width:440px; line-height:40px; }
 #product .infos .buy .price { color:#c00; font-weight:bold; font-size:24px; }
 #product .infos .buy .button { border:1px solid #ffefd2; padding:10px; background:#fff8e7; margin:20px auto; text-align:center; }
-#product .infos .buy .button input { border:0; margin:0 10px; background:url(../images/bg.png) left -176px; height:35px; width:144px; cursor:pointer; }
+/*#product .infos .buy .button input { border:0; margin:0 10px; background:url(../images/bg.png) left -176px; height:35px; width:144px; cursor:pointer; }*/
+
+#product .infos .buy .button input { border:0; margin:0 10px; font-size:20px; color:#FFFFFF; background:#FF835A; left:176px; height:35px; width:144px; cursor:pointer;}
+
 #product .introduce .text { padding:20px; font-size:14px; line-height:25px; }
 
 #shopping { }
@@ -216,3 +219,5 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #welcomeImage{position:relative;width:100%;top:0;margin:0 auto;text-align:center;text-align:center;z-index:99;display:none}
 
 #header #floatBag{position:absolute;background:#fff;z-index:100;display:none;border:1px #c0c0c0 solid}
+#status strong{color: #dc6b04}
+#list{position: fixed;top:300px;right:20px;z-index: revert;font-size: 12px}

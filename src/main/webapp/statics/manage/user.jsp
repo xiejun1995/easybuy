@@ -4,8 +4,8 @@
 <%@ page import="com.easybuy.service.user.ServiceUserDaoImpl" %>
 <%@ page import="com.easybuy.util.PageSupport" %>
 <%@ page import="com.easybuy.pojo.EasyBuyUser" %>
-<%@ page import="java.util.List" %>
 
+<%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -120,10 +120,10 @@
 						<td>${user.email}</td>
 						<td class="w4 c">${user.mobile}</td>
 						<td class="w1 c">
-						<a href="${pageContext.request.contextPath}/servlet/seekservlet?id=${user.userId}">修改</a>
-						<c:if test="${user.statuss<2}">
-						<a class="manageDel" href="${pageContext.request.contextPath}/servlet/deleteuser?id=${user.userId}">删除</a>
-						</c:if>
+							<a href="${pageContext.request.contextPath}/servlet/seekservlet?id=${user.userId}">修改</a>
+							<c:if test="${user.statuss<2}">
+								<a class="manageDel" href="${pageContext.request.contextPath}/servlet/deleteuser?id=${user.userId}">删除</a>
+							</c:if>
 						</td>
 					</tr>
 				</c:forEach>

@@ -1,11 +1,12 @@
 
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+
+<%@ page import="java.util.List" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
 <%@ page import="com.easybuy.util.PageSupport" %>
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
-<%@ page import="java.util.List" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
@@ -93,6 +94,7 @@
 					List<EasyBuyProduct> list=service.commodityList(pageIndex,pageSize);
 					for (EasyBuyProduct buy :list) {
 				%>
+
 				<tr>
 					<td class="first w4 c"><%=buy.getEpId()%></td>
 					<td class="thumb"><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>" /><a href="../../../../jsp/product-view.jsp" target="_self"><%=buy.getEpName()%></a></td>

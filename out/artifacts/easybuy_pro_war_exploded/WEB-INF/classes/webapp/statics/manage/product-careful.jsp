@@ -27,6 +27,7 @@
     }
     ServiceCommodityDao service = new ServiceCommodityDaoImpl();
     EasyBuyProduct product = service.getProdusById(id1);
+    request.setAttribute("product",product);
     request.setAttribute("price",product.getEpPrice());
 %>
 <div id="header" class="wrap">
@@ -64,9 +65,12 @@
         </ul>
     </div>
 </div>
-
 <%
     String name = request.getParameter("name");
+    if (name==null){
+        name="图书";
+    }
+%>
 %>
 
 <div id="position" class="wrap">
@@ -99,19 +103,19 @@
         </div>
     </div>
     <div id="product" class="main">
-        <h1><%=product.getEpName()%></h1>
+        <h1>${product.epName}</h1>
         <div class="infos">
-            <div class="thumb"><img src="../images/upload/<%=product.getEpFileName()%>" width="220" height="212" alt=""/></div>
+            <div class="thumb"><img src="../images/upload/${product.epFileName}" width="220" height="212" alt=""/></div>
             <div class="buy">
-                商城价：<span class="price">￥<%=product.getEpPrice()%></span><br />
-                库　存：<%=product.getEpStock()%>
+                商城价：<span class="price">￥${product.epPrice}</span><br />
+                库　存：${product.epStock}
                 <div class="button">
                     <input type="hidden" id="price" value="${price}" />
 
                    <%-- <input type="button" name="button" value="" onclick="proPrice();" />
                     <a href="${pageContext.request.contextPath}/statics/shopping?ep_id=<%=id%>">放入购物车 </a>--%>
                     <input type="button" name="button" value="购买" onclick="proPrice();" />
-                    <input type="button" name="button" value="加入购物车" onclick="window.location='${pageContext.request.contextPath}/statics/shopping?ep_id=<%=id%>'" />
+                    <input type="button" name="button" value="加入购物车" onclick="window.location='${pageContext.request.contextPath}/statics/shopping.jsp?ep_id=<%=id%>'" />
                 </div>
             </div>
             <div class="clear"></div>
@@ -119,7 +123,7 @@
         <div class="introduce">
             <h2><strong>商品详情</strong></h2>
             <div class="text">
-                <%=product.getEpDescription()%><br />
+                ${product.epDescription}<br />
                 ......<br />
             </div>
         </div>
