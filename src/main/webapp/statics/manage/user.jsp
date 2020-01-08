@@ -4,8 +4,8 @@
 <%@ page import="com.easybuy.service.user.ServiceUserDaoImpl" %>
 <%@ page import="com.easybuy.util.PageSupport" %>
 <%@ page import="com.easybuy.pojo.EasyBuyUser" %>
-
 <%@ page import="java.util.List" %>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
