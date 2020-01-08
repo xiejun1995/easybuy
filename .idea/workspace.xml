@@ -8,6 +8,24 @@
   <component name="ChangeListManager">
     <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/classes/webapp/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/classes/webapp/statics/images/product/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/classes/webapp/statics/images/product/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/src/main/webapp/statics/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/src/main/webapp/statics/manage/alipay.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/images/product/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/webapp/statics/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/images/product/banner_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/scripts/My97DatePicker/WdatePicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/lib/alipay-sdk-java-4.9.5.ALL.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/images/product/0_big.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/classes/target/easybuy_pro/WEB-INF/classes/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/statics/images/upload/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/lib/aspectjweaver-1.6.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/easybuy_pro/WEB-INF/classes/target/classes/target/easybuy_pro/statics/images/product/banner_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/target/easybuy_pro/WEB-INF/classes/webapp/statics/images/product/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/util/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/util/BaseDao.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +270,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -294,7 +322,7 @@
       <workItem from="1578356426981" duration="7690000" />
       <workItem from="1578368748725" duration="6865000" />
       <workItem from="1578443874109" duration="8553000" />
-      <workItem from="1578482625360" duration="453000" />
+      <workItem from="1578482625360" duration="1284000" />
     </task>
     <task id="LOCAL-00001" summary="hebing">
       <created>1578278250398</created>
@@ -324,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578285392893</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="merge everyone file">
+      <created>1578483282634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578483282634</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,10 +429,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578275131048" />
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1578285385138">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="401" y="0" key="CommitChangelistDialog2" timestamp="1578483276353">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="321" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578285385138" />
+    <state x="401" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578483276353" />
     <state x="524" y="65" key="FileChooserDialogImpl" timestamp="1578360000498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
