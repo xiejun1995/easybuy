@@ -1,6 +1,6 @@
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
+<%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%--
@@ -26,8 +26,9 @@
          id1 = Integer.parseInt(request.getParameter("id"));
     }
     ServiceCommodityDao service = new ServiceCommodityDaoImpl();
-    EasyBuy_Product product = service.getProdusById(id1);
-    request.setAttribute("price",product.getEp_price());
+    EasyBuyProduct product = service.getProdusById(id1);
+    request.setAttribute("product",product);
+    request.setAttribute("price",product.getEpPrice());
 %>
 <div id="header" class="wrap">
     <div id="logo"><img src="../images/logo.gif" /></div>
@@ -64,13 +65,16 @@
         </ul>
     </div>
 </div>
-
 <%
     String name = request.getParameter("name");
+    if (name==null){
+        name="图书";
+    }
+%>
 %>
 
 <div id="position" class="wrap">
-    您现在的位置：<a href="../../index.jsp">易买网</a> &gt; <a href="../product-list.jsp">图书音像</a> &gt;<%=name%>
+    您现在的位置：<a href="../../index.jsp">易买网</a> &gt; <a href="../product-list.jsp">商品</a> &gt;<%=name%>
 </div>
 <div id="main" class="wrap">
     <div class="lefter">
@@ -99,17 +103,19 @@
         </div>
     </div>
     <div id="product" class="main">
-        <h1><%=product.getEp_name()%></h1>
+        <h1>${product.epName}</h1>
         <div class="infos">
-            <div class="thumb"><img src="../images/upload/<%=product.getEp_file_name()%>" width="220" height="212" alt=""/></div>
+            <div class="thumb"><img src="../images/upload/${product.epFileName}" width="220" height="212" alt=""/></div>
             <div class="buy">
-                商城价：<span class="price">￥<%=product.getEp_price()%></span><br />
-                库　存：<%=product.getEp_stock()%>
+                商城价：<span class="price">￥${product.epPrice}</span><br />
+                库　存：${product.epStock}
                 <div class="button">
                     <input type="hidden" id="price" value="${price}" />
-                    <input type="button" name="button" value="" onclick="proPrice();" />
-                    <a href="${pageContext.request.contextPath}/statics/shopping?ep_id=<%=id%>">放入购物车
-                    </a>
+
+                   <%-- <input type="button" name="button" value="" onclick="proPrice();" />
+                    <a href="${pageContext.request.contextPath}/statics/shopping?ep_id=<%=id%>">放入购物车 </a>--%>
+                    <input type="button" name="button" value="购买" onclick="proPrice();" />
+                    <input type="button" name="button" value="加入购物车" onclick="window.location='${pageContext.request.contextPath}/statics/shopping.jsp?ep_id=<%=id%>'" />
                 </div>
             </div>
             <div class="clear"></div>
@@ -117,7 +123,7 @@
         <div class="introduce">
             <h2><strong>商品详情</strong></h2>
             <div class="text">
-                <%=product.getEp_description()%><br />
+                ${product.epDescription}<br />
                 ......<br />
             </div>
         </div>
