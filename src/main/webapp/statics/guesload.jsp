@@ -1,4 +1,4 @@
-<%@ page import="com.easybuy.pojo.EasyBuy_Comment" %>
+<%@ page import="com.easybuy.pojo.EasyBuyComment" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
 <%@ page import="java.text.SimpleDateFormat" %>
@@ -33,18 +33,18 @@
         e.printStackTrace();
     }
     //输出编号，昵称，内容，内容时间，回复编号
-    EasyBuy_Comment easyBuy_Comment = new EasyBuy_Comment();
-    easyBuy_Comment.setEc_id(ec_id);
-    easyBuy_Comment.setEc_nick_name(ec_nick_name);
-    easyBuy_Comment.setEc_content(ec_content);
+    EasyBuyComment easyBuyComment = new EasyBuyComment();
+    easyBuyComment.setEcId(ec_id);
+    easyBuyComment.setEcNickName(ec_nick_name);
+    easyBuyComment.setEcContent(ec_content);
     Date ec_create_time = new Date();
-    easyBuy_Comment.setEc_create_time(ec_create_time);
-    easyBuy_Comment.setEc_reply(ec_reply);
+    easyBuyComment.setEcCreateTime(ec_create_time);
+    easyBuyComment.setEcReply(ec_reply);
     Date ec_reply_time = new Date();
-    easyBuy_Comment.setEc_reply_time(ec_reply_time);
+    easyBuyComment.setEcReplyTime(ec_reply_time);
     //调用添加方法
     ServiceMassageDao serviceMassageDao=new ServiceMassageDaoImpl();
-    serviceMassageDao.addCommodity1(easyBuy_Comment);
+    serviceMassageDao.addCommodity1(easyBuyComment);
     //将结果返回到留言界面
     response.sendRedirect("../guestbook.jsp");
 %>

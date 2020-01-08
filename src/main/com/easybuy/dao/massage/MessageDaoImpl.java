@@ -14,75 +14,68 @@ import java.util.List;
 public class MessageDaoImpl implements MessageDao {
     //添加全部留言操作处理
     public int addCommodity(EasyBuyComment comment) {
-        String sql="INSERT INTO `easybuycomment`(`ec_id`,`ec_content`,`ec_create_time`,`ec_reply`,`ec_reply_time`,`ec_nick_name`) VALUES(?,?,?,?,?,?)";
+        String sql="INSERT INTO `easybuycomment`(ecId,ecContent,ecCreateTime,ecReply,ecReplyTime,ecNickName) VALUES(?,?,?,?,?,?)";
         Object[] objects={comment.getEcId(),comment.getEcContent(),comment.getEcCreateTime(),comment.getEcReply(),comment.getEcReplyTime(),comment.getEcNickName()};
         int result= BaseDao.getBaseDao().executeUpdate(sql,objects);
         if (result>0){
             System.out.println("添加成功!");
         }
-
         return result;
     }
     //添加编号，昵称，内容
     public int addCommodity1(EasyBuyComment comment) {
-        String sql="INSERT INTO easybuycomment(ec_id,ec_nick_name,ec_content) VALUES(?,?,?)";
+        String sql="INSERT INTO easybuycomment(ecId,ecNickName,ecContent) VALUES(?,?,?)";
         Object[] objects={comment.getEcId(),comment.getEcNickName(),comment.getEcContent()};
         int result= BaseDao.getBaseDao().executeUpdate(sql,objects);
         if (result>0){
             System.out.println("添加成功!");
         }
-
         return result;
     }
-
     //添加编号，回复，回复时间
     public int addCommodity2(EasyBuyComment comment) {
-        String sql="INSERT INTO easybuycomment(ec_id,setEc_reply,ec_reply_time) VALUES(?,?,?)";
+        String sql="INSERT INTO easybuycomment(ecId,setEcReply,ecReplyTime) VALUES(?,?,?)";
         Object[] objects={comment.getEcId(),comment.getEcReply(),comment.getEcReplyTime()};
         int result= BaseDao.getBaseDao().executeUpdate(sql,objects);
         if (result>0){
             System.out.println("添加成功!");
         }
-
         return result;
     }
     //关于留言的删除操作（根据id查询，返回一个对象）
     public int deleteCommodity(EasyBuyComment comment) {
-        String sql="DELETE FROM easybuycomment WHERE ec_id=?";
+        String sql="DELETE FROM easybuycomment WHERE ecId=?";
         Object[] objects={comment.getEcId()};
         int result= BaseDao.getBaseDao().executeUpdate(sql,objects);
         if (result>0){
             System.out.println("删除成功!");
         }
-
         return result;
     }
-
     //关于留言的修改（回复）操作
     public EasyBuyComment selectCommodityById(int id) {
         EasyBuyComment comment=null;
-        String sql="SELECT * FROM easybuycomment WHERE ec_id=?";
+        String sql="SELECT * FROM easybuycomment WHERE ecId=?";
         Object[] objects={id};
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
             while (rs.next()){
-                int id2=rs.getInt("ec_id");
-                String ec_content=rs.getString("ec_content");
-                Date ec_create_time=rs.getDate("ec_create_time");
-                String price=rs.getString("ec_reply");
-                Date ec_reply_time=rs.getDate("ec_reply_time");
-                String ec_nick_name=rs.getString("ec_nick_name");
-                comment=new EasyBuyComment(id2,ec_content,ec_create_time,price,ec_reply_time,ec_nick_name);
+                int id2=rs.getInt("ecId");
+                String ecContent=rs.getString("ecContent");
+                Date ecCreateTime=rs.getDate("ecCreateTime");
+                String ecReply=rs.getString("ecReply");
+                Date ecReplyRime=rs.getDate("ecReplyRime");
+                String ecNickName=rs.getString("ecNickName");
+                comment=new EasyBuyComment(id2,ecContent,ecCreateTime,ecReply,ecReplyRime,ecNickName);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return comment;
     }
     //关于留言的添加操作（查询留言总条数）
     public int updateCommodity(EasyBuyComment comment) {
-        String sql="UPDATE EasyBuyComment SET ec_nick_name=?,ec_reply=?,ec_reply_time=? WHERE ec_id=?";
+        String sql="UPDATE EasyBuyComment SET ecNickName=?,ecReply=?,ecReplyTime=? WHERE ecId=?";
         Object[] objects={comment.getEcNickName(),comment.getEcReply(),comment.getEcReplyTime(),comment.getEcId()};
         int result=BaseDao.getBaseDao().executeUpdate(sql,objects);
         if (result>0){
@@ -103,7 +96,6 @@ public class MessageDaoImpl implements MessageDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return count;
     }
     //根据分类分页查询
@@ -115,12 +107,12 @@ public class MessageDaoImpl implements MessageDao {
         try {
             while (rs.next()){
 
-                Integer ec_id=rs.getInt("ec_id");
-                String ec_content=rs.getString("ec_content");
-                Date ec_create_time=rs.getDate("ec_create_time");
-                String price=rs.getString("ec_reply");
-                Date ec_reply_time=rs.getDate("ec_reply_time");
-                String ec_nick_name=rs.getString("ec_nick_name");
+                Integer ec_id=rs.getInt("ecId");
+                String ec_content=rs.getString("ecContent");
+                Date ec_create_time=rs.getDate("ecCreateTime");
+                String price=rs.getString("ecReply");
+                Date ec_reply_time=rs.getDate("ecReplyTime");
+                String ec_nick_name=rs.getString("ecNickName");
 
                 EasyBuyComment comment=new EasyBuyComment(ec_id,ec_content,ec_create_time,price,ec_reply_time,ec_nick_name);
                 list.add(comment);
@@ -128,7 +120,6 @@ public class MessageDaoImpl implements MessageDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return list;
     }
     //根据id查询分类总记录数
@@ -139,12 +130,12 @@ public class MessageDaoImpl implements MessageDao {
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
             while (rs.next()){
-                Integer id=rs.getInt("ec_id");
-                String ec_content=rs.getString("ec_content");
-                Date ec_create_time=rs.getDate("ec_create_time");
-                String price=rs.getString("ec_reply");
-                Date ec_reply_time=rs.getDate("ec_reply_time");
-                String ec_nick_name=rs.getString("ec_nick_name");
+                Integer id=rs.getInt("ecId");
+                String ec_content=rs.getString("ecContent");
+                Date ec_create_time=rs.getDate("ecCreateTime");
+                String price=rs.getString("ecReply");
+                Date ec_reply_time=rs.getDate("ecReplyTime");
+                String ec_nick_name=rs.getString("ecNickName");
 
                 EasyBuyComment comment=new EasyBuyComment(id,ec_content,ec_create_time,price,ec_reply_time,ec_nick_name);
                 list.add(comment);
@@ -152,20 +143,17 @@ public class MessageDaoImpl implements MessageDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return list;
     }
-
-    @Override
-    public int totalCountById(int ec_id) {
-        String sql="SELECT COUNT(1) FROM EasyBuyComment WHERE epc_id=?";
-        Object[] objects={ec_id};
+    //查询
+    public int totalCountById(int ecId) {
+        String sql="SELECT COUNT(1) FROM EasyBuyComment WHERE ecId=?";
+        Object[] objects={ecId};
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         int count=0;
         try {
             while(rs.next()){
                 count=rs.getInt(1);
-
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -173,30 +161,26 @@ public class MessageDaoImpl implements MessageDao {
 
         return count;
     }
-
-    @Override
     public EasyBuyComment MrssageById(int id) {
         EasyBuyComment comment=null;
-        String sql="SELECT *  FROM  `easybuycomment` WHERE ec_id=?";
+        String sql="SELECT *  FROM  `easybuycomment` WHERE ecId=?";
         Object[] objects={id};
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
             while (rs.next()){
-                Integer id2=rs.getInt("ec_id");
-                String ec_content=rs.getString("ec_content");
-                Date ec_create_time=rs.getDate("ec_create_time");
-                String price=rs.getString("ec_reply");
-                Date ec_reply_time=rs.getDate("ec_reply_time");
-                String ec_nick_name=rs.getString("ec_nick_name");
-
+                Integer id2=rs.getInt("ecId");
+                String ec_content=rs.getString("ecContent");
+                Date ec_create_time=rs.getDate("ecCreateTime");
+                String price=rs.getString("ecReply");
+                Date ec_reply_time=rs.getDate("ecReplyTime");
+                String ec_nick_name=rs.getString("ecNickName");
                 comment=new EasyBuyComment(id2,ec_content,ec_create_time,price,ec_reply_time,ec_nick_name);
-                System.out.println(comment.getEcId()+"1111"+comment.getEcNickName());
-
+                //验证是否接受
+                //System.out.println(comment.getEcId()+"1111"+comment.getEcNickName());
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
         return comment;
     }
 }

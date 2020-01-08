@@ -45,10 +45,10 @@ public class ServiceMassageDaoImpl implements ServiceMassageDao {
         return dao.commodityList(pageNo,pageSize);
     }
     //根据分类分页查询
-    public List<EasyBuyComment> commodityListById( int pageNo, int pageSize) { return dao.commodityListById(pageNo,pageSize); }
+    public List<EasyBuyComment> commodityListById(int pageNo, int pageSize) { return dao.commodityListById(pageNo,pageSize); }
 
-    public int totalCountById(int ec_id) {
-        return dao.totalCountById(ec_id);
+    public int totalCountById(int ecId) {
+        return dao.totalCountById(ecId);
     }
 
     public EasyBuyComment MrssageById(int id) {

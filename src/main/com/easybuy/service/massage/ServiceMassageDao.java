@@ -28,7 +28,7 @@ public interface ServiceMassageDao {
     //根据分类分页查询
     List<EasyBuyComment> commodityListById(int pageNo, int pageSize);
     //根据id查询分类总记录数
-    int totalCountById(int ec_id);
+    int totalCountById(int ecId);
 
     EasyBuyComment MrssageById(int id);
 

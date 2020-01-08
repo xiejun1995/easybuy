@@ -1,6 +1,6 @@
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.Date" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Comment" %>
+<%@ page import="com.easybuy.pojo.EasyBuyComment" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
 <%@ page import="java.text.ParseException" %><%--
@@ -33,9 +33,9 @@
        Date  replyTim1 = simpleDateFormat.parse(replyTime);
 
         //调用方法
-        EasyBuy_Comment easyBuy_comment=new EasyBuy_Comment(id,ec_content,ec_create_time,guestReply,replyTim1,guestName);
+        EasyBuyComment easyBuycomment=new EasyBuyComment(id,ec_content,ec_create_time,guestReply,replyTim1,guestName);
         ServiceMassageDao service=new ServiceMassageDaoImpl();
-        int redult=service.addCommodity(easyBuy_comment);
+        int redult=service.addCommodity(easyBuycomment);
         System.out.println(redult+"``````````````````111111111111111111111111111``````````````````");
         //将结果返回到留言界面
         response.sendRedirect("guestbook.jsp");

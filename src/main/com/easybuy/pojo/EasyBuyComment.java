@@ -16,6 +16,7 @@ public class EasyBuyComment {
         private Date ecReplyTime;//回复时间
         private String ecNickName;//留言用户昵称
 
+
     public int getEcId() {
         return ecId;
     }
@@ -72,7 +73,6 @@ public class EasyBuyComment {
         this.ecReplyTime = ecReplyTime;
         this.ecNickName = ecNickName;
     }
-
     public EasyBuyComment() {
     }
 }
