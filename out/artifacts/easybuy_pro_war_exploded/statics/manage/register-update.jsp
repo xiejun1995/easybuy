@@ -6,7 +6,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="org.apache.commons.fileupload.FileUploadException" %>
 <%@ page import="java.util.Iterator" %>
-
+<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
@@ -68,7 +68,7 @@
             e.printStackTrace();
         }
         System.out.println("修改成功之后的文件名：" + buy.getEpFileName());
-        /*System.out.println(buy.getEpname()+"\t"+buy.getEp_description()+"\t"+buy.getEp_price()+"\t"+
+       /* System.out.println(buy.getEp_name()+"\t"+buy.getEp_description()+"\t"+buy.getEp_price()+"\t"+
                 buy.getEp_stock()+"\t"+buy.getEpc_id()+"\t"+buy.getEp_file_name()+"\t"+buy.getEp_id());*/
         ServiceCommodityDao service=new ServiceCommodityDaoImpl();
         int result=service.updateCommodity(buy);

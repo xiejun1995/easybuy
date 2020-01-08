@@ -6,7 +6,6 @@
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
-
 </head>
 <body>
 <div id="header" class="wrap">
@@ -110,9 +109,11 @@
 						<td><img src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"></td>
 					</tr>
 					<tr>
-						<td class="field">修改图片：</td>
+						<td class="field">修改商品图片：</td>
 						<td><input type="file" class="text" name="photo"/></td>
 					</tr>
+
+
 					<tr>
 						<td></td>
 						<td><label class="ui-blue"><input type="submit" name="submit" value="确定" /></label></td>

@@ -126,7 +126,7 @@ a:hover, a:active { color:#3a52a8; text-decoration:underline; }
 ul.product li { width:110px; line-height:18px; height:160px; float:left; display:inline; margin:9px; }
 ul.product li dl dt { text-align:center; }
 ul.product li dl dt img { width:100px; height:100px; }
-ul.product li dl dd.title { word-wrap:no-wrap; word-break:break-all; height:36px; overflow:hidden; }
+ul.product li dl dd.title { word-wrap:normal; word-break:break-all; height:36px; overflow:hidden; }
 ul.product li dl dd.title a { color:#666; }
 ul.product li dl dd.price { color:#c30; font-weight:bold; }
 
@@ -216,3 +216,5 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #welcomeImage{position:relative;width:100%;top:0;margin:0 auto;text-align:center;text-align:center;z-index:99;display:none}
 
 #header #floatBag{position:absolute;background:#fff;z-index:100;display:none;border:1px #c0c0c0 solid}
+#status strong{color: #dc6b04}
+#list{position: fixed;top:300px;right:20px;z-index: revert;font-size: 12px}
