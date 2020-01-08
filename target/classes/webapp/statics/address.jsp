@@ -84,7 +84,7 @@
 <div id="news" class="right-main">
     <h1>&nbsp;</h1>
     <div class="content">
-        <form action="manage/alipay.jsp?totalAmounts=${amount}" method="post">
+        <form action="${pageContext.request.contextPath}/statics/manage/alipay.jsp?totalAmounts=${amount}" method="post">
             收货地址:<input name="addr" id="addr" type="button"  value="添加新地址" />
             <span id="span"></span> <br />
             <input name="address" type="radio" id="address0" checked="checked" />

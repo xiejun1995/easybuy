@@ -2,19 +2,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/webapp/statics/scripts/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="${pageContext.request.contextPath}/webapp/statics/scripts/function.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
     <title>易买网 - 首页</title>
-    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/webapp/statics/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
 </head>
 <body>
 <div id="header" class="wrap">
-    <div id="logo"><img src="${pageContext.request.contextPath}/webapp/statics/images/logo.gif" /></div>
+    <div id="logo"><img src="${pageContext.request.contextPath}/statics/images/logo.gif" /></div>
     <div class="help">
-        <a href="${pageContext.request.contextPath}/webapp/statics/shopping.jsp" class="shopping">购物车X件</a>
+        <a href="${pageContext.request.contextPath}/statics/shopping.jsp" class="shopping">购物车X件</a>
         <a href="login.jsp">登录</a>
-        <a href="${pageContext.request.contextPath}/webapp/statics/register.jsp">注册</a>
-        <a href="${pageContext.request.contextPath}/webapp/statics/guestbook.jsp">留言</a>
+        <a href="${pageContext.request.contextPath}/statics/register.jsp">注册</a>
+        <a href="${pageContext.request.contextPath}/statics/guestbook.jsp">留言</a>
         <a href="manage/index.jsp">后台管理</a></div>
     <div class="navbar">
         <ul class="clearfix">
@@ -30,31 +30,31 @@
     <div class="wrap">
         <ul class="clearfix">
             <li class="first">
-                <a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=音乐">音乐</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=影视">影视</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=少儿">少儿</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=动漫">动漫</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=小说">小说</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=外语">外语</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=数码相机">数码相机</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=笔记本">笔记本</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=羽绒服">羽绒服</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=秋冬靴">秋冬靴</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=运动鞋">运动鞋</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=美容护肤">美容护肤</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=家纺用品">家纺用品</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=婴幼奶粉">婴幼奶粉</a></li>
-            <li><a href="${pageContext.request.contextPath}/webapp/statics/product-list.jsp?name=饰品">饰品</a></li>
+                <a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=音乐">音乐</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=影视">影视</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=少儿">少儿</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=动漫">动漫</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=小说">小说</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=外语">外语</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=数码相机">数码相机</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=笔记本">笔记本</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=羽绒服">羽绒服</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=秋冬靴">秋冬靴</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=运动鞋">运动鞋</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=美容护肤">美容护肤</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=家纺用品">家纺用品</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=婴幼奶粉">婴幼奶粉</a></li>
+            <li><a href="${pageContext.request.contextPath}/statics/product-list.jsp?name=饰品">饰品</a></li>
             <li class="last"><a href="#">Investor Relations</a></li>
         </ul>
     </div>
 </div>
 <div id="position" class="wrap">
-    您现在的位置：<a href="${pageContext.request.contextPath}/webapp/index.jsp   ">易买网</a> &gt; 购物车
+    您现在的位置：<a href="${pageContext.request.contextPath}/index.jsp   ">易买网</a> &gt; 购物车
 </div>
 <div class="wrap">
     <div id="shopping">
-        <form action="${pageContext.request.contextPath}/webapp/statics/address.jsp?amount=${amount}">
+        <form action="${pageContext.request.contextPath}/statics/address.jsp?amount=${amount}">
             <table id="tab">
                 <tr>
                     <th>商品名称</th>
@@ -79,7 +79,7 @@
     //获取表格元素
     var $table=$("#tab");
     //判断是否是购物车X件访问
-    if(${product!=null}){
+    if(!${product!=null}){
         //判断购物车中是否已存在当前要加入购物车的商品
         if($("#tab").find("#proId_${proId}").val()==${proId}){
             //如果存在则让他的数量加1

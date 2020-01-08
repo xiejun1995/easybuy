@@ -142,7 +142,7 @@ $(function(){
                 }
                 break;
             case "email":
-                if((value != "") && !/^[a-z0-9]+\@([a-z0-9]+\.)+[a-z0-9]{2,4}$/i.test(value)) {
+                if((value != "") && !/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})$/.test(value)) {
                     errorMessage = "邮件地址格式不正确";
                 }else{
                     isError = false ;
