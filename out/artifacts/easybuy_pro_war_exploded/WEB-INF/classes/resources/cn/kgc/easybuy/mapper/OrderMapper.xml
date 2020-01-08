@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kgc.easybuy.mapper.OrderMapper">
+    <!--下面为查询指定订单的映射-->
+    <resultMap id="orderAndPro" type="EasyBuyOrder">
+        <!-- id用于每个数据库表的主键可以提高MyBatis性能 -->
+        <id property="eoId" column="eoId"/>
+        <result property="eoCreateTime" column="eoCreateTime"/>
+        <result property="eoStatus" column="eoStatus"/>
+        <result property="eoCost" column="eoCost" />
+        <!--下面为订单详情类的映射-->
+        <collection property="orderDetailList" ofType="EasyBuyOrderDetail" resultMap="detailMapper"></collection>
+    </resultMap>
+
+    <!-- 用于多个实体类有该复杂类型的映射时重用，需要该映射的时候只需要在association标签中添加resultMap属性，并且属性值
+    为resultMap属性id的属性值-->
+
+    <!--下面为订单详情类的映射-->
+    <resultMap type="EasyBuyOrderDetail" id="detailMapper">
+        <id property="eodId" column="eodId"/>
+        <result property="eodQuantity" column="eodQuantity"/>
+        <result property="eodCost" column="eodCost"/>
+        <!-- association用于属性为复杂数据类型映射:一对一,即JavaBean,里面的属性property对应属性复杂类型的属性名，
+        javaType属性对应该复杂类型的全类名或别名，resultMap用于重复使用该复杂联系映射别的表中也需要该复杂类型作为属性时也可以
+        调用只需要association标签里面添加resultMap属性并且属性值为指定的映射名即可 -->
+        <!--下面为商品基本信息类的映射-->
+        <association property="product" javaType="EasyBuyProduct" resultMap="proMapper"></association>
+    </resultMap>
+    <!--下面为商品基本信息类的映射-->
+    <resultMap type="EasyBuyProduct" id="proMapper">
+        <id property="epId" column="epId"/>
+        <result property="epName" column="epName"/>
+        <result property="epPrice" column="epPrice"/>
+        <result property="epFileName" column="epFileName"/>
+    </resultMap>
+    <!--根据当前页码及页码大小查询当前页所对应的订单Id集合-->
+    <select id="getOrderListOfPagination" resultType="Integer">
+       SELECT o.eoId FROM easybuyorder o limit #{currentPage},#{pageSize}
+    </select>
+    <!--根据当前订单Id集合进行联表查询查询该订单中的所有商品信息及订单详情信息-->
+    <select id="getOrderDetailListbyOrderId" resultMap="orderAndPro">
+        SELECT o.eoId,o.eoCreateTime,o.eoStatus,o.eoCost,p.epName,p.epPrice,p.epFileName,d.eodQuantity,d.eodCost FROM easybuyorder o
+        INNER JOIN easybuyorderdetail d ON (o.eoId = d.eoId)
+        INNER JOIN easybuyProduct p ON (d.epId=p.epId)
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="orderIds != null and orderIds.size()>0">
+                and o.eoId in(
+                <foreach item="orderId" index="index" collection="orderIds" separator=",">
+                    #{orderId}
+                </foreach>
+                )
+            </if>
+        </trim>
+    </select>
+    <!--根据订单ID范围进行模糊查询并且联表查询该订单中的所有商品信息及订单详情信息-->
+    <select id="getOrderByOrdererAndOrderNumber" resultMap="orderAndPro">
+        select o.eoId,o.eoCreate_time,o.eoStatus,o.eoCost,p.epName,p.epPrice,p.epFileName,d.eodQuantity,d.eodCost FROM easybuyorder o
+        INNER JOIN easybuyorderdetail d ON (o.eoId = d.eoId)
+        INNER JOIN easybuyproduct p ON (d.epId=p.epId)
+        <if test="orderIds != null and orderIds.size()>0">
+            and o.eoId in(
+            <foreach item="orderId" index="index" collection="orderIds" separator=",">
+                #{orderId}
+            </foreach>
+            )
+        </if>
+    </select>
+
+    <!--查询订单表中的总记录条数-->
+    <select id="getNumberOfRecords" resultType="Integer">
+        select count(1) from easybuyorder
+    </select>
+
+    <!--根据模糊查询条件查询该条件下的总记录条数-->
+    <select id="getNumberOfRecordsByFuzzyQuery" resultType="Integer">
+        select count(1) from easybuyorder o
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="entityId !=null and entityId!=0">
+                and o.eoId=#{entityId}
+            </if>
+            <if test="userName !=null and userName !=''">
+                or o.eoUserName like('%#{usrName}%')
+            </if>
+        </trim>
+    </select>
+
+    <!--根据当前页码及页码大小以及模糊查询条件查询当前页所对应的订单Id集合-->
+    <select id="getOrderListOfPaginationByFuzzyQuery" resultType="Integer">
+        SELECT o.eoId FROM easybuyorder o
+        <trim prefix="where" prefixOverrides="and | or">
+            <if test="entityId !=null and entityId!=0">
+                and o.eoId=#{entityId}
+            </if>
+            <if test="userName !=null and userName !=''">
+                or o.eoUserName like('%#{usrName}%')
+            </if>
+        </trim>
+    </select>
+</mapper>
