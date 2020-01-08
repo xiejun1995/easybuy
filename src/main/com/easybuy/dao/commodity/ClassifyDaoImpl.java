@@ -24,6 +24,7 @@ public class ClassifyDaoImpl implements ClassifyDao {
         if (result>0){
             System.out.println("添加成功!");
         }
+        BaseDao.getBaseDao().closeResource();
         return result;
     }
 
@@ -35,17 +36,19 @@ public class ClassifyDaoImpl implements ClassifyDao {
         if (result>0){
             System.out.println("删除成功!");
         }
+        BaseDao.getBaseDao().closeResource();
         return result;
     }
 
     @Override
     public int updateClassify(Classify clfy) {
-        String sql="UPDATE easybuy_product_category  SET epcName=?,epcParentId=? WHERE epcId=?";
+        String sql="UPDATE EasybuyProductCategory  SET epcName=?,epcParentId=? WHERE epcId=?";
         Object[] objects={clfy.getEpcName(),clfy.getEpcParentId(),clfy.getEpcId()};
         int result=BaseDao.getBaseDao().executeUpdate(sql,objects);
         if (result>0){
             System.out.println("修改成功!");
         }
+        BaseDao.getBaseDao().closeResource();
         return result;
     }
 
@@ -62,6 +65,7 @@ public class ClassifyDaoImpl implements ClassifyDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return count;
     }
 
@@ -75,13 +79,14 @@ public class ClassifyDaoImpl implements ClassifyDao {
             while(rs.next()){
                 Integer id=rs.getInt("epcId");
                 String name=rs.getString("epcName");
-                Integer parent_id=rs.getInt("epcParentId");
-                Classify clfy=new Classify(id,name,parent_id);
+                Integer parentIid=rs.getInt("epcParentId");
+                Classify clfy=new Classify(id,name,parentIid);
                 list.add(clfy);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return list;
     }
 
@@ -94,15 +99,16 @@ public class ClassifyDaoImpl implements ClassifyDao {
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
             while (rs.next()){
-                Integer id=rs.getInt("epc_id");
-                String name=rs.getString("epc_name");
-                Integer parent_id=rs.getInt("epc_parent_id");
-                Classify clfy=new Classify(id,name,parent_id);
+                Integer id=rs.getInt("epcId");
+                String name=rs.getString("epcName");
+                Integer parentId=rs.getInt("epcParentId");
+                Classify clfy=new Classify(id,name,parentId);
                 list.add(clfy);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return list;
     }
 
@@ -114,15 +120,16 @@ public class ClassifyDaoImpl implements ClassifyDao {
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
             while(rs.next()){
-                Integer id2=rs.getInt("epc_id");
-                String name=rs.getString("epc_name");
-                Integer parent_id=rs.getInt("epc_parent_id");
-                Classify clfy=new Classify(id2,name,parent_id);
+                Integer id2=rs.getInt("epcId");
+                String name=rs.getString("epcName");
+                Integer parentId=rs.getInt("epcParentId");
+                Classify clfy=new Classify(id2,name,parentId);
                 list.add(clfy);
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return list;
     }
 
@@ -143,6 +150,7 @@ public class ClassifyDaoImpl implements ClassifyDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return clfy;
     }
 }

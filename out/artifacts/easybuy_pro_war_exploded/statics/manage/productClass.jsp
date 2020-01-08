@@ -1,11 +1,10 @@
-<%@ page import="com.easybuy.service.commodity.ClassifyService" %>
-<%@ page import="com.easybuy.service.commodity.ClassifyServiceImpl" %>
-<%@ page import="java.util.List" %>
-<%@ page import="com.easybuy.pojo.Classify" %>
 <%@ page import="com.easybuy.util.PageSupport" %>
-<%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="com.easybuy.service.commodity.ClassifyService" %>
+<%@ page import="com.easybuy.service.commodity.ClassifyServiceImpl" %>
+<%@ page import="com.easybuy.pojo.Classify" %>
+<%@ page import="java.util.List" %>
 <%@taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
@@ -90,8 +89,7 @@
 					//获取总页数
 					int totalPage=pageSupport.getTotalPageCount();
 					List<Classify> list=service.Classifylist(pageIndex,pageSize);
-					/*out.print(list.size());*/
-
+					out.print(list.size());
 
 					for (Classify clfy:list) {
 						if (clfy.getEpcParentId()==0) {

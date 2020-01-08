@@ -24,7 +24,7 @@ public class Classify {
         this.epcParentId = epcParentId;
     }
 
-    public Classify(int epc_id, String epc_name, int epc_parent_id) {
+    public Classify(int epcId, String epcName, int epcParentId) {
         this.epcId = epcId;
         this.epcName = epcName;
         this.epcParentId = epcParentId;

@@ -6,15 +6,16 @@
 <%@ page import="java.util.List" %>
 <%@ page import="org.apache.commons.fileupload.FileUploadException" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
+
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
+<%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     request.setCharacterEncoding("utf-8");
     String fieldName="";
-    EasyBuy_Product buy=new EasyBuy_Product();
+    EasyBuyProduct buy=new EasyBuyProduct();
 
     //是否是文件上传类型
     boolean flag= ServletFileUpload.isMultipartContent(request);
@@ -34,22 +35,22 @@
                     fieldName=item.getFieldName();
                     switch (fieldName){
                         case  "ep_id":
-                            buy.setEp_id(Integer.parseInt(item.getString()));
+                            buy.setEpId(Integer.parseInt(item.getString()));
                             break;
                         case "productName":
-                            buy.setEp_name(item.getString("utf-8"));
+                            buy.setEpName(item.getString("utf-8"));
                             break;
                         case "productDetail":
-                            buy.setEp_description(item.getString("utf-8"));
+                            buy.setEpDescription(item.getString("utf-8"));
                             break;
                         case "parentId":
-                            buy.setEpc_id(Integer.parseInt(item.getString()));
+                            buy.setEpcId(Integer.parseInt(item.getString()));
                             break;
                         case "productPrice":
-                            buy.setEp_price(Float.parseFloat(item.getString()));
+                            buy.setEpPrice(Float.parseFloat(item.getString()));
                             break;
                         case "productNumber":
-                            buy.setEp_stock(Integer.parseInt(item.getString()));
+                            buy.setEpStock(Integer.parseInt(item.getString()));
                             break;
                     }
                 }else{//文件
@@ -59,16 +60,16 @@
                         File saveFile=new File(uploadFilepath,fulFile.getName());
                         item.write(saveFile);
                         String uploadFileName=fulFile.getName();
-                        buy.setEp_file_name(uploadFileName);
+                        buy.setEpFileName(uploadFileName);
                     }
                 }
             }
         } catch (FileUploadException e) {
             e.printStackTrace();
         }
-        System.out.println("修改成功之后的文件名：" + buy.getEp_file_name());
-        System.out.println(buy.getEp_name()+"\t"+buy.getEp_description()+"\t"+buy.getEp_price()+"\t"+
-                buy.getEp_stock()+"\t"+buy.getEpc_id()+"\t"+buy.getEp_file_name()+"\t"+buy.getEp_id());
+        System.out.println("修改成功之后的文件名：" + buy.getEpFileName());
+       /* System.out.println(buy.getEp_name()+"\t"+buy.getEp_description()+"\t"+buy.getEp_price()+"\t"+
+                buy.getEp_stock()+"\t"+buy.getEpc_id()+"\t"+buy.getEp_file_name()+"\t"+buy.getEp_id());*/
         ServiceCommodityDao service=new ServiceCommodityDaoImpl();
         int result=service.updateCommodity(buy);
         System.out.println(result+"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");

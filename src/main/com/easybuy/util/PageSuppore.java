@@ -15,7 +15,6 @@ public class PageSuppore {
 	//总页数
 	private int totalPageCount;
 
-
 	public int getCurrentPageNo() {
 		return currentPageNo;
 	}

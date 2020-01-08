@@ -6,7 +6,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="org.apache.commons.fileupload.FileUploadException" %>
 <%@ page import="java.util.Iterator" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Product" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
