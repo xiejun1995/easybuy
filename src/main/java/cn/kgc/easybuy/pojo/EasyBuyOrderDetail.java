@@ -9,7 +9,7 @@ public class EasyBuyOrderDetail {
     private int eodId;//编号
     private int eoId;//订单ID
     private int epId;//商品ID
-    private int eoQuantity;//数量
+    private int eodQuantity;//数量
     private float eodCost;//金额
     private EasyBuyProduct product;//商品基本信息类
 
@@ -37,12 +37,12 @@ public class EasyBuyOrderDetail {
         this.epId = epId;
     }
 
-    public int getEoQuantity() {
-        return eoQuantity;
+    public int getEodQuantity() {
+        return eodQuantity;
     }
 
-    public void setEoQuantity(int eoQuantity) {
-        this.eoQuantity = eoQuantity;
+    public void setEoQuantity(int eodQuantity) {
+        this.eodQuantity = eodQuantity;
     }
 
     public float getEodCost() {
@@ -64,11 +64,11 @@ public class EasyBuyOrderDetail {
     public EasyBuyOrderDetail() {
     }
 
-    public EasyBuyOrderDetail(int eodId, int eoId, int epId, int eoQuantity, float eodCost, EasyBuyProduct product) {
+    public EasyBuyOrderDetail(int eodId, int eoId, int epId, int eodQuantity, float eodCost, EasyBuyProduct product) {
         this.eodId = eodId;
         this.eoId = eoId;
         this.epId = epId;
-        this.eoQuantity = eoQuantity;
+        this.eodQuantity = eodQuantity;
         this.eodCost = eodCost;
         this.product = product;
     }

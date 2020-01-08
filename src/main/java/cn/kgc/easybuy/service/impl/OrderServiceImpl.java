@@ -34,7 +34,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public List<EasyBuyOrder> getOrderByOrdererAndOrderNumber(List<Integer> orderIds) {
-        return getOrderByOrdererAndOrderNumber(orderIds);
+        return orderMapper.getOrderByOrdererAndOrderNumber(orderIds);
     }
 
     @Override
