@@ -1,6 +1,10 @@
 package com.easybuy.filter.user;
 
 
+import com.easybuy.pojo.EasyBuyUser;
+import com.easybuy.service.user.ServiceUserDao;
+import com.easybuy.service.user.ServiceUserDaoImpl;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,6 +27,14 @@ public class Login implements Filter {
         /**
          * 查询用户权限 普通用户无法进入后台 管理员和商家可以进入
          */
+//        EasyBuyUser easyBuyUser = new EasyBuyUser();
+//        int statuss = easyBuyUser.getStatuss();
+//        if (statuss>2) {
+//            chain.doFilter(req,resp);
+//        }else {
+//            response.sendRedirect("../login.jsp");
+//        }
+
 
         //如果是后台页面必须登录才能访问
         String path = request.getServletPath();
@@ -30,8 +42,8 @@ public class Login implements Filter {
             HttpSession httpSession = request.getSession(false);
                 //判断是否登录
                 if (httpSession !=null) {
-                    String easyBuyuser = (String) httpSession.getAttribute("userName");
-                        if (easyBuyuser!=null) {
+                    String user = (String) httpSession.getAttribute("userName");
+                        if (user!=null) {
                             chain.doFilter(req,resp);
                         }else {
                             response.sendRedirect("../login.jsp");

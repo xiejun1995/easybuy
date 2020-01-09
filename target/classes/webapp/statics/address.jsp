@@ -1,11 +1,14 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="org.apache.commons.lang3.StringUtils" %>
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
+<%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
+<%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>易买网 - 首页</title>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/address.css" />
     <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="scripts/function.js"></script>
 </head>
@@ -20,6 +23,16 @@
         price=Integer.valueOf(request.getParameter("price"));
     }
     request.setAttribute("amount",price);
+%>
+<%
+  /*  String id = request.getParameter("epId");
+    int id1=0;
+    if(id != null && !id.equals("")){
+        id1 = Integer.parseInt(id);
+    }*/
+    ServiceCommodityDao service = new ServiceCommodityDaoImpl();
+    EasyBuyProduct product = service.getProdusById(15);
+    request.setAttribute("product",product);
 %>
 <body>
 <div id="header" class="wrap">
@@ -95,13 +108,11 @@
                 <dd><a href="product-list.jsp?name=电脑办公">电脑办公</a></dd>
                 <dd><a href="product-list.jsp?name=玩具文具">玩具文具</a></dd>
                 <dd><a href="product-list.jsp?name=汽车用品">汽车用品</a></dd>
-
             </dl>
         </div>
     </div>
 </div>
-<div id="news" class="right-main">
-    <h1>&nbsp;</h1>
+<%--<div id="news" class="right-main">
     <div class="content">
         <form action="${pageContext.request.contextPath}/statics/manage/alipay.jsp?totalAmounts=${amount}" method="post">
             收货地址:<input name="addr" id="addr" type="button"  value="添加新地址" />
@@ -113,7 +124,42 @@
             <div class="button">  <input type="submit" value="结账" /> </div>
         </form>
     </div>
+</div>--%>
+<div class="father-div" style="margin-left: 500px">
+    <div class="address-div1" style="padding-bottom: 30px">
+        <p style="font-size: 14px;"><strong>选择收货地址：</strong></p>
+        <ul>
+            <li style="font-size: 12px ">
+                <input class="radio" type="radio" name="sex" value="男" checked="checked" > 北京市海淀区中关村大厦202</input><br>
+                <input class="radio" type="radio" name="sex" value="男" checked="checked" > 河北省邯郸市建设大街54号</input>
+            </li>
+        </ul>
+        <input id="add-address" type="button" value="使用新地址"/>
+    </div>
+    <div class="product-div1" >
+        <p style="font-size: 14px;"><strong>订单信息</strong></p>
+        <hr style="width: 700px;height: 2px;background-color: #FC7E31">
+        <table style="margin:30px 0px 30px 0px; ">
+            <tr style="font-size: 14px;color: #9d9d9d">
+                <th style="padding: 0px 20px 0px;">店铺宝贝</th>
+                <th style="padding: 0px 70px 0px;">商品名</th>
+                <th style="padding: 0px 70px 0px;">商品描述</th>
+                <th style="padding: 0px 70px 0px;">单价</th>
+            </tr>
+            <tr style="font-size: 12px">
+                <th style="padding: 5px 20px 0px;"><img src="images/upload/${product.epFileName}" width="80" height="100" alt=""/></th>
+                <th style="padding: 0px 70px 0px;">${product.epName}</th>
+                <th style="padding: 0px 70px 0px;">${product.epDescription}</th>
+                <th style="padding: 0px 70px 0px;color: red">${product.epPrice}</th>
+            </tr>
+        </table>
+        <hr style="width: 700px;height: 2px;background-color: #FC7E31">
+    </div>
+    <div style="border:0;width: 100px;height: 35px ; font-size:20px; color:#FFFFFF; background:#FC7E31;">
+        提交订单
+    </div>
 </div>
+
 <div class="clear"></div>
 <div id="position1" class="wrap"></div>
 <div class="wrap">
