@@ -319,7 +319,7 @@
       <workItem from="1578448991016" duration="32109000" />
       <workItem from="1578529890593" duration="3497000" />
       <workItem from="1578534733426" duration="7169000" />
-      <workItem from="1578558526443" duration="17038000" />
+      <workItem from="1578558526443" duration="17544000" />
     </task>
     <task id="LOCAL-00001" summary="hebing">
       <created>1578278250398</created>
@@ -398,7 +398,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578538506108</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fix order manage all function and fix shopping cart part function">
+      <created>1578577648457</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578577648457</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
