@@ -6,7 +6,6 @@
 <html>
 <head>
     <title>footer</title>
-
 <body>
 <div id="footer">
     Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号

@@ -15,28 +15,29 @@
     <title>main</title>
 </head>
 <body>
+
     <div class="lefter">
         <div class="box">
             <h2>商品分类</h2>
             <dl>
                 <dt>图书音像</dt>
-                <dd><a href="product-list.jsp">图书</a></dd>
-                <dd><a href="product-list.jsp">音乐</a></dd>
+                <dd><a href="product-list.jsp?name=图书">图书</a></dd>
+                <dd><a href="product-list.jsp?name=音乐">音乐</a></dd>
                 <dt>百货</dt>
-                <dd><a href="product-list.jsp">运动健康</a></dd>
-                <dd><a href="product-list.jsp">服装</a></dd>
-                <dd><a href="product-list.jsp">家居</a></dd>
-                <dd><a href="product-list.jsp">美妆</a></dd>
-                <dd><a href="product-list.jsp">母婴</a></dd>
-                <dd><a href="product-list.jsp">食品</a></dd>
-                <dd><a href="product-list.jsp">手机数码</a></dd>
-                <dd><a href="product-list.jsp">家具首饰</a></dd>
-                <dd><a href="product-list.jsp">手表饰品</a></dd>
-                <dd><a href="product-list.jsp">鞋包</a></dd>
-                <dd><a href="product-list.jsp">家电</a></dd>
-                <dd><a href="product-list.jsp">电脑办公</a></dd>
-                <dd><a href="product-list.jsp">玩具文具</a></dd>
-                <dd><a href="product-list.jsp">汽车用品</a></dd>
+                <dd><a href="product-list.jsp?name=运动健康">运动健康</a></dd>
+                <dd><a href="product-list.jsp?name=服装">服装</a></dd>
+                <dd><a href="product-list.jsp?name=家居">家居</a></dd>
+                <dd><a href="product-list.jsp?name=美妆">美妆</a></dd>
+                <dd><a href="product-list.jsp?name=母婴">母婴</a></dd>
+                <dd><a href="product-list.jsp?name=食品">食品</a></dd>
+                <dd><a href="product-list.jsp?name=手机数码">手机数码</a></dd>
+                <dd><a href="product-list.jsp?name=家具首饰">家具首饰</a></dd>
+                <dd><a href="product-list.jsp?name=手表饰品">手表饰品</a></dd>
+                <dd><a href="product-list.jsp?name=鞋包">鞋包</a></dd>
+                <dd><a href="product-list.jsp?name=家电">家电</a></dd>
+                <dd><a href="product-list.jsp?name=电脑办公">电脑办公</a></dd>
+                <dd><a href="product-list.jsp?name=玩具文具">玩具文具</a></dd>
+                <dd><a href="product-list.jsp?name=汽车用品">汽车用品</a></dd>
             </dl>
         </div>
         <div class="spacer"></div>
