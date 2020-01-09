@@ -3,6 +3,7 @@
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../scripts/function.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath() %>/ckeditor/ckeditor.js"></script>
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
@@ -97,7 +98,7 @@
 					</tr>
 					<tr>
 						<td class="field">商品图片(*)：</td>
-
+						<%--<td><textarea name="photo" class="ckeditor" style="display: block;"></textarea></td>--%>
 						<td><input type="file" class="text" name="photo" /><span></span></td>
 					</tr>
 					<tr>

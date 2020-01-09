@@ -2,7 +2,7 @@
 <%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
 <%@ page import="com.easybuy.util.PageSuppore" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Comment" %>
+<%@ page import="com.easybuy.pojo.EasyBuyComment" %>
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -114,15 +114,15 @@
                     }else if(pageNo>totalPage){
                         pageNo=totalPage;
                     }
-                    List<EasyBuy_Comment> lists = service.commodityListById(pageNo,pageSize);
+                    List<EasyBuyComment> lists = service.commodityListById(pageNo,pageSize);
                     // System.out.println(lists.size());
-                    for(EasyBuy_Comment con : lists) {
+                    for(EasyBuyComment con : lists) {
                 %>
                 <li>
                     <dl>
-                        <dt><%=con.getEc_content()%></dt>
-                        <dd class="author">网友：<%=con.getEc_nick_name()%> <span class="timer"><%=con.getEc_create_time()%></span></dd>
-                        <dd><%=con.getEc_content()%></dd>
+                        <dt><%=con.getEcContent()%></dt>
+                        <dd class="author">网友：<%=con.getEcNickName()%> <span class="timer"><%=con.getEcCreateTime()%></span></dd>
+                        <dd><%=con.getEcContent()%></dd>
                     </dl>
                 </li>
                 <%}%>

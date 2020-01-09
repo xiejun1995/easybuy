@@ -1,12 +1,12 @@
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="com.easybuy.pojo.EasyBuy_Comment" %>
-<%@ page import="java.util.List" %>
 <%@ page import="com.easybuy.util.PageSuppore" %>
+<%@ page import="com.easybuy.pojo.EasyBuyComment" %>
+<%@ page import="java.util.List" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../scripts/function.js"></script>
@@ -101,19 +101,19 @@
 					}else if(pageNo>totalPage){
 						pageNo=totalPage;
 					}
-					List<EasyBuy_Comment> lists = service.commodityListById(pageNo,pageSize);
+					List<EasyBuyComment> lists = service.commodityListById(pageNo,pageSize);
 					// System.out.println(lists.size());
-					for(EasyBuy_Comment con : lists) {
+					for(EasyBuyComment con : lists) {
 				%>
 				<tr>
-					<td><%=con.getEc_id()%></td>
-					<td><%=con.getEc_nick_name()%></td>
-					<td><%=con.getEc_content()%></td>
-					<td><%=con.getEc_create_time()%></td>
-					<td><%=con.getEc_reply()%></td>
-					<td><%=con.getEc_reply_time()%></td>
+					<td><%=con.getEcId()%></td>
+					<td><%=con.getEcNickName()%></td>
+					<td><%=con.getEcContent()%></td>
+					<td><%=con.getEcCreateTime()%></td>
+					<td><%=con.getEcReply()%></td>
+					<td><%=con.getEcReplyTime()%></td>
 					<td>
-						<a href="guestbook-selectid.jsp?ec_id=<%=con.getEc_id()%>">&nbsp;回复&nbsp;</a><a href="guestt-book-del.jsp?ec_id=<%=con.getEc_id()%>">删除</a>
+						<a href="guestbook-selectid.jsp?ec_id=<%=con.getEcId()%>">&nbsp;回复&nbsp;</a><a href="guestt-book-del.jsp?ec_id=<%=con.getEcId()%>">删除</a>
 					</td>
 				</tr>
 				<%}%>

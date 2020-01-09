@@ -105,7 +105,7 @@
     <div id="product" class="main">
         <h1>${product.epName}</h1>
         <div class="infos">
-            <div class="thumb"><img src="../images/upload/<%=product.getEpFileName()%>>" width="220" height="212" alt=""/></div>
+            <div class="thumb"><img src="../images/upload/${product.epFileName}" width="220" height="212" alt=""/></div>
             <div class="buy">
                 商城价：<span class="price">￥${product.epPrice}</span><br />
                 库　存：${product.epStock}
@@ -115,7 +115,7 @@
                    <%-- <input type="button" name="button" value="" onclick="proPrice();" />
                     <a href="${pageContext.request.contextPath}/statics/shopping?ep_id=<%=id%>">放入购物车 </a>--%>
                     <input type="button" name="button" value="购买" onclick="proPrice();" />
-                    <input type="button" name="button" value="加入购物车" onclick="window.location='${pageContext.request.contextPath}/statics/shopping.jsp?<%=id%>'" />
+                    <input type="button" name="button" value="加入购物车" onclick="window.location='${pageContext.request.contextPath}/statics/shopping.jsp?ep_id=<%=id%>'" />
                 </div>
             </div>
             <div class="clear"></div>

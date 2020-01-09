@@ -3,7 +3,7 @@ package com.easybuy.pojo;
 import java.util.Date;
 
 /**
- * @author 谢军军
+ * @author杨晓东
  * @Email 18045972801@163.com
  * @date 2020/1/6 11:24
  */
@@ -11,13 +11,13 @@ public class EasyBuyNews {
         private int enId;//新闻编号
         private String enTitle;//新闻标题
         private String enContent;//新闻内容
-        private Date enCreateTime;//新闻录入时间 默认为系统时间
+        private Date encreateTime;//新闻录入时间 默认为系统时间
 
-    public EasyBuyNews(int enId, String enTitle, String enContent, Date enCreateTime) {
+    public EasyBuyNews(int enId, String enTitle, String enContent, Date encreateTime) {
         this.enId = enId;
         this.enTitle = enTitle;
         this.enContent = enContent;
-        this.enCreateTime = enCreateTime;
+        this.encreateTime = encreateTime;
     }
 
     public EasyBuyNews() {
@@ -48,10 +48,10 @@ public class EasyBuyNews {
     }
 
     public Date getEnCreateTime() {
-        return enCreateTime;
+        return encreateTime;
     }
 
-    public void setEnCreateTime(Date enCreateTime) {
-        this.enCreateTime = enCreateTime;
+    public void setEnCreateTime(Date encreateTime) {
+        this.encreateTime = encreateTime;
     }
 }

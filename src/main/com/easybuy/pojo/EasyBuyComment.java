@@ -8,13 +8,13 @@ import java.util.Date;
  * @date 2020/1/6 11:21
  */
 public class EasyBuyComment {
-
         private int ecId;//留言编号
         private String ecContent;//发表的留言内容
         private Date ecCreateTime;//创建时间
         private String ecReply;//针对留言的回复
         private Date ecReplyTime;//回复时间
         private String ecNickName;//留言用户昵称
+
 
     public int getEcId() {
         return ecId;
@@ -72,7 +72,6 @@ public class EasyBuyComment {
         this.ecReplyTime = ecReplyTime;
         this.ecNickName = ecNickName;
     }
-
     public EasyBuyComment() {
     }
 }

@@ -59,20 +59,20 @@
 				<table>
 					<tr>
 						<td class="field">Id：</td>
-						<td><input class="text" type="text" name="Id"  value="${requestScope.comm.ec_id}"/></td>
+						<td><input class="text" type="text" name="Id"  value="${requestScope.comm.ecId}"/></td>
 					</tr>
 					<tr>
 						<td class="field">昵称：</td>
-						<td><input class="text" type="text" name="guestName"  value="${requestScope.comm.ec_nick_name}"/></td>
+						<td><input class="text" type="text" name="guestName"  value="${requestScope.comm.ecNickName}"/></td>
 					</tr>
 
 					<tr>
 						<td class="field">回复内容：</td>
-						<td><input class="text" type="text" name="guestReply"  value="${requestScope.comm.ec_reply}"/></td>
+						<td><input class="text" type="text" name="guestReply"  value="${requestScope.comm.ecReply}"/></td>
 					</tr>
 					<tr>
 						<td class="field">回复时间：</td>
-						<td><input class="text" type="date" name="replyTime"  value="${requestScope.comm.ec_reply_time}"/></td>
+						<td><input class="text" type="date" name="replyTime"  value="${requestScope.comm.ecReplyTime}"/></td>
 					</tr>
 					<tr>
 						<td></td>

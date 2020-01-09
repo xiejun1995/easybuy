@@ -9,17 +9,18 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link type="text/css" rel="stylesheet" href="../css/style.css" />
-<script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="../scripts/function.js"></script>
+<link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/scripts/scripts/My97DatePicker/WdatePicker.js"></script>
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
 </head>
 <body>
 <div id="header" class="wrap">
-	<div id="logo"><img src="../images/logo.gif" /></div>
-	<div class="help"><a href="../../../index.jsp">返回前台页面</a></div>
+	<div id="logo"><img src="${pageContext.request.contextPath}/statics/images/logo.gif" /></div>
+	<div class="help"><a href="${pageContext.request.contextPath}/index.jsp">返回前台页面</a></div>
 	<div class="navbar">
 		<ul class="clearfix">
 			<li><a href="index.jsp">首页</a></li>
@@ -105,25 +106,23 @@
 					request.setAttribute("totalPage",totalPage);
 				%>
 				<tr>
-					<th>用户名</th>
-					<th>真实姓名</th>
-					<th>性别</th>
-					<th>Email</th>
-					<th>手机</th>
-					<th>操作</th>
+					<th style="font-size: 14px">用户名</th>
+					<th style="font-size: 14px">真实姓名</th>
+					<th style="font-size: 14px">性别</th>
+					<th style="font-size: 14px">Email</th>
+					<th style="font-size: 14px">手机</th>
+					<th style="font-size: 14px">操作</th>
 				</tr>
 				<c:forEach var="user" items="${list}">
 					<tr>
-						<td class="first w4 c">${user.userId}</td>
-						<td class="w1 c">${user.userName}</td>
-						<td class="w2 c">${user.sex}</td>
-						<td>${user.email}</td>
-						<td class="w4 c">${user.mobile}</td>
+						<td class="first w4 c" style="font-size: 12px">${user.userId}</td>
+						<td class="w1 c" style="font-size: 12px">${user.userName}</td>
+						<td class="w2 c" style="font-size: 12px">${user.sex}</td>
+						<td style="text-align: center;font-size: 12px" >${user.email}</td>
+						<td class="w4 c" style="font-size: 12px">${user.mobile}</td>
 						<td class="w1 c">
-							<a href="${pageContext.request.contextPath}/servlet/seekservlet?id=${user.userId}">修改</a>
-							<c:if test="${user.statuss<2}">
-								<a class="manageDel" href="${pageContext.request.contextPath}/servlet/deleteuser?id=${user.userId}">删除</a>
-							</c:if>
+							<a href="${pageContext.request.contextPath}/servlet/seekservlet?id=${user.userId}" style="font-size: 12px">修改</a>
+							<a class="manageDel" href="${pageContext.request.contextPath}/servlet/deleteuser?id=${user.userId}" style="font-size: 12px">删除</a>
 						</td>
 					</tr>
 				</c:forEach>
