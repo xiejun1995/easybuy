@@ -29,12 +29,9 @@ public class BaseDao {
     public boolean getConnection2() {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            /*172.16.0.114
-            * xj18793898395
-            * */
-            String url = "jdbc:mysql://localhost:3306/ymw?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
+            String url = "jdbc:mysql://172.16.0.114:3306/ymw?useSSL=false&serverTimezone=UTC";
             String username = "root";
-            String password = "caoyi1";
+            String password = "xj18793898395";
             connection = DriverManager.getConnection(url, username, password);
         }catch(ClassNotFoundException e){
             e.printStackTrace();
@@ -48,6 +45,7 @@ public class BaseDao {
 
     //使用数据源获取数据库连接
     public Boolean getConnection(){
+
         try {
             //初始化上下文
             Context cxt = new InitialContext();

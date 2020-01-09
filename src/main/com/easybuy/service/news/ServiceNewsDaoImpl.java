@@ -34,8 +34,8 @@ public class ServiceNewsDaoImpl implements ServiceNewsDao{
     }
 
     @Override
-    public EasyBuyNews getProdusById(int id) {
-        return newsDao.getProdusById(id);
+    public EasyBuyNews getProdusById(int Id) {
+        return newsDao.getProdusById(Id);
     }
 
 
