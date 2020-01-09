@@ -24,6 +24,7 @@ public class CommodityDaoImpl implements CommodityDao {
         if (result>0){
             System.out.println("添加成功!");
         }
+        BaseDao.getBaseDao().closeResource();
         return result;
     }
 
@@ -35,6 +36,7 @@ public class CommodityDaoImpl implements CommodityDao {
         if (result>0){
             System.out.println("删除成功!");
         }
+        BaseDao.getBaseDao().closeResource();
         return result;
     }
 
@@ -60,6 +62,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return buy;
     }
 
@@ -71,6 +74,7 @@ public class CommodityDaoImpl implements CommodityDao {
         if (result>0){
             System.out.println("修改成功!");
         }
+        BaseDao.getBaseDao().closeResource();
         return result;
     }
 
@@ -88,6 +92,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return count;
     }
 
@@ -114,6 +119,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return list;
     }
 
@@ -121,7 +127,7 @@ public class CommodityDaoImpl implements CommodityDao {
     @Override
     public List<EasyBuyProduct> commodityListById(int epcId,int pageNo, int pageSize) {
         List<EasyBuyProduct> list=new ArrayList<>();
-        String sql="SELECT * FROM EasybuyProduct WHERE epc_id=? LIMIT ?,?";
+        String sql="SELECT * FROM EasybuyProduct WHERE epcId=? LIMIT ?,?";
         Object[] objects={epcId,(pageNo-1)*pageSize,pageSize};
         ResultSet rs=BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
@@ -140,6 +146,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return list;
     }
 
@@ -156,6 +163,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return count;
     }
 
@@ -182,7 +190,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+        BaseDao.getBaseDao().closeResource();
         return product;
     }
     //获取商品的总数据量
@@ -198,6 +206,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return total;
     }
 
@@ -229,6 +238,7 @@ public class CommodityDaoImpl implements CommodityDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        BaseDao.getBaseDao().closeResource();
         return list;
     }
 }
