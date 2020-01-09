@@ -13,7 +13,7 @@
 <body>
 <script>
     alert("登录成功");
-    window.location="../index.jsp";
+    window.location="../statics/index.jsp";
 </script>
 </body>
 </html>
