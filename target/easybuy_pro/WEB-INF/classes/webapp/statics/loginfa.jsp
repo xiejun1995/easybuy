@@ -13,7 +13,7 @@
 <body>
 <script>
     alert("用户名或密码错误，请重新登录");
-    window.location="../index.jsp";
+    window.location="../statics/login.jsp";
 </script>
 </body>
 </html>
