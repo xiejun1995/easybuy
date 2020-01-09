@@ -1,12 +1,11 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="../scripts/function.js"></script>
-<script type="text/javascript" src="<%=request.getContextPath() %>/ckeditor/ckeditor.js"></script>
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
+	<script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 <div id="header" class="wrap">
@@ -60,7 +59,8 @@
 					</tr>
                     <tr>
 						<td class="field">描述：</td>
-						<td><input type="text" class="text" name="productDetail" /></td>
+						<td><textarea  class="ckeditor" name="productDetail"  cols="50" rows="10"></textarea></td>
+						<%--<td><input type="text" class="text" name="productDetail" /></td>--%>
 					</tr>
 					<tr>
 						<td class="field">所属分类：</td>
@@ -98,7 +98,6 @@
 					</tr>
 					<tr>
 						<td class="field">商品图片(*)：</td>
-						<%--<td><textarea name="photo" class="ckeditor" style="display: block;"></textarea></td>--%>
 						<td><input type="file" class="text" name="photo" /><span></span></td>
 					</tr>
 					<tr>

@@ -25,7 +25,7 @@
 			<li><a href="index.jsp">首页</a></li>
 			<li><a href="user.jsp">用户</a></li>
 			<li class="current"><a href="product.jsp">商品</a></li>
-			<li><a href="order.jsp">订单</a></li>
+			<li><a href="${pageContext.request.contextPath}/statics/manage/orderList">订单</a></li>
 			<li><a href="guestbook.jsp">留言</a></li>
 			<li><a href="news.jsp">新闻</a></li>
 		</ul>
@@ -55,7 +55,7 @@
 				<dd><em><a href="productClass-add.jsp">新增</a></em><a href="productClass.jsp">分类管理</a></dd>
 				<dd><em><a href="product-add.jsp">新增</a></em><a href="product.jsp">商品管理</a></dd>
 				<dt>订单管理</dt>
-				<dd><a href="order.jsp">订单管理</a></dd>
+				<dd><a href="${pageContext.request.contextPath}/statics/manage/orderList">订单管理</a></dd>
 				<dt>留言管理</dt>
 				<dd><a href="guestbook.jsp">留言管理</a></dd>
 				<dt>新闻管理</dt>

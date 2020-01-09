@@ -67,9 +67,15 @@ public class ShoppingController {
         if(StringUtils.isNoneEmpty(epId)){
             //将替换后的金额转换为整型并存储在request中
             EasyBuyProduct product=shoppingService.getProduct(Integer.valueOf(epId));
-            request.setAttribute("price",product.getEpPrice());
-            resultMap.put("product",product);
-            return JSON.toJSONString(resultMap);
+            if(product!=null){
+                request.setAttribute("price",product.getEpPrice());
+                resultMap.put("product",product);
+                return JSON.toJSONString(resultMap);
+            }else{
+                resultMap.put("messeage",Constants.NO_PRODUCT);
+                return JSON.toJSONString(resultMap);
+            }
+
         }else{
             resultMap.put("messeage", Constants.NO_EP_ID);
             return JSON.toJSONString(resultMap);

@@ -1,4 +1,4 @@
-<%@ page import="com.easybuy.pojo.EasyBuy_User" %><%--
+<%@ page import="com.easybuy.pojo.EasyBuyUser" %><%--
   Created by IntelliJ IDEA.
   User: Allen
   Date: 2019/12/28

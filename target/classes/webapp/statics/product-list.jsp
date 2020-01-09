@@ -188,8 +188,8 @@
                 %>
                 <li>
                     <dl>
-                        <dt class="sw"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><img class="color"  src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"/></a></dt>
-                        <dd class="title" style="text-align: center;"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
+                        <dt class="sw"><a href="manage/product-careful.jsp?epId=<%=buy.getEpId()%>" target="_self"><img class="color"  src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"/></a></dt>
+                        <dd class="title" style="text-align: center;"><a href="manage/product-careful.jsp?epId=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
                         <dd class="price" style="text-align: center;">￥<%=buy.getEpPrice()%></dd>
                     </dl>
                 </li>

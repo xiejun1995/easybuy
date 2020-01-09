@@ -12,4 +12,6 @@ public class Constants {
     public static final String INVALID_ID="请输入订单号或订单状态或订单人电话！";
     public static final String NO_RECORD="无该查询条件下的订单！";
     public static final String NO_EP_ID="商品的编号未知！";
+    public static final String NO_PRODUCT="未查询到商品！";
+
 }
