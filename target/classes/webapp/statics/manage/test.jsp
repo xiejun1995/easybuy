@@ -10,7 +10,7 @@
 <head>
     <title>Title</title>
     <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"> </script>
+    <script type="text/javascript" src="<%=request.getContextPath()%>/statics/ckeditor/ckeditor.js"> </script>
     <script type="text/javascript">
         $(function () {
             $("#one").mouseover(function () {

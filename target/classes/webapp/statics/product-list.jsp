@@ -6,8 +6,8 @@
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
-<%@ page import="com.easybuy.pojo.Classify" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="com.easybuy.pojo.Classify" %><%--
   Created by IntelliJ IDEA.
   User: 29246
   Date: 2019/12/27
@@ -23,11 +23,11 @@
     <script type="text/javascript" src="scripts/function.js"></script>
     <script type="text/javascript">
         $(function () {
-            $(".sw").mousemove(function () {
-                $(this).css("border","2px red solid");
+            $(".product-list ul.product li dl dt img").mousemove(function () {
+                $(this).css("border","1px red solid");
             });
-            $(".sw").mouseout(function () {
-                $(this).css("border","none");
+            $(".product-list ul.product li dl dt img").mouseout(function () {
+                $(this).css("border","1px solid #ccc");
             });
         });
     </script>
@@ -68,6 +68,7 @@
             <li><a href="product-list.jsp?name=运动鞋">运动鞋</a></li>
             <li><a href="product-list.jsp?name=美容护肤">美容护肤</a></li>
             <li><a href="product-list.jsp?name=家纺用品">家纺用品</a></li>
+
             <li><a href="product-list.jsp?name=婴幼奶粉">婴幼奶粉</a></li>
             <li><a href="product-list.jsp?name=饰品">饰品</a></li>
             <li class="last"><a href="#">Investor Relations</a></li>
