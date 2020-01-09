@@ -493,10 +493,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578275131048" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1578487114637">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1578538432479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578487114637" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578538432479" />
     <state x="524" y="65" key="FileChooserDialogImpl" timestamp="1578360000498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -622,6 +622,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="408" y="194" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578534733418" />
+    <state x="335" y="88" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1578538421575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="335" y="88" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1578538421575" />
     <state x="257" y="109" width="1077" height="666" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578039776687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -634,10 +638,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="170" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1577525231226" />
-    <state x="441" y="170" key="git4idea.merge.GitPullDialog" timestamp="1578538360920">
+    <state x="441" y="170" key="git4idea.merge.GitPullDialog" timestamp="1578538445464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="441" y="170" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578538360920" />
+    <state x="441" y="170" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578538445464" />
     <state x="121" y="46" key="new project wizard" timestamp="1577528262995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
