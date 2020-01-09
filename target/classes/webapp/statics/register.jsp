@@ -60,53 +60,65 @@
                     <tr>
                         <td class="field">用户名(*)：</td>
                         <td>
-                            <input class="text" type="text" name="userId" placeholder="请以数字或字母组合" id="userId" maxlength="10"  />
+                            <input class="text" type="text" name="userId" placeholder="用户名由6-20位,数字或字母组合" id="userId" maxlength="10"  />
                             <span></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="field">真实姓名(*)：</td>
-                        <td><input class="text" type="text" name="userName" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="您的中文姓名" name="userName" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">登录密码(*)：</td>
-                        <td><input class="text" type="password" id="password" name="password" /><span></span></td>
+                        <td><input class="text" type="password" placeholder="密码由6-20位,数字或字母组合" id="password" name="password" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">确认密码(*)：</td>
-                        <td><input class="text" type="password" name="confirmPassword" /><span></span></td>
+                        <td><input class="text" type="password" placeholder="密码由6-20位,数字或字母组合" name="confirmPassword" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">性别(*)：</td>
                         <td>
                             <label>
-                            <input class="radio" type="radio" name="sex" value="男" checked="checked">男性</input>
+                            <input class="radio" type="radio" name="sex" value="男" checked="checked">男</input>
                             </label>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                             <label>
-                            <input class="radio" type="radio" name="sex" value="女">女性</input>
+                            <input class="radio" type="radio" name="sex" value="女">女</input>
                             </label>
                             <span></span></td>
                     </tr>
                     <tr>
                         <td class="field">出生日期：</td>
-                        <td><input id="birthday" class="text" type="text" name="birthday" /><span></span></td>
+                        <td><input id="birthday" placeholder="生日格式xxxx-xx-xx" class="text" type="text" name="birthday" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">身份证：</td>
-                        <td><input class="text" type="text" name="identityCode" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="请填写本人有效身份证号码" name="identityCode" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">电子邮件：</td>
-                        <td><input class="text" type="text" name="email" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="请填写常用邮箱" name="email" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">手机(*)：</td>
-                        <td><input class="text" type="text" name="mobile" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="请填写常用电话" name="mobile" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">收货地址(*)：</td>
                         <td><input class="text" type="text" placeholder="方便取件的地址" name="address" /><span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="field">用途选择(*)：</td>
+                        <td>
+                            <label>
+                                <input class="radio" type="radio" name="statuss" value="1" checked="checked">我是买家</input>
+                            </label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <label>
+                                <input class="radio" type="radio" name="statuss" value="2">我是商家</input>
+                            </label>
+                            <span></span></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -122,35 +134,4 @@
     Copyright &copy; 2010 北大青鸟 All Rights Reserved. 京ICP证1000001号
 </div>
 </body>
-<script>
-
-    $(function cal() {
-
-        $("#txtBeginDate").calendar({
-
-            controlId: "divDate",                                 // 弹出的日期控件ID，默认: $(this).attr("id") + "Calendar"
-
-            speed: 200,                                           // 三种预定速度之一的字符串("slow", "normal", or "fast")或表示动画时长的毫秒数值(如：1000),默认：200
-
-            complement: true,                                     // 是否显示日期或年空白处的前后月的补充,默认：true
-
-            readonly: true,                                       // 目标对象是否设为只读，默认：true
-
-            upperLimit: new Date(),                               // 日期上限，默认：NaN(不限制)
-
-            lowerLimit: new Date("2011/01/01"),                   // 日期下限，默认：NaN(不限制)
-
-            callback: function () {                               // 点击选择日期后的回调函数
-
-                alert("您选择的日期是：" + $("#txtBeginDate").val());
-
-            }
-
-        });
-
-        $("#txtEndDate").calendar();
-
-    });
-
-</script>
 </html>

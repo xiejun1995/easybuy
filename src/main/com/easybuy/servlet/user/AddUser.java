@@ -33,7 +33,8 @@ public class AddUser extends HttpServlet {
             String mobile = request.getParameter("mobile");
             String address = request.getParameter("address");
             double login = 1;
-            int statuss = 1;
+            String statuss1 = request.getParameter("statuss");
+            int statuss = Integer.parseInt(statuss1);
 
             EasyBuyUser easyBuyUser = new EasyBuyUser();
             easyBuyUser.setUserId(userId);
@@ -47,7 +48,6 @@ public class AddUser extends HttpServlet {
             }else {
                 response.sendRedirect("../statics/reg-fail.jsp");
             }
-
             easyBuyUser.setMobile(mobile);
             easyBuyUser.setAddress(address);
             easyBuyUser.setLogin(login);
