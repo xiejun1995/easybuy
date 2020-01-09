@@ -20,9 +20,13 @@ public class Login implements Filter {
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
+        /**
+         * 查询用户权限 普通用户无法进入后台 管理员和商家可以进入
+         */
+
         //如果是后台页面必须登录才能访问
         String path = request.getServletPath();
-        if (path.startsWith("/manage")) {
+        if (path.startsWith("/statics/manage")) {
             HttpSession httpSession = request.getSession(false);
                 //判断是否登录
                 if (httpSession !=null) {
@@ -30,10 +34,10 @@ public class Login implements Filter {
                         if (easyBuyuser!=null) {
                             chain.doFilter(req,resp);
                         }else {
-                            response.sendRedirect("../statics/login.jsp");
+                            response.sendRedirect("../login.jsp");
                         }
                 } else {
-                    response.sendRedirect("../statics/login.jsp");
+                    response.sendRedirect("../login.jsp");
                 }
         }else {
             chain.doFilter(req,resp);

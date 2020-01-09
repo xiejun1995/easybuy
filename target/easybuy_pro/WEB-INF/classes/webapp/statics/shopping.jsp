@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -11,11 +12,16 @@
 <div id="header" class="wrap">
     <div id="logo"><img src="${pageContext.request.contextPath}/statics/images/logo.gif" /></div>
     <div class="help">
+        <c:if test="${sessionScope.userName==null}">
+            <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
+        </c:if>
+        <c:if test="${sessionScope.userName!=null}">
+            <span>欢迎您:${userName}</span>
+            <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
+        </c:if>
         <a href="${pageContext.request.contextPath}/statics/shopping.jsp" class="shopping">购物车X件</a>
-        <a href="login.jsp">登录</a>
-        <a href="${pageContext.request.contextPath}/statics/register.jsp">注册</a>
         <a href="${pageContext.request.contextPath}/statics/guestbook.jsp">留言</a>
-        <a href="manage/index.jsp">后台管理</a></div>
+    </div>
     <div class="navbar">
         <ul class="clearfix">
             <li class="current"><a href="#">首页</a></li>

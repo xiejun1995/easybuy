@@ -13,7 +13,7 @@
 <body>
 <script>
     alert("欢迎下次再来");
-    window.location="../index.jsp";
+    window.location="../statics/index.jsp";
 </script>
 </body>
 </html>

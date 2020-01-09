@@ -22,7 +22,7 @@ public class Login extends HttpServlet {
         //获取请求参数
         String userName = request.getParameter("userId");
         String userPass = request.getParameter("password");
-        session.setAttribute("userName",userName);
+
 
         //封装对象
         EasyBuyUser loginuser = new EasyBuyUser();
@@ -35,10 +35,12 @@ public class Login extends HttpServlet {
 
         //判断
         if (easyBuyuser!=null) {
+            session.setAttribute("userName",userName);
             request.setAttribute("easyBuyuser",easyBuyuser);
-            request.getRequestDispatcher("/statics/loginload.jsp").forward(request,response);
+            request.getRequestDispatcher("../statics/loginload.jsp").forward(request,response);
         }else {
-            request.getRequestDispatcher("/statics/loginfa.jsp").forward(request,response);
+            response.sendRedirect("../statics/loginfa.jsp");
+            //request.getRequestDispatcher("/statics/loginfa.jsp").forward(request,response);
         }
     }
 
