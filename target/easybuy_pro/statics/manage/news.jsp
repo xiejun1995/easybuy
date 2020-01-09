@@ -1,6 +1,5 @@
 
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.Date" %>
 <%@ page import="com.easybuy.service.news.ServiceNewsDao" %>
 <%@ page import="com.easybuy.service.news.ServiceNewsDaoImpl" %>
 <%@ page import="cn.kgc.easybuy.pojo.PageSupport" %>
@@ -98,6 +97,7 @@
 					<td><%=con.getEnCreateTime()%></td>
 					<td>
 						<a href="news-modify.jsp?en_id=<%=con.getEnId()%>">&nbsp;修改&nbsp;</a><a href="news-del.jsp?en_id=<%=con.getEnId()%>">删除</a>
+
 					</td>
 				</tr>
 				<%}%>
