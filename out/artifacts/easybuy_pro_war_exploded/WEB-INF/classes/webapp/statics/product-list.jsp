@@ -1,13 +1,13 @@
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="com.easybuy.pojo.Classify" %>
+
 <%@ page import="java.util.List" %>
 <%@ page import="com.easybuy.service.commodity.ClassifyService" %>
 <%@ page import="com.easybuy.service.commodity.ClassifyServiceImpl" %>
 <%@ page import="com.easybuy.util.PageSupport" %>
-
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
-<%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %><%--
+<%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
+<%@ page import="com.easybuy.pojo.Classify" %>
+<%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: 29246
   Date: 2019/12/27
@@ -21,6 +21,16 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="scripts/function.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".sw").mousemove(function () {
+                $(this).css("border","2px red solid");
+            });
+            $(".sw").mouseout(function () {
+                $(this).css("border","none");
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="header" class="wrap">
@@ -71,7 +81,7 @@
             name="图书";
         }
     %>
-    您现在的位置：<a href="manage/index.jsp   ">易买网</a> &gt; <a href="product-list.jsp   ">商品</a> &gt; <%=name%>
+    您现在的位置：<a href="manage/index.jsp   ">易买网</a> &gt; <a href="product-list.jsp">商品</a> &gt; <%=name%>
 </div>
 <div id="main" class="wrap">
     <div class="lefter">
@@ -99,7 +109,7 @@
                     for (Classify clfy2:ids) {
                         if (clfy.getEpcId()==clfy2.getEpcParentId()){
                 %>
-                <dd><a href="product-list.jsp?name=<%=clfy2.getEpcName()%>&epc_id=<%=clfy2.getEpcId()%>"><%=clfy2.getEpcName()%></a></dd>
+                <dd><a href="product-list.jsp?name=<%=clfy2.getEpcName()%>&epcId=<%=clfy2.getEpcId()%>"><%=clfy2.getEpcName()%></a></dd>
                 <%
                             }
                         }
@@ -146,7 +156,7 @@
 
             <h2>全部商品</h2>
             <div class="clear"></div>
-            <ul class="product clearfix">
+            <ul class="product clearfix" id="one">
                 <%
                     ServiceCommodityDao service2=new ServiceCommodityDaoImpl();
                     String index=request.getParameter("pageIndex");
@@ -172,15 +182,15 @@
                     //获取总页数
                     int totalPage=pageSupport.getTotalPageCount();
 
-                    List<EasyBuyProduct> list2= service2.commodityListById(epcId,pageIndex,pageSize);;
+                    List<EasyBuyProduct> list2= service2.commodityListById(epcId,pageIndex,pageSize);
 
                     for (EasyBuyProduct buy :list2) {
                 %>
                 <li>
                     <dl>
-                        <dt><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><img src="<%=request.getContextPath()%>/images/upload/<%=buy.getEpFileName()%>" /></a></dt>
-                        <dd class="title"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
-                        <dd class="price">￥<%=buy.getEpPrice()%></dd>
+                        <dt class="sw"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><img class="color"  src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"/></a></dt>
+                        <dd class="title" style="text-align: center;"><a href="manage/product-careful.jsp?id=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
+                        <dd class="price" style="text-align: center;">￥<%=buy.getEpPrice()%></dd>
                     </dl>
                 </li>
                 <%}%>

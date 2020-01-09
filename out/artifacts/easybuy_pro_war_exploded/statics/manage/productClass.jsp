@@ -89,7 +89,7 @@
 					//获取总页数
 					int totalPage=pageSupport.getTotalPageCount();
 					List<Classify> list=service.Classifylist(pageIndex,pageSize);
-					out.print(list.size());
+					/*out.print(list.size());*/
 
 					for (Classify clfy:list) {
 						if (clfy.getEpcParentId()==0) {
