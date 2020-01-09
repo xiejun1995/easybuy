@@ -20,11 +20,10 @@ public class EmptyShoppingCart {
     private ShoppingService shoppingService;
     /**
      * 将购物车中对应的商品清空
-     * @param epId
      */
-    @Scheduled(cron = "")
-    public void emptyShoppingCart(Integer epId){
-        shoppingService.reduceTempStock(epId);
+    @Scheduled(cron = "0 1-2 * * * ? ")
+    public void emptyShoppingCart(){
+
     }
 
 }
