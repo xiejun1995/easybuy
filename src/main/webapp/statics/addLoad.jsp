@@ -13,7 +13,7 @@
 <body>
 <script>
     alert("注册成功");
-    window.location="../index.jsp";
+    window.location="index.jsp";
 </script>
 </body>
 </html>

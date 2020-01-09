@@ -21,7 +21,8 @@
         <a href="${pageContext.request.contextPath}/statics/shopping.jsp" id="shoppingBag" class="shopping">购物车X件</a><a href="statics/guestbook.jsp">留言</a></div>
     <div class="navbar">
         <ul class="clearfix">
-            <li class="current"><a href="../index.jsp">首页</a></li>
+            <li class="current">
+                <a href="../index.jsp">首页</a></li>
             <li><a href="product-list.jsp?name=图书">图书</a></li>
             <li><a href="product-list.jsp?name=百货">百货</a></li>
             <li><a href="product-list.jsp?name=品牌">品牌</a></li>
