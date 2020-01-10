@@ -18,7 +18,7 @@ public interface OrderMapper {
      * @return   当前页码所对应的订单列表
      */
     public List<Integer> getOrderListOfPagination(@Param("currentPage") Integer currentPage,
-                                                        @Param("pageSize") Integer pageSize);
+                                                  @Param("pageSize") Integer pageSize);
 
     /**
      * 根据当前订单Id进行联表查询查询该订单中的所有商品信息及订单详情信息
@@ -46,9 +46,9 @@ public interface OrderMapper {
      * @param phone  订单人电话
      * @return  该条件下的总记录条数
      */
-    public Integer getNumberOfRecordsByFuzzyQuery(@Param("entityId")Integer entityId,
-                                                  @Param("status")Integer status,
-                                                  @Param("phone")String phone);
+    public Integer getNumberOfRecordsByFuzzyQuery(@Param("entityId") Integer entityId,
+                                                  @Param("status") Integer status,
+                                                  @Param("phone") String phone);
 
     /**
      * 根据当前页码及页码大小查询当前页所对应的订单Id集合
@@ -57,7 +57,7 @@ public interface OrderMapper {
      * @param phone  订单人电话
      * @return 订单Id集合
      */
-    public List<Integer> getOrderListOfPaginationByFuzzyQuery(@Param("entityId")Integer entityId,
-                                                              @Param("status")Integer status,
-                                                              @Param("phone")String phone);
+    public List<Integer> getOrderListOfPaginationByFuzzyQuery(@Param("entityId") Integer entityId,
+                                                              @Param("status") Integer status,
+                                                              @Param("phone") String phone);
 }

@@ -13,5 +13,6 @@ public class Constants {
     public static final String NO_RECORD="无该查询条件下的订单！";
     public static final String NO_EP_ID="商品的编号未知！";
     public static final String NO_PRODUCT="未查询到商品！";
+    public static final String SHOPPING_SUCCESS="加入购物车成功！";
 
 }
