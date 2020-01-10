@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -69,6 +70,9 @@
                     <th>购买数量</th>
                     <th>操作</th>
                 </tr>
+                <form>
+                    <input type="checkbox" value="">
+                </form>
             </table>
             <div id="total"><span>总计：￥0</span></div>
             <div id="button">
