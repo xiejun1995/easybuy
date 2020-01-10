@@ -2,7 +2,6 @@ package com.easybuy.dao.user;
 
 import com.easybuy.pojo.EasyBuyUser;
 import com.easybuy.util.BaseDao;
-import com.easybuy.dao.user.UserDao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -35,9 +34,9 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     //通过ID查找用户
-    public EasyBuyUser getUser(int id) {
+    public EasyBuyUser getUser(String id) {
         EasyBuyUser easyBuyUser = new EasyBuyUser();
-        String sql = "SELECT * FROM easyBuyUser WHERE eu_user_id=?";
+        String sql = "SELECT * FROM easyBuyUser WHERE userId=?";
         Object[] objects = {id};
         ResultSet resultSet = BaseDao.getBaseDao().executeSQL(sql,objects);
         try {

@@ -1,19 +1,19 @@
 <%--
   Created by IntelliJ IDEA.
   User: Allen
-  Date: 2019/12/25
-  Time: 18:52
+  Date: 2020/1/9
+  Time: 19:48
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>注册中转页面</title>
+    <title>Title</title>
 </head>
 <body>
 <script>
-    alert("注册成功");
-    window.location="${pageContext.request.contextPath }/statics/manage/index.jsp";
+    alert("已经是商家，请勿重复操作");
+    window.location="../statics/index.jsp";
 </script>
 </body>
 </html>

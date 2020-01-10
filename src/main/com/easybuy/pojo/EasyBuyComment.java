@@ -16,6 +16,7 @@ public class EasyBuyComment {
         private String ecNickName;//留言用户昵称
 
 
+
     public int getEcId() {
         return ecId;
     }

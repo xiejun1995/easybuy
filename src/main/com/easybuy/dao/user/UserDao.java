@@ -15,7 +15,7 @@ public interface UserDao {
     boolean setUser(EasyBuyUser easyBuyUser);
 
     //通过ID查找用户信息
-    EasyBuyUser getUser(int id);
+    EasyBuyUser getUser(String id);
 
     //分页查询用户
     List<EasyBuyUser> getPageUserList(int pageNo,int pageSize);
