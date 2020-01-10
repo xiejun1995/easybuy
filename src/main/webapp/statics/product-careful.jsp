@@ -1,8 +1,8 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -10,13 +10,13 @@
   Time: 19:18
   To change this template use File | Settings | File Templates.
 --%>
+
 <html>
 <head>
     <title>商品详情页</title>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="scripts/function.js"></script>
-    <script type="text/javascript" src="scripts/shopping.js"></script>
 </head>
 <body>
 <%
@@ -33,17 +33,7 @@
 %>
 <div id="header" class="wrap">
     <div id="logo"><img src="images/logo.gif" /></div>
-    <div class="help">
-        <a href="shopping.jsp" class="shopping">购物车X件</a>
-        <c:if test="${sessionScope.userName==null}">
-            <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
-        </c:if>
-        <c:if test="${sessionScope.userName!=null}">
-            <span>欢迎您:${userName}</span>
-            <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
-        </c:if>
-        <a href="guestbook.jsp">留言</a>
-    </div>
+    <div class="help"><a href="shoppingCart" class="shopping">购物车X件</a><a href="login.jsp">登录</a><a href="register.jsp">注册</a><a href="guestbook.jsp">留言</a><a href="index.jsp">后台管理</a></div>
     <div class="navbar">
         <ul class="clearfix">
             <li class="current"><a href="index.jsp?name=" +首页 >首页</a></li>
@@ -81,6 +71,7 @@
     if (name==null){
         name="图书";
     }
+%>
 %>
 
 <div id="position" class="wrap">
@@ -170,8 +161,9 @@
             data:{"epId":epId},
             dataType:"Json",
             success:function (data) {
-                if(data.product!=null && data.product!=undefined){
-                    window.location.href="address.jsp?epId="+data.product.epId+"&price="+data.product.epPrice;
+                if(data.success!=null && data.success!=undefined){
+                    alert(data.success);
+                    window.location.href="${pageContext.request.contextPath}/statics/product-careful.jsp?epId="+epId;
                 }else{
                     alert(data.messeage);
                 }

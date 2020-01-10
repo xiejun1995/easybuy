@@ -15,9 +15,8 @@
 <head>
     <title>商品详情页</title>
     <link type="text/css" rel="stylesheet" href="../css/style.css" />
-    <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="../scripts/function.js"></script>
-    <script type="text/javascript" src="../scripts/shopping.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
 </head>
 <body>
 <%
@@ -34,7 +33,7 @@
 %>
 <div id="header" class="wrap">
     <div id="logo"><img src="../images/logo.gif" /></div>
-    <div class="help"><a href="../shopping.jsp" class="shopping">购物车X件</a><a href="../login.jsp">登录</a><a href="../register.jsp">注册</a><a href="../guestbook.jsp">留言</a><a href="index.jsp">后台管理</a></div>
+    <div class="help"><a href="shoppingCart" class="shopping">购物车X件</a><a href="../login.jsp">登录</a><a href="../register.jsp">注册</a><a href="../guestbook.jsp">留言</a><a href="index.jsp">后台管理</a></div>
     <div class="navbar">
         <ul class="clearfix">
             <li class="current"><a href="../../index.jsp?name=" +首页 >首页</a></li>
@@ -162,8 +161,9 @@
             data:{"epId":epId},
             dataType:"Json",
             success:function (data) {
-                if(data.product!=null && data.product!=undefined){
-                    window.location.href="../address.jsp?epId="+data.product.epId+"&price="+data.product.epPrice;
+                if(data.success!=null && data.success!=undefined){
+                    alert(data.success);
+                    window.location.href="${pageContext.request.contextPath}/statics/product-careful.jsp?epId="+epId;
                 }else{
                     alert(data.messeage);
                 }

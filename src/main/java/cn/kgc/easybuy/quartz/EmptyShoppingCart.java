@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 定义一个任务调度类用于购物车超时清空
@@ -16,14 +18,21 @@ import java.time.LocalDateTime;
  */
 @Component
 public class EmptyShoppingCart {
-    @Resource
-    private ShoppingService shoppingService;
+     public static Map<Integer,Integer> minuteMap=new HashMap<>(); //用于存放购物车定时时间的分钟数
+     public static Map<Integer,Integer> secondMap=new HashMap<>();//用于存放购物车定时时间的秒数
+
     /**
      * 将购物车中对应的商品清空
      */
-    @Scheduled(cron = "0 1-2 * * * ? ")
-    public void emptyShoppingCart(){
-
+    @Scheduled(cron = "1 * * * * ? ")
+   public void emptyShoppingCart(Integer epId){
+        if(secondMap.get(epId)>0){
+            secondMap.put(epId,secondMap.get(epId)-1);
+        }else if(secondMap.get(epId)==0&&minuteMap.get(epId)>0){
+            minuteMap.put(epId,minuteMap.get(epId)-1);
+            secondMap.put(epId,59);
+        }else{
+            return;
+        }
     }
-
 }

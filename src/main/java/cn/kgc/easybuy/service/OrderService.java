@@ -17,7 +17,7 @@ public interface OrderService {
      *  pageSize 页码大小
      * @return   当前页码所对应的订单列表
      */
-    public List<Integer> getOrderListOfPagination(Integer currentPage,Integer pageSize);
+    public List<Integer> getOrderListOfPagination(Integer currentPage, Integer pageSize);
 
     /**
      * 根据当前订单Id进行联表查询查询该订单中的所有商品信息及订单详情信息
@@ -45,11 +45,11 @@ public interface OrderService {
      *  phone
      * @return
      */
-    public Integer getNumberOfRecordsByFuzzyQuery(Integer entityId,Integer status,String phone);
+    public Integer getNumberOfRecordsByFuzzyQuery(Integer entityId, Integer status, String phone);
 
     /**
      * 根据当前页码及页码大小查询当前页所对应的订单Id集合
      * @return 订单Id集合
      */
-    public List<Integer> getOrderListOfPaginationByFuzzyQuery(Integer entityId,Integer status,String phone);
+    public List<Integer> getOrderListOfPaginationByFuzzyQuery(Integer entityId, Integer status, String phone);
 }
