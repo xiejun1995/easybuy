@@ -3,7 +3,6 @@
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -11,7 +10,6 @@
   Time: 19:18
   To change this template use File | Settings | File Templates.
 --%>
-
 <html>
 <head>
     <title>商品详情页</title>

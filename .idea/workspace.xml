@@ -2,30 +2,1015 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="easybuy:war" />
       <artifact name="easybuy:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="caoyi 5.0">
+    <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="easybuy 1.3">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UserSeek.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UserUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/statics/js/reg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-maijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-up.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-upmaijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/UserSeek.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/UserUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/js/reg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-maijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-up.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-upmaijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/js/reg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-maijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-up.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-upmaijia.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/filter/user/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/filter/user/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/easybuy/util/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/easybuy/util/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/SeekServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/SeekServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/util/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/util/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestt-book-del.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestt-book-del.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/manage-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/manage-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/shopping-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/META-INF/easybuy.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/massage/MessageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/massage/MessageDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/user/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/filter/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/filter/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/pojo/EasyBuyComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/pojo/EasyBuyComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/SeekServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/SeekServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/util/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/util/BaseDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/CHANGES.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/INSTALL.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/api_dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/asp/advanced.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/asp/events.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/asp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/asp/replace.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/asp/sample_posteddata.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/asp/standalone.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/autogrow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/bbcode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/devtools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/divreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/enterkey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/fullpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/jqueryadapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/output_for_flash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/output_html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/output_xhtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/php/advanced.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/placeholder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/readonly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/replacebyclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/replacebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/sample_posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/sharedspaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/skins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/stylesheetparser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/tableresize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/ui_color.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_samples/ui_languages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/adapters/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/_bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/ckeditor_base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/ckeditor_basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/command.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/commanddefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/dataprocessor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/dtd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/editor_basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/eventInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/focusmanager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/htmlparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/lang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/plugindefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/resourcemanager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/scriptloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/skins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/themes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/core/ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/_languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/a11yhelp/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/clipboard/dialogs/paste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/devtools/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/docprops/dialogs/docprops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/iframe/dialogs/iframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/iframe/images/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/liststyle/dialogs/liststyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/pagebreak/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/pastefromword/filter/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/pastetext/dialogs/pastetext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/dialogs/placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/placeholder/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_blockquote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_div.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_h1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_h2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_h3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_h4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_h5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_h6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/showblocks/images/block_pre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/dialogs/smiley.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/angel_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/angry_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/broken_heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/confused_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/cry_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/devil_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/embaressed_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/envelope.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/lightbulb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/omg_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/regular_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/sad_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/shades_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/teeth_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/thumbs_down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/thumbs_up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/tounge_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/whatchutalkingabout_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/smiley/images/wink_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/specialchar/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/styles/styles/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/table/dialogs/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/templates/dialogs/templates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/templates/templates/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/templates/templates/images/template1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/templates/templates/images/template2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/templates/templates/images/template3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/dialogs/uicolor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/yui/assets/hue_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/yui/assets/hue_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/yui/assets/picker_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/yui/assets/picker_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/yui/assets/yui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/_source/plugins/uicolor/yui/yui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/adapters/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor_basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor_basic_source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor_php4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor_php5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/ckeditor_source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/contents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/_languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/adobeair/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/ajax/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/autogrow/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/bbcode/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/devtools/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/docprops/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/iframedialog/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/placeholder/placeholder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/placeholder/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/stylesheetparser/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/tableresize/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/templates/templates/images/template1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/templates/templates/images/template2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/templates/templates/images/template3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/uicolor/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/uicolor/uicolor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/uicolor/yui/assets/hue_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/uicolor/yui/assets/picker_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/uicolor/yui/assets/yui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/plugins/xml/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/kama/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/kama/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/kama/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/kama/icons_rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/kama/skin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/kama/templates.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/office2003/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/office2003/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/office2003/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/office2003/icons_rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/office2003/skin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/office2003/templates.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/v2/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/v2/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/v2/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/v2/icons_rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/v2/skin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/skins/v2/templates.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/ckeditor/themes/default/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/addLoad.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/addLoad.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guesload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guesload.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guest-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guest-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guest-book-do-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guest-book-do-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestt-book-del.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestt-book-del.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/manage-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/manage-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-fail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/scripts/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/scripts/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/CHANGES.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/INSTALL.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/LICENSE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/api_dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/asp/advanced.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/asp/events.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/asp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/asp/replace.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/asp/sample_posteddata.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/asp/standalone.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/autogrow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/bbcode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/devtools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/divreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/enterkey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/fullpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/jqueryadapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/output_for_flash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/output_html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/output_xhtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/php/advanced.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/placeholder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/readonly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/replacebyclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/replacebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/sample_posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/sharedspaces.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/skins.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/stylesheetparser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/tableresize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/ui_color.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_samples/ui_languages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/adapters/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/_bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/ckeditor_base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/ckeditor_basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/command.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/commanddefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/dataprocessor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/dtd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/editor_basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/eventInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/focusmanager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/htmlparser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/lang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/plugindefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/resourcemanager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/scriptloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/skins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/themes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/core/ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/_languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/a11yhelp/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/clipboard/dialogs/paste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/devtools/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/docprops/dialogs/docprops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/iframe/dialogs/iframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/iframe/images/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/liststyle/dialogs/liststyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/pagebreak/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/pastefromword/filter/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/pastetext/dialogs/pastetext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/dialogs/placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/placeholder/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_blockquote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_div.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_h1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_h2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_h3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_h4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_h5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_h6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/showblocks/images/block_pre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/dialogs/smiley.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/angel_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/angry_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/broken_heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/confused_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/cry_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/devil_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/embaressed_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/envelope.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/heart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/kiss.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/lightbulb.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/omg_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/regular_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/sad_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/shades_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/teeth_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/thumbs_down.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/thumbs_up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/tounge_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/whatchutalkingabout_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/smiley/images/wink_smile.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/specialchar/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/styles/styles/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/table/dialogs/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/templates/dialogs/templates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/templates/templates/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/templates/templates/images/template1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/templates/templates/images/template2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/templates/templates/images/template3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/dialogs/uicolor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/yui/assets/hue_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/yui/assets/hue_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/yui/assets/picker_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/yui/assets/picker_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/yui/assets/yui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/_source/plugins/uicolor/yui/yui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/adapters/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor.asp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor_basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor_basic_source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor_php4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor_php5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/ckeditor_source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/contents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/_languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/adobeair/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/ajax/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/autogrow/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/bbcode/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/devtools/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/docprops/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/iframedialog/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/placeholder/placeholder.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/placeholder/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/stylesheetparser/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/tableresize/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/templates/templates/images/template1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/templates/templates/images/template2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/templates/templates/images/template3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/uicolor/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/uicolor/uicolor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/uicolor/yui/assets/hue_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/uicolor/yui/assets/hue_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/uicolor/yui/assets/picker_mask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/uicolor/yui/assets/picker_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/uicolor/yui/assets/yui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/plugins/xml/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/kama/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/kama/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/kama/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/kama/icons_rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/kama/skin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/kama/templates.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/office2003/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/office2003/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/office2003/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/office2003/icons_rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/office2003/skin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/office2003/templates.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/v2/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/v2/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/v2/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/v2/icons_rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/v2/skin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/skins/v2/templates.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/ckeditor/themes/default/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/addLoad.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/addLoad.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/guesload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/guesload.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/guest-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/guest-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guest-book-do-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guest-book-do-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestt-book-del.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestt-book-del.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/manage-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/manage-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/product-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/product-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-fail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideInfoMessages" value="true" />
-    <option name="HIDE_INFO_MESSAGES" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="JavaScript File" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -67,7 +1052,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/statics" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -75,29 +1060,30 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\ykq83\IDEA projects\easybuy\src\main\webapp\statics\manage" />
+      <recent name="D:\Users\ykq83\IDEA projects\easybuy\src\main\webapp\statics" />
+      <recent name="D:\Users\ykq83\IDEA projects\easybuy\src\main\webapp" />
       <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp\statics" />
-      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics\manage" />
-      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
-      <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics" />
+      <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easybuy.servlet.user" />
       <recent name="cn.kgc.easybuy.util" />
       <recent name="cn.kgc.easybuy.mapper" />
       <recent name="cn.kgc.easybuy.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\ykq83\IDEA projects\easybuy\src\main\webapp\statics" />
       <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp\statics" />
-      <recent name="G:\idea\workspace\easybuy_pro\src\main\webapp" />
       <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics\manage" />
-      <recent name="G:\easybuy\easybuy_pro\web\manage" />
+      <recent name="G:\double\2\easybuy_pro\src\main\webapp\statics" />
       <recent name="G:\easybuy\easybuy_pro\src\main\webapp\statics\manage" />
     </key>
   </component>
@@ -114,7 +1100,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_29_easybuy_2" />
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_29_easybuy_4" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -172,9 +1158,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="easybuy_pro:war exploded" />
           <artifact name="easybuy_pro:war" />
           <artifact name="easybuy:war exploded" />
+          <artifact name="easybuy:war" />
         </option>
       </method>
     </configuration>
@@ -247,9 +1233,9 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="easybuy_pro:war exploded" />
           <artifact name="easybuy_pro:war" />
           <artifact name="easybuy:war exploded" />
+          <artifact name="easybuy:war" />
         </option>
       </method>
     </configuration>
@@ -264,6 +1250,11 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -308,8 +1299,11 @@
       <workItem from="1578448991016" duration="32109000" />
       <workItem from="1578529890593" duration="3497000" />
       <workItem from="1578534733426" duration="7169000" />
-      <workItem from="1578556160901" duration="1255000" />
-      <workItem from="1578557508613" duration="18733000" />
+      <workItem from="1578551878057" duration="204000" />
+      <workItem from="1578552116090" duration="187000" />
+      <workItem from="1578552318301" duration="12628000" />
+      <workItem from="1578565983579" duration="13009000" />
+      <workItem from="1578616533961" duration="15248000" />
     </task>
     <task id="LOCAL-00001" summary="hebing">
       <created>1578278250398</created>
@@ -388,18 +1382,42 @@
       <option name="project" value="LOCAL" />
       <updated>1578538506108</updated>
     </task>
-    <task id="LOCAL-00012" summary="fix order manage all function and fix shopping cart part function">
-      <created>1578558486209</created>
+    <task id="LOCAL-00012" summary="easybuy 1.1">
+      <created>1578558413490</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1578558486209</updated>
+      <updated>1578558413490</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="easybuy 1.2">
+      <created>1578578972188</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578578972188</updated>
+    </task>
+    <task id="LOCAL-00014" summary="普通用户不让进入后台">
+      <created>1578629171536</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578629171536</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hebing" />
@@ -407,8 +1425,10 @@
     <MESSAGE value="fix order manage part function" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;out/artifacts/easybuy_pro_war_exploded/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class&#10;#&#9;target/classes/cn/kgc/easybuy/controller/OrderListController.class" />
     <MESSAGE value="fix order manage all function and fix shopping cart part function" />
-    <MESSAGE value="caoyi 5.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="caoyi 5.0" />
+    <MESSAGE value="easybuy 1.1" />
+    <MESSAGE value="easybuy 1.2" />
+    <MESSAGE value="普通用户不让进入后台" />
+    <option name="LAST_COMMIT_MESSAGE" value="普通用户不让进入后台" />
   </component>
   <component name="WindowStateProjectService">
     <state x="261" y="0" key="#Inspections" timestamp="1578016435947">
@@ -427,23 +1447,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="319" y="0" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1578048669237" />
-    <state x="391" y="0" key="#Web_Browsers" timestamp="1578557296441">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="391" y="0" key="#Web_Browsers/0.0.1920.1040@0.0.1920.1040" timestamp="1578557296441" />
-    <state x="353" y="0" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578577893295">
+    <state x="353" y="2" width="1092" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578627780262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578543393287" />
-    <state x="353" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578577893295" />
-    <state x="530" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1578486684125">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="353" y="2" width="1092" height="756" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578627780262" />
+    <state x="663" y="63" key="#com.intellij.ide.util.MemberChooser" timestamp="1578619044711">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1578486684125" />
-    <state x="593" y="298" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578487561541">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="663" y="63" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578619044711" />
+    <state x="741" y="376" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1578551884188">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="593" y="298" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1578487561541" />
+    <state x="741" y="376" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578551884188" />
     <state x="0" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1578048852299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -464,136 +1482,168 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="436" y="99" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1578543981348" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1578616638179">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="0" y="0" width="814" height="800" key="CommitChangelistDialog2" timestamp="1578634553377">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578616638179" />
     <state x="0" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578544784868" />
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578558475149" />
-    <state x="655" y="82" key="FileChooserDialogImpl" timestamp="1578557600229">
+    <state x="0" y="0" width="814" height="800" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578634553377" />
+    <state x="184" y="92" key="DiffContextDialog" timestamp="1578629928426">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="92" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578629928426" />
+    <state x="655" y="82" key="FileChooserDialogImpl" timestamp="1578552055433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="524" y="65" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578360000498" />
-    <state x="655" y="82" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578557600229" />
-    <state width="1458" height="764" key="GridCell.Tab.0.bottom" timestamp="1578577985289">
+    <state x="655" y="82" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578552055433" />
+    <state width="1598" height="317" key="GridCell.Tab.0.bottom" timestamp="1578630914515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="764" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="764" key="GridCell.Tab.0.center" timestamp="1578577985289">
+    <state width="1598" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914515" />
+    <state width="1598" height="317" key="GridCell.Tab.0.center" timestamp="1578630914515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578544880972" />
-    <state width="1458" height="764" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="764" key="GridCell.Tab.0.left" timestamp="1578577985289">
+    <state width="1598" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914515" />
+    <state width="1598" height="317" key="GridCell.Tab.0.left" timestamp="1578630914515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578544880972" />
-    <state width="1458" height="764" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="764" key="GridCell.Tab.0.right" timestamp="1578577985289">
+    <state width="1598" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914515" />
+    <state width="1598" height="317" key="GridCell.Tab.0.right" timestamp="1578630914515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578544880972" />
-    <state width="1458" height="764" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="223" key="GridCell.Tab.1.bottom" timestamp="1578578054059">
+    <state width="1598" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914515" />
+    <state width="1598" height="317" key="GridCell.Tab.1.bottom" timestamp="1578630914516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="223" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="223" key="GridCell.Tab.1.center" timestamp="1578578054059">
+    <state width="1598" height="317" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914516" />
+    <state width="1598" height="317" key="GridCell.Tab.1.center" timestamp="1578630914515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="223" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="223" key="GridCell.Tab.1.left" timestamp="1578578054059">
+    <state width="1598" height="317" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914515" />
+    <state width="1598" height="317" key="GridCell.Tab.1.left" timestamp="1578630914515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="223" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="223" key="GridCell.Tab.1.right" timestamp="1578578054059">
+    <state width="1598" height="317" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914515" />
+    <state width="1598" height="317" key="GridCell.Tab.1.right" timestamp="1578630914515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="223" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="179" key="GridCell.Tab.2.bottom" timestamp="1578576772774">
+    <state width="1598" height="317" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914515" />
+    <state width="1598" height="317" key="GridCell.Tab.2.bottom" timestamp="1578630914516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="179" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772774" />
-    <state width="1458" height="179" key="GridCell.Tab.2.center" timestamp="1578576772773">
+    <state width="1598" height="317" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914516" />
+    <state width="1598" height="317" key="GridCell.Tab.2.center" timestamp="1578630914516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="179" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772773" />
-    <state width="1458" height="179" key="GridCell.Tab.2.left" timestamp="1578576772773">
+    <state width="1598" height="317" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914516" />
+    <state width="1598" height="317" key="GridCell.Tab.2.left" timestamp="1578630914516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="179" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772773" />
-    <state width="1458" height="179" key="GridCell.Tab.2.right" timestamp="1578576772774">
+    <state width="1598" height="317" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914516" />
+    <state width="1598" height="317" key="GridCell.Tab.2.right" timestamp="1578630914516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="156" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
-    <state width="1458" height="179" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772774" />
-    <state width="1252" height="478" key="GridCell.Tab.3.bottom" timestamp="1578271270579">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578630914516" />
+    <state width="1598" height="317" key="GridCell.Tab.3.bottom" timestamp="1578629602744">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="478" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578271270579" />
-    <state width="1252" height="478" key="GridCell.Tab.3.center" timestamp="1578271270579">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578629602744" />
+    <state width="1598" height="317" key="GridCell.Tab.3.center" timestamp="1578629602744">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="478" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1578271270579" />
-    <state width="1252" height="478" key="GridCell.Tab.3.left" timestamp="1578271270579">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578629602744" />
+    <state width="1598" height="317" key="GridCell.Tab.3.left" timestamp="1578629602744">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="478" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1578271270579" />
-    <state width="1252" height="478" key="GridCell.Tab.3.right" timestamp="1578271270579">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578629602744" />
+    <state width="1598" height="317" key="GridCell.Tab.3.right" timestamp="1578629602744">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1252" height="478" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1578271270579" />
-    <state width="1013" height="272" key="GridCell.Tab.4.bottom" timestamp="1578099089699">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578629602744" />
+    <state width="1598" height="317" key="GridCell.Tab.4.bottom" timestamp="1578627867046">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1013" height="272" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578099089699" />
-    <state width="1013" height="272" key="GridCell.Tab.4.center" timestamp="1578099089698">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578627867046" />
+    <state width="1598" height="317" key="GridCell.Tab.4.center" timestamp="1578627867046">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1013" height="272" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1578099089698" />
-    <state width="1013" height="272" key="GridCell.Tab.4.left" timestamp="1578099089698">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578627867046" />
+    <state width="1598" height="317" key="GridCell.Tab.4.left" timestamp="1578627867046">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1013" height="272" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1578099089698" />
-    <state width="1013" height="272" key="GridCell.Tab.4.right" timestamp="1578099089699">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1598" height="317" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578627867046" />
+    <state width="1598" height="317" key="GridCell.Tab.4.right" timestamp="1578627867046">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1013" height="272" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1578099089699" />
+    <state width="1598" height="317" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578627867046" />
+    <state width="1598" height="317" key="GridCell.Tab.5.bottom" timestamp="1578627048991">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1598" height="317" key="GridCell.Tab.5.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578627048991" />
+    <state width="1598" height="317" key="GridCell.Tab.5.center" timestamp="1578627048991">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1598" height="317" key="GridCell.Tab.5.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578627048991" />
+    <state width="1598" height="317" key="GridCell.Tab.5.left" timestamp="1578627048991">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1598" height="317" key="GridCell.Tab.5.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578627048991" />
+    <state width="1598" height="317" key="GridCell.Tab.5.right" timestamp="1578627048991">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1598" height="317" key="GridCell.Tab.5.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578627048991" />
     <state x="186" y="0" key="Maven.ArtifactSearchDialog" timestamp="1578032197948">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="186" y="0" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1578032197948" />
-    <state x="184" y="82" key="MergeDialog" timestamp="1578558584555">
+    <state x="184" y="82" key="MergeDialog" timestamp="1578629471249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1578487476799" />
-    <state x="184" y="82" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578558584555" />
-    <state x="513" y="71" key="MultipleFileMergeDialog" timestamp="1578558592967">
+    <state x="184" y="82" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578629471249" />
+    <state x="513" y="71" key="MultipleFileMergeDialog" timestamp="1578629478685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="410" y="56" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1578538675438" />
-    <state x="513" y="71" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578558592967" />
+    <state x="513" y="71" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578629478685" />
     <state x="378" y="44" width="790" height="735" key="NewModule_or_Project.wizard" timestamp="1577528277769">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="378" y="44" width="790" height="735" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1577528277769" />
-    <state x="151" y="0" key="SettingsEditor" timestamp="1578562811162">
+    <state x="706" y="242" key="RollbackChangesDialog" timestamp="1578630224738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="706" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578630224738" />
+    <state x="463" y="49" key="SettingsEditor" timestamp="1578630931274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="85" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578543357510" />
-    <state x="151" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578562811162" />
-    <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1578538514945">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="463" y="49" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578630931274" />
+    <state x="326" y="100" key="Vcs.Push.Dialog.v2" timestamp="1578629515791">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="261" y="79" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578538514945" />
+    <state x="326" y="100" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578629515791" />
     <state x="554" y="176" key="chooseDestDirectoryDialog" timestamp="1577528483601">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -618,6 +1668,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="257" y="109" width="1077" height="666" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1578039776687" />
+    <state x="567" y="220" width="786" height="600" key="find.popup" timestamp="1578628781602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="567" y="220" width="786" height="600" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578628781602" />
     <state x="508" y="62" key="git4idea.branch.GitSmartOperationDialog" timestamp="1578278059906">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -626,23 +1680,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="170" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1577525231226" />
-    <state x="551" y="215" key="git4idea.merge.GitPullDialog" timestamp="1578558531923">
+    <state x="551" y="215" key="git4idea.merge.GitPullDialog" timestamp="1578634559051">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="441" y="170" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578538445464" />
-    <state x="551" y="215" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578558531923" />
+    <state x="551" y="215" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578634559051" />
     <state x="121" y="46" key="new project wizard" timestamp="1577528262995">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="121" y="46" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1577528262995" />
-    <state x="642" y="78" key="refactoring.ChangeSignatureDialog" timestamp="1578571929886">
+    <state x="426" y="231" key="run.anything.popup" timestamp="1578623275780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="642" y="78" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578571929886" />
-    <state x="341" y="183" key="run.anything.popup" timestamp="1578482892078">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
     <state x="341" y="183" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1578482892078" />
+    <state x="426" y="231" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578623275780" />
     <state x="347" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1578485903652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

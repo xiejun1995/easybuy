@@ -18,7 +18,7 @@
 <div id="header" class="wrap">
 	<div id="logo"><img src="../images/logo.gif" /></div>
 	<div class="help">
-		<a href="../../index.jsp">返回前台页面</a>
+		<a href="index.jsp">返回前台页面</a>
 	</div>
 	<div class="navbar">
 		<ul class="clearfix">
@@ -68,13 +68,13 @@
 		<div class="manage">
 			<table class="list">
 				<tr>
-					<th>编号</th>
-					<th>昵称</th>
-					<th>留言内容</th>
-					<th>留言时间</th>
-					<th>回复内容</th>
-					<th>回复时间</th>
-					<th>操作</th>
+					<th style="font-size: 14px">编号</th>
+					<th style="font-size: 14px">昵称</th>
+					<th style="font-size: 14px">留言的内容</th>
+					<th style="font-size: 14px">留言时间</th>
+					<th style="font-size: 14px">回复内容</th>
+					<th style="font-size: 14px">回复时间</th>
+					<th style="font-size: 14px">操作</th>
 				</tr>
 				<%//分页查询
 					// 当前页码
@@ -106,17 +106,24 @@
 					for(EasyBuyComment con : lists) {
 				%>
 				<tr>
-					<td><%=con.getEcId()%></td>
-					<td><%=con.getEcNickName()%></td>
-					<td><%=con.getEcContent()%></td>
-					<td><%=con.getEcCreateTime()%></td>
-					<td><%=con.getEcReply()%></td>
-					<td><%=con.getEcReplyTime()%></td>
-					<td>
-						<a href="guestbook-selectid.jsp?ec_id=<%=con.getEcId()%>">&nbsp;回复&nbsp;</a><a href="guestt-book-del.jsp?ec_id=<%=con.getEcId()%>">删除</a>
+					<td style="font-size: 12px"><%=con.getEcId()%></td>
+					<td style="font-size: 12px"><%=con.getEcNickName()%></td>
+					<td style="font-size: 12px"><%=con.getEcContent()%></td>
+					<td style="font-size: 12px"><%=con.getEcCreateTime()%></td>
+					<td style="font-size: 12px"><%=con.getEcReply()%></td>
+					<td style="font-size: 12px"><%=con.getEcReplyTime()%></td>
+					<td style="font-size: 12px">
+						<a href="guestbook-selectid.jsp?ecId=<%=con.getEcId()%>">&nbsp;回复&nbsp;</a><a href="guestt-book-del.jsp?ecId=<%=con.getEcId()%>">删除</a>
 					</td>
 				</tr>
 				<%}%>
+				<script>
+					$(document).ready(function(){
+						$("a").bind("click",function(){
+							alert("确定执行此项操作？");
+						});
+					});
+				</script>
 				<div class="clear"></div>
 			</table>
 		</div>

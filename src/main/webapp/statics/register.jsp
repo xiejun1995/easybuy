@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
@@ -12,7 +13,18 @@
 <body>
 <div id="header" class="wrap">
     <div id="logo"><img src="images/logo.gif" /></div>
-    <div class="help"><a href="shopping.jsp" class="shopping">购物车X件</a><a href="login.jsp">登录</a><a href="register.jsp">注册</a><a href="guestbook.jsp">留言</a><a href="manage/index.jsp">后台管理</a></div>
+    <div class="help">
+        <c:if test="${sessionScope.userName==null}">
+            <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
+        </c:if>
+        <c:if test="${sessionScope.userName!=null}">
+            <span>欢迎您:${userName}</span>
+            <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
+            <a href="${pageContext.request.contextPath}/servlet/userseek?id=${userName}">我想升级为卖家</a>
+        </c:if>
+        <a href="shopping.jsp" class="shopping">购物车X件</a>
+        <a href="guestbook.jsp">留言</a>
+    </div>
     <div class="navbar">
         <ul class="clearfix">
             <li><a href="index.jsp?name=首页">首页</a></li>

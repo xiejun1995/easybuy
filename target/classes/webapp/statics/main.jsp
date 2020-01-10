@@ -76,20 +76,20 @@
                 <%
                     ServiceCommodityDao service2=new ServiceCommodityDaoImpl();
                     String index=request.getParameter("pageIndex");
-                    String cid=request.getParameter("epc_id");
+                    String cid=request.getParameter("epcid");
                     if (index==null){
                         index="1";
                     }
                     if (cid==null){
                         cid="3";
                     }
-                    int epc_id=Integer.parseInt(cid);
+                    int epcid=Integer.parseInt(cid);
                     //当前页码
                     int pageIndex=Integer.parseInt(index);
                     //页面容量
                     int pageSize=12;
                     //总条数
-                    int totalCount=service2.totalCountById(epc_id);
+                    int totalCount=service2.totalCountById(epcid);
 
                     PageSupport pageSupport=new PageSupport();
                     pageSupport.setPageNo(pageIndex);
@@ -98,7 +98,7 @@
                     //获取总页数
                     int totalPage=pageSupport.getTotalPageCount();
 
-                    List<EasyBuyProduct> list2= service2.commodityListById(epc_id,pageIndex,pageSize);;
+                    List<EasyBuyProduct> list2= service2.commodityListById(epcid,pageIndex,pageSize);;
 
                     for (EasyBuyProduct buy :list2) {
                 %>

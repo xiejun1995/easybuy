@@ -1,4 +1,5 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDao" %>
 <%@ page import="com.easybuy.util.PageSuppore" %>
 <%@ page import="com.easybuy.service.massage.ServiceMassageDaoImpl" %>
@@ -18,14 +19,20 @@
 <div id="header" class="wrap">
     <div id="logo"><img src="images/logo.gif" /></div>
     <div class="help">
+        <c:if test="${sessionScope.userName==null}">
+            <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
+        </c:if>
+        <c:if test="${sessionScope.userName!=null}">
+            <span>欢迎您:${userName}</span>
+            <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
+        </c:if>
         <a href="shopping.jsp"class="shopping">购物车X件</a>
-        <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
         <a href="guestbook.jsp">留言</a>
-        <a href="manage/index.jsp">后台管理</a></div>
+    </div>
     <div class="navbar">
         <ul class="clearfix">
             <li class="current">
-                <a href="../index.jsp?name=首页">首页</a></li>
+                <a href="index.jsp?name=首页">首页</a></li>
             <li><a href="product-list.jsp?name=图书">图书</a></li>
             <li><a href="product-list.jsp?name=百货">百货</a></li>
             <li><a href="product-list.jsp?name=品牌">品牌</a></li>
@@ -57,7 +64,7 @@
     </div>
 </div>
 <div id="position" class="wrap">
-    您现在的位置：<a href="../index.jsp">易买网</a> &gt; 在线留言
+    您现在的位置：<a href="index.jsp">易买网</a> &gt; 在线留言
 </div>
 <div id="main" class="wrap">
     <div class="lefter">
@@ -150,10 +157,10 @@
                         </tr>
                         <tr>
                             <td class="field">昵称：</td>
-                            <td><input class="text" type="text" name="guestName"  value="当前用户名"/></td>
+                            <td><input class="text" type="text" name="guestName"  value="${userName}"/></td>
                         </tr>
                         <tr>
-                            <td class="field">留言内容：</td>
+                            <td class="field">请输入要留言内容：</td>
                             <td><textarea name="guestContent"></textarea><span></span></td>
                         </tr>
                         <tr>
@@ -161,17 +168,27 @@
 
                             <td><input class="text" type="date" name="guestTime"  value="留言时间"/></td>
                         </tr>
-                        <tr>
-                            <td class="field">回复内容：</td>
-                            <td><input class="text" type="text" name="guestReply"  value="回复内容"/></td>
-                        </tr>
-                        <tr>
-                            <td class="field">回复时间：</td>
-                            <td><input class="text" type="date" name="replyTime"  value="回复时间"/></td>
-                        </tr>
-                        <tr>
+                        <script>
+                            $(document).ready(function(){
+                                $("input").focus(function(){
+                                    $(this).css("background-color","#cccccc");
+                                });
+                                $("input").blur(function(){
+                                    $(this).css("background-color","#ffffff");
+                                });
+                            });
+                        </script>
+<%--                        <tr>--%>
+<%--                            <td class="field">回复内容：</td>--%>
+<%--                            <td><input class="text" type="text" name="guestReply"  value="回复内容"/></td>--%>
+<%--                        </tr>--%>
+<%--                        <tr>--%>
+<%--                            <td class="field">回复时间：</td>--%>
+<%--                            <td><input class="text" type="date" name="replyTime"  value="回复时间"/></td>--%>
+<%--                        </tr>--%>
+<%--                        <tr>--%>
                             <td></td>
-                            <td><label class="ui-blue"><input type="submit" name="submit" value="提交留言" /></label></td>
+                            <td><label class="ui-blue"><input type="submit" name="submit" value="提交您的留言" /></label></td>
                         </tr>
                     </table>
 
