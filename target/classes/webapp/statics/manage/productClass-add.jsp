@@ -72,15 +72,6 @@
 								<%--<option value="<%=i+%>">衣服</option>--%>
 								<%}%>
 							</select>
-
-							<select name="parentId2">
-								<option value="0" selected="selected">请选择根栏目</option>
-								<option value="yif">衣服</option>
-							</select>
-							<select name="parentId3">
-								<option value="0" selected="selected">请选择根栏目</option>
-								<option value="yif2">衣服2</option>
-							</select>
 						</td>
 					</tr>
 					<tr>

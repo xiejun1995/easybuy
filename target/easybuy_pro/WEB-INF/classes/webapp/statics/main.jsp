@@ -13,6 +13,16 @@
 <html>
 <head>
     <title>main</title>
+    <script type="text/javascript">
+        $(function () {
+            $("ul li dl dt img").mousemove(function () {
+                $(this).css("border","1px red solid");
+            });
+            $("ul li dl dt img").mouseout(function () {
+                $(this).css("border","1px #ccc solid");
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="lefter">

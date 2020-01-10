@@ -5,7 +5,7 @@
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
-	<script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="<%=request.getContextPath()%>/statics/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 <div id="header" class="wrap">
@@ -51,7 +51,7 @@
 	<div class="main">
 		<h2>添加商品</h2>
 		<div class="manage">
-			<form id="productAdd" action="product-do-add.jsp" enctype="multipart/form-data" method="post">
+			<form id="Add" action="product-do-add.jsp" enctype="multipart/form-data" method="post">
 				<table class="form">
 					<tr>
 						<td class="field">商品名称(*)：</td>

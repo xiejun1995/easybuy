@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page import="java.util.List" %>
 <%@ page import="com.easybuy.service.commodity.ClassifyService" %>
@@ -6,8 +7,8 @@
 <%@ page import="com.easybuy.pojo.EasyBuyProduct" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDao" %>
 <%@ page import="com.easybuy.service.commodity.ServiceCommodityDaoImpl" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="com.easybuy.pojo.Classify" %><%--
+<%@ page import="com.easybuy.pojo.Classify" %>
+<%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.
   User: 29246
   Date: 2019/12/27
@@ -27,7 +28,7 @@
                 $(this).css("border","1px red solid");
             });
             $(".product-list ul.product li dl dt img").mouseout(function () {
-                $(this).css("border","1px solid #ccc");
+                $(this).css("border","1px #ccc solid");
             });
         });
     </script>
@@ -36,14 +37,20 @@
 <div id="header" class="wrap">
     <div id="logo"><img src="images/logo.gif" /></div>
     <div class="help">
+        <c:if test="${sessionScope.userName==null}">
+            <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
+        </c:if>
+        <c:if test="${sessionScope.userName!=null}">
+            <span>欢迎您:${userName}</span>
+            <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
+        </c:if>
         <a href="shopping.jsp" class="shopping">购物车X件</a>
-        <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
-        <a href="manage/guestbook.jsp">留言</a>
-        <a href="manage/index.jsp">后台管理</a></div>
+        <a href="guestbook.jsp">留言</a>
+    </div>
     <div class="navbar">
         <ul class="clearfix">
             <li class="current">
-            <a href="manage/index.jsp?name=首页">首页</a></li>
+            <a href="index.jsp?name=首页">首页</a></li>
             <li><a href="product-list.jsp?name=图书">图书</a></li>
             <li><a href="product-list.jsp?name=百货">百货</a></li>
             <li><a href="product-list.jsp?name=品牌">品牌</a></li>
@@ -68,7 +75,6 @@
             <li><a href="product-list.jsp?name=运动鞋">运动鞋</a></li>
             <li><a href="product-list.jsp?name=美容护肤">美容护肤</a></li>
             <li><a href="product-list.jsp?name=家纺用品">家纺用品</a></li>
-
             <li><a href="product-list.jsp?name=婴幼奶粉">婴幼奶粉</a></li>
             <li><a href="product-list.jsp?name=饰品">饰品</a></li>
             <li class="last"><a href="#">Investor Relations</a></li>
@@ -82,7 +88,7 @@
             name="图书";
         }
     %>
-    您现在的位置：<a href="manage/index.jsp   ">易买网</a> &gt; <a href="product-list.jsp">商品</a> &gt; <%=name%>
+    您现在的位置：<a href="index.jsp   ">易买网</a> &gt; <a href="product-list.jsp">商品</a> &gt; <%=name%>
 </div>
 <div id="main" class="wrap">
     <div class="lefter">
@@ -189,8 +195,8 @@
                 %>
                 <li>
                     <dl>
-                        <dt class="sw"><a href="manage/product-careful.jsp?epId=<%=buy.getEpId()%>" target="_self"><img class="color"  src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"/></a></dt>
-                        <dd class="title" style="text-align: center;"><a href="manage/product-careful.jsp?epId=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
+                        <dt class="sw"><a href="product-careful.jsp?epId=<%=buy.getEpId()%>" target="_self"><img class="color"  src="<%=request.getContextPath()%>/statics/images/upload/<%=buy.getEpFileName()%>"/></a></dt>
+                        <dd class="title" style="text-align: center;"><a href="product-careful.jsp?epId=<%=buy.getEpId()%>" target="_self"><%=buy.getEpDescription()%></a></dd>
                         <dd class="price" style="text-align: center;">￥<%=buy.getEpPrice()%></dd>
                     </dl>
                 </li>

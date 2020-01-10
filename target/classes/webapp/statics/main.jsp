@@ -19,7 +19,7 @@
                 $(this).css("border","1px red solid");
             });
             $("ul li dl dt img").mouseout(function () {
-                $(this).css("border","1px solid #ccc");
+                $(this).css("border","1px #ccc solid");
             });
         });
     </script>
