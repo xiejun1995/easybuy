@@ -1,12 +1,13 @@
 package cn.kgc.easybuy.controller;
 
 import cn.kgc.easybuy.pojo.EasyBuyProduct;
-import cn.kgc.easybuy.quartz.EmptyShoppingCart;
+import cn.kgc.easybuy.quartz.ShoppingCartTiming;
 import cn.kgc.easybuy.service.ShoppingService;
 import cn.kgc.easybuy.util.Constants;
 import com.alibaba.fastjson.JSON;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
+import org.quartz.SchedulerException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,6 +32,8 @@ public class ShoppingController {
     private Logger logger=Logger.getLogger(ShoppingController.class);
     @Resource
     private ShoppingService shoppingService;  //购物业务类
+    @Resource
+    private ShoppingCartTiming shoppingCartTiming; //购物车定时器类
 
 
     /**
@@ -126,7 +129,7 @@ public class ShoppingController {
     @GetMapping("/addShoppingCart")
     @ResponseBody
     public String addShoppingCart(@RequestParam("epId") String epId,
-                                 HttpServletRequest request){
+                                 HttpServletRequest request) throws SchedulerException {
         //定义一个map集合用于存储多种类型的集合
         Map<String,Object> resultMap=new HashMap<>();
         if(StringUtils.isNoneEmpty(epId)){
@@ -146,10 +149,10 @@ public class ShoppingController {
             //提示用户加入成功
             resultMap.put("success",Constants.SHOPPING_SUCCESS);
             //当加入成功后将购物车定时时间重新定义为20分钟
-            EmptyShoppingCart.minuteMap.put(id,19);
-            EmptyShoppingCart.secondMap.put(id,59);
+            ShoppingCartTiming.minuteMap.put(id,19);
+            ShoppingCartTiming.secondMap.put(id,59);
             //执行20分钟的倒计时
-            new EmptyShoppingCart().emptyShoppingCart();
+            shoppingCartTiming.shoppingCartTimingStart();
             return JSON.toJSONString(resultMap);
         }else{
             resultMap.put("messeage", Constants.NO_EP_ID);
@@ -164,7 +167,7 @@ public class ShoppingController {
     @GetMapping("/manage/addShoppingCart")
     @ResponseBody
     public String addManageShoppingCart(@RequestParam("epId") String epId,
-                                  HttpServletRequest request){
+                                  HttpServletRequest request) throws SchedulerException {
         //定义一个map集合用于存储多种类型的集合
         Map<String,Object> resultMap=new HashMap<>();
         if(StringUtils.isNoneEmpty(epId)){
@@ -184,10 +187,10 @@ public class ShoppingController {
             //提示用户加入成功
             resultMap.put("success",Constants.SHOPPING_SUCCESS);
             //当加入成功后将购物车定时时间重新定义为20分钟
-            EmptyShoppingCart.minuteMap.put(id,19);
-            EmptyShoppingCart.secondMap.put(id,59);
+            ShoppingCartTiming.minuteMap.put(id,19);
+            ShoppingCartTiming.secondMap.put(id,59);
             //执行20分钟的倒计时
-            new EmptyShoppingCart().emptyShoppingCart();
+            shoppingCartTiming.shoppingCartTimingStart();
             return JSON.toJSONString(resultMap);
         }else{
             resultMap.put("messeage", Constants.NO_EP_ID);
@@ -200,8 +203,8 @@ public class ShoppingController {
         //将购物车集合数据存储在session中
         session.setAttribute("proMap",proMap);
         session.setAttribute("countMap",countMap);
-        session.setAttribute("minuteMap", EmptyShoppingCart.minuteMap);
-        session.setAttribute("secondMap", EmptyShoppingCart.secondMap);
+        session.setAttribute("minuteMap", ShoppingCartTiming.minuteMap);
+        session.setAttribute("secondMap", ShoppingCartTiming.secondMap);
         return "../shopping";
     }
     @GetMapping("/manage/shoppingCart")
@@ -209,8 +212,21 @@ public class ShoppingController {
         //将购物车集合数据存储在session中
         session.setAttribute("proMap",proMap);
         session.setAttribute("countMap",countMap);
-        session.setAttribute("minuteMap", EmptyShoppingCart.minuteMap);
-        session.setAttribute("secondMap", EmptyShoppingCart.secondMap);
+        session.setAttribute("minuteMap", ShoppingCartTiming.minuteMap);
+        session.setAttribute("secondMap", ShoppingCartTiming.secondMap);
         return "../shopping";
     }
+    /**
+     * 用于处理将指定商品加入临时库存中的异步请求
+     * @param epId
+     */
+    @GetMapping("/addShoppingStock")
+    public void addShoppingStock(@RequestParam("epId") String epId) {
+        if (StringUtils.isNoneEmpty(epId)) {
+            Integer id = Integer.valueOf(epId);
+            //将对应的商品临时库存加1
+            int result = shoppingService.addTempStock(id);
+        }
+    }
+
 }

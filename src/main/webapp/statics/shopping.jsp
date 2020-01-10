@@ -64,27 +64,14 @@
     <div id="shopping">
         <form action="${pageContext.request.contextPath}/statics/address.jsp?amount=${amount}">
             <table id="tab">
-                <tr>
-                    <th>商品名称</th>
-                    <th>商品价格</th>
-                    <th>购买数量</th>
-                    <th>操作</th>
-                </tr>
-                <form>
-                    <input type="checkbox" value="">
-                </form>
             </table>
-            <div id="total"><span>总计：￥0</span></div>
+            <div id="total">总计：￥<span>0</span></div>
             <div id="button">
-                <button id="totalAmount" type="submit">结算
-                    &nbsp;&nbsp;<span class="min">15</span>&nbsp;:&nbsp;
-                    <span class="sec">20</span></button>
+                <button style="color: red;width: 120px;height: 30px;" onclick="delPro()" type="button">删除选中商品</button >
+                <button id="totalAmount" type="submit">结算</button>
             </div>
         </form>
     </div>
-    <script type="text/javascript">
-        document.write("Cookie中记录的购物车商品ID："+ getCookie("product") + "，可以在动态页面中进行读取");
-    </script>
 </div>
 <div id="footer">
     Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
@@ -97,25 +84,92 @@
     //判断购物车中的东西是否过期
     if(${sessionScope.proMap!=null}){
         //如果有商品则在表格中追加
-        tables+="<c:forEach items='${sessionScope.proMap}' var='product'>"+
-            "<tr id='product_id_${product.key}' >"+
-            "<td class='thumb'><img src='${pageContext.request.contextPath}/statics/images/upload/${product.value.epFileName}' /><a href='${pageContext.request.contextPath}/statics/product-careful.jsp?epId =${product.key}'>${product.value.epName}</a></td>"+
-            "<td class='price' id='price_id_${product.key}' >"+
-            "<span>${product.value.epPrice}</span>"+
-            "<input type='hidden' class='price' value='${product.value.epPrice}' />"+
-            "<input type='hidden' id='proId_${product.key}' value='${product.key}'/>"+
-            "</td>"+
-            "<td class='number'>"+
-            "<span name='del'>-</span>"+
-            "<input id='number_id_${product.key}' type='text' name='number' value=${sessionScope.countMap.get(product.key)} />" +
-            "<span name='add'>+</span>"+
-            "</td>"+
-            "<td class='delete'><a href='javascript:void(0)'>删除</a></td>" +
-            "</tr></c:forEach>";
+        tables+="<tr><th><input id='checkbox' type='checkbox' onclick='AllIsChecked()' style='width: 15px;height: 15px'><label for='checkbox' style='color: red'>全选</label></th>"+
+                "<th>商品名称</th><th>商品价格</th><th>购买数量</th><th>操作</th><th>商品保留时间</th></tr>"+
+                "<c:forEach items='${sessionScope.proMap}' var='product'>"+
+                "<tr id='product_id_${product.key}' >"+
+                "<td><input class ='checkbox' type='checkbox' onclick='IsChecked()' style='width: 15px;height: 15px'></td>"+
+                "<td class='thumb'><img src='${pageContext.request.contextPath}/statics/images/upload/${product.value.epFileName}' /><a href='${pageContext.request.contextPath}/statics/product-careful.jsp?epId =${product.key}'>${product.value.epName}</a></td>"+
+                "<td class='price' id='price_id_${product.key}' ><span>${product.value.epPrice}</span>"+
+                "<input type='hidden' class='price' value='${product.value.epPrice}' />"+
+                "<input type='hidden' id='proId_${product.key}' value='${product.key}'/></td>"+
+                "<td class='number'>"+
+                "<span name='del'onclick='delCount()' >-</span>"+
+                "<input id='number_id_${product.key}' type='text' name='number' value='${sessionScope.countMap.get(product.key)}' />"+
+                "<span name='add'onclick='addCount()' >+</span></td>"+
+                "<td class='delete'><a href='javascript:void(0)'>删除</a></td><td class='MinAndSec'><span class='min' id='min${product.key}' >"+
+                ${sessionScope.minuteMap.get(product.key)}+"</span>&nbsp;:&nbsp;"+
+                "<span class='sec' id='sec${product.key}' >${sessionScope.secondMap.get(product.key)}</span></td></tr></c:forEach>";
         $table.html(tables);
-    }else{
+    }else {
+        $table.html("");
         $("#button").hide();
+        if(confirm("您的购物车为空，是否前去浏览商品？")){
+            window.location.href="index.jsp";
+        }
+    };
+    //选取分钟和秒元素
+    var $mins=$(".min");
+    var $secs=$(".sec");
+    //设置一个定时函数
+    var timing=setInterval(shoppingCartTiming(),1000);
+    function shoppingCartTiming() {
+       //遍历该元素
+        $mins.each(function (i,ele){
+            //如果有商品保留时间到了则放回临时库存中同时将对应的商品从购物车中删除
+            if(ele.html()==0&&$secs[i].html()==0){
+                var epId=ele.parent().parent().attr("id").split("_")[2];
+                $.ajax({
+                    url:"addShoppingStock",
+                    type:"GET",
+                    data:{"epId":epId},
+                    error:function () {
+                        alert("加入库存失败，请重试!");
+                    }
+                });
+            }else if($secs[i].html()>0){
+                $secs[i].html($secs[i].html-1);
+            }else if($secs[i].html()==0&&ele.html>0){
+                ele.html(ele.html()-1);
+            }
+        });
+    };
+    //全选点击事件
+    function AllIsChecked(){
+        var $chechboxs=$(".checkbox");
+        $chechboxs.each(function () {
+            ele.checked=true;
+        });
+        totalPrice();
     }
+    //计算总价格
+    function totalPrice() {
+        var totalPrices=0;
+        var $chechboxs=$(".checkbox");
+        //遍历所有复选框
+        $chechboxs.each(function (i) {
+            var prices=$("input [class=price][type=hidden]");
+            var count=$("input [name=number]")[i].val();
+            if(!isNaN(count)&& !isNaN(prices)){
+                totalPrices=totalPrices+count*prices;
+            }
+        });
+        //将总价格赋值给总计
+        $("#total span").html(totalPrices);
+
+    };
+    //checkbox选中和不选中改变总价格
+    function IsChecked() {
+        totalPrice();
+    };
+    //当数量增加时重新计算总金额
+    function addCount() {
+        totalPrice();
+    };
+    //当数量减少时重新计算总金额
+    function delCount() {
+        totalPrice();
+    };
 </script>
 </body>
 </html>

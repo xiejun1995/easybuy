@@ -14,5 +14,6 @@ public class Constants {
     public static final String NO_EP_ID="商品的编号未知！";
     public static final String NO_PRODUCT="未查询到商品！";
     public static final String SHOPPING_SUCCESS="加入购物车成功！";
+    public static final String ADD_TEMP_STOCK_SUCCESS="成功！";
 
 }
