@@ -139,7 +139,7 @@
                 </label>
             </li>
         </ul>
-        <input id="add-address" type="button" value="使用新地址" onclick="doAddresss()"/>
+        <input id="add-address" type="button" value="使用新地址"/>
     </div>
     <div class="product-div1" >
         <p style="font-size: 14px;"><strong>订单信息</strong></p>
