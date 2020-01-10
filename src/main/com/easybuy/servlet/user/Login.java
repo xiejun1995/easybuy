@@ -37,7 +37,25 @@ public class Login extends HttpServlet {
         if (easyBuyuser!=null) {
             session.setAttribute("userName",userName);
             request.setAttribute("easyBuyuser",easyBuyuser);
-            request.getRequestDispatcher("../statics/loginload.jsp").forward(request,response);
+            switch (easyBuyuser.getStatuss()) {
+                case 1 :
+                    request.getRequestDispatcher("../statics/loginload.jsp").forward(request,response);
+                    break;
+                case 2:
+                    request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
+                    break;
+                case 3:
+                    request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
+                    break;
+                default:
+                    break;
+
+            }
+//            if (easyBuyuser.getStatuss()>1) {
+//                request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
+//            }else {
+//                request.getRequestDispatcher("loginload.jsp").forward(request,response);
+//            }
         }else {
             response.sendRedirect("../statics/loginfa.jsp");
             //request.getRequestDispatcher("/statics/loginfa.jsp").forward(request,response);

@@ -18,7 +18,7 @@ import java.io.IOException;
 public class SeekServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServiceUserDao serviceUserDao = new ServiceUserDaoImpl();
-        Integer id = Integer.parseInt(request.getParameter("id"));
+        String id = request.getParameter("id");
         serviceUserDao.getUser(id);
 
         EasyBuyUser easyBuyuser = new EasyBuyUser();

@@ -29,5 +29,5 @@
     ServiceMassageDao service=new ServiceMassageDaoImpl();
     service.updateCommodity(easyBuycomment);
     //将结果返回到留言界面
-    response.sendRedirect("guestbook.jsp");
+    request.getRequestDispatcher("guestbook.jsp").forward(request,response);
 %>

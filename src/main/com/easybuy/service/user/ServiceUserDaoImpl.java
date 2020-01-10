@@ -20,7 +20,7 @@ public class ServiceUserDaoImpl implements ServiceUserDao {
     }
 
     @Override
-    public EasyBuyUser getUser(int id) {
+    public EasyBuyUser getUser(String id) {
         return userDao.getUser(id);
     }
 
@@ -33,6 +33,11 @@ public class ServiceUserDaoImpl implements ServiceUserDao {
     public boolean updateUser(EasyBuyUser easyBuyUser) {
         return  userDao.updateUser(easyBuyUser);
 
+    }
+
+    @Override
+    public boolean userUp(EasyBuyUser easyBuyUser) {
+        return userDao.userUp(easyBuyUser);
     }
 
     @Override

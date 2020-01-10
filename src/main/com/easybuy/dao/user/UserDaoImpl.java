@@ -2,7 +2,6 @@ package com.easybuy.dao.user;
 
 import com.easybuy.pojo.EasyBuyUser;
 import com.easybuy.util.BaseDao;
-import com.easybuy.dao.user.UserDao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -35,9 +34,9 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     //通过ID查找用户
-    public EasyBuyUser getUser(int id) {
+    public EasyBuyUser getUser(String id) {
         EasyBuyUser easyBuyUser = new EasyBuyUser();
-        String sql = "SELECT * FROM easyBuyUser WHERE eu_user_id=?";
+        String sql = "SELECT * FROM easyBuyUser WHERE userId=?";
         Object[] objects = {id};
         ResultSet resultSet = BaseDao.getBaseDao().executeSQL(sql,objects);
         try {
@@ -123,6 +122,19 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    //用户升级卖家
+    public boolean userUp(EasyBuyUser easyBuyUser) {
+        String sql = "UPDATE easyBuyUser SET statuss=? WHERE userId=?";
+        Object[] objects = {easyBuyUser.getStatuss(),easyBuyUser.getUserId()};
+        int i = BaseDao.getBaseDao().executeUpdate(sql,objects);
+        boolean flag = false;
+        if (i>0) {
+            flag = true;
+        }
+        return flag;
+    }
+
+    @Override
     //删除用户
     public boolean deleteUser(EasyBuyUser easyBuyUser) {
         String sql = "DELETE FROM easyBuyUser WHERE userId=?";
@@ -158,9 +170,11 @@ public class UserDaoImpl implements UserDao {
             while (resultSet.next()) {
                 String userId = resultSet.getString("userId");
                 String passWords = resultSet.getString("passWords");
+                int statuss = resultSet.getInt("statuss");
 
                 easyBuyUser.setUserId(userId);
                 easyBuyUser.setPassWords(passWords);
+                easyBuyUser.setStatuss(statuss);
                 return easyBuyUser;
             }
         }catch (SQLException e) {

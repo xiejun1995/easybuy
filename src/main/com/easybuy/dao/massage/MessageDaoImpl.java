@@ -14,8 +14,8 @@ import java.util.List;
 public class MessageDaoImpl implements MessageDao {
     //添加全部留言操作处理
     public int addCommodity(EasyBuyComment comment) {
-        String sql="INSERT INTO `easybuycomment`(ecId,ecContent,ecCreateTime,ecReply,ecReplyTime,ecNickName) VALUES(?,?,?,?,?,?)";
-        Object[] objects={comment.getEcId(),comment.getEcContent(),comment.getEcCreateTime(),comment.getEcReply(),comment.getEcReplyTime(),comment.getEcNickName()};
+        String sql="INSERT INTO `easybuycomment`(ecId,ecContent,ecCreateTime,ecNickName) VALUES(?,?,?,?)";
+        Object[] objects={comment.getEcId(),comment.getEcContent(),comment.getEcCreateTime(),comment.getEcNickName()};
         int result= BaseDao.getBaseDao().executeUpdate(sql,objects);
         if (result>0){
             System.out.println("添加成功!");

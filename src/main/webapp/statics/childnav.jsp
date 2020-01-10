@@ -11,7 +11,8 @@
 
     <div class="wrap">
         <ul class="clearfix">
-            <li class="first"><a href="#">音乐</a></li>
+            <li class="first">
+                <a href="product-list.jsp">音乐</a></li>
             <li><a href="product-list.jsp">影视</a></li>
             <li><a href="product-list.jsp">少儿</a></li>
             <li><a href="product-list.jsp">动漫</a></li>
@@ -29,6 +30,5 @@
             <li class="last"><a href="product-list.jsp">Investor Relations</a></li>
         </ul>
     </div>
-
 </body>
 </html>

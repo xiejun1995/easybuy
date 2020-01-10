@@ -32,7 +32,7 @@
     <div class="navbar">
         <ul class="clearfix">
             <li class="current">
-                <a href="../index.jsp?name=首页">首页</a></li>
+                <a href="index.jsp?name=首页">首页</a></li>
             <li><a href="product-list.jsp?name=图书">图书</a></li>
             <li><a href="product-list.jsp?name=百货">百货</a></li>
             <li><a href="product-list.jsp?name=品牌">品牌</a></li>
@@ -64,7 +64,7 @@
     </div>
 </div>
 <div id="position" class="wrap">
-    您现在的位置：<a href="../index.jsp">易买网</a> &gt; 在线留言
+    您现在的位置：<a href="index.jsp">易买网</a> &gt; 在线留言
 </div>
 <div id="main" class="wrap">
     <div class="lefter">
@@ -157,10 +157,10 @@
                         </tr>
                         <tr>
                             <td class="field">昵称：</td>
-                            <td><input class="text" type="text" name="guestName"  value="当前用户名"/></td>
+                            <td><input class="text" type="text" name="guestName"  value="${userName}"/></td>
                         </tr>
                         <tr>
-                            <td class="field">留言内容：</td>
+                            <td class="field">请输入要留言内容：</td>
                             <td><textarea name="guestContent"></textarea><span></span></td>
                         </tr>
                         <tr>
@@ -168,17 +168,27 @@
 
                             <td><input class="text" type="date" name="guestTime"  value="留言时间"/></td>
                         </tr>
-                        <tr>
-                            <td class="field">回复内容：</td>
-                            <td><input class="text" type="text" name="guestReply"  value="回复内容"/></td>
-                        </tr>
-                        <tr>
-                            <td class="field">回复时间：</td>
-                            <td><input class="text" type="date" name="replyTime"  value="回复时间"/></td>
-                        </tr>
-                        <tr>
+                        <script>
+                            $(document).ready(function(){
+                                $("input").focus(function(){
+                                    $(this).css("background-color","#cccccc");
+                                });
+                                $("input").blur(function(){
+                                    $(this).css("background-color","#ffffff");
+                                });
+                            });
+                        </script>
+<%--                        <tr>--%>
+<%--                            <td class="field">回复内容：</td>--%>
+<%--                            <td><input class="text" type="text" name="guestReply"  value="回复内容"/></td>--%>
+<%--                        </tr>--%>
+<%--                        <tr>--%>
+<%--                            <td class="field">回复时间：</td>--%>
+<%--                            <td><input class="text" type="date" name="replyTime"  value="回复时间"/></td>--%>
+<%--                        </tr>--%>
+<%--                        <tr>--%>
                             <td></td>
-                            <td><label class="ui-blue"><input type="submit" name="submit" value="提交留言" /></label></td>
+                            <td><label class="ui-blue"><input type="submit" name="submit" value="提交您的留言" /></label></td>
                         </tr>
                     </table>
 

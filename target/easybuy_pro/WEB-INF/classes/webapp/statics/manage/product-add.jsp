@@ -5,7 +5,17 @@
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
-	<script type="text/javascript" src="<%=request.getContextPath()%>/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="<%=request.getContextPath()%>/statics/ckeditor/ckeditor.js"></script>
+	<%--<script type="text/javascript">
+		$(function () {
+			$("#two").click(function () {
+				alert(123);
+				$("#on").css("dispaly","block");
+				$("#on").css("visibility;","visible;");
+			});
+
+		});
+	</script>--%>
 </head>
 <body>
 <div id="header" class="wrap">
@@ -50,8 +60,9 @@
 	</div>
 	<div class="main">
 		<h2>添加商品</h2>
+
 		<div class="manage">
-			<form id="productAdd" action="product-do-add.jsp" enctype="multipart/form-data" method="post">
+			<form id="add" action="product-do-add.jsp" enctype="multipart/form-data" method="post">
 				<table class="form">
 					<tr>
 						<td class="field">商品名称(*)：</td>
@@ -59,7 +70,8 @@
 					</tr>
                     <tr>
 						<td class="field">描述：</td>
-						<td><textarea  class="ckeditor" name="productDetail"  cols="50" rows="10"></textarea></td>
+						<td><textarea style="display: block"   class="ckeditor" name="productDetail"  cols="50" rows="10"></textarea></td>
+						<%--<td><input type="button" value="显示" id="two"/></td>--%>
 						<%--<td><input type="text" class="text" name="productDetail" /></td>--%>
 					</tr>
 					<tr>
@@ -106,6 +118,7 @@
 					</tr>
 				</table>
 			</form>
+
 		</div>
 	</div>
 	<div class="clear"></div>
