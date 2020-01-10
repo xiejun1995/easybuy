@@ -33,4 +33,7 @@ public interface ServiceUserDao {
 
     //登录验证用户是否存在
     EasyBuyUser login(EasyBuyUser easyBuyUser);
+
+    //注册时验证账号是否存在
+    EasyBuyUser register(EasyBuyUser easyBuyUser);
 }

@@ -183,5 +183,34 @@ public class UserDaoImpl implements UserDao {
         return null;
     }
 
+    @Override
+    //注册时验证账号是否存在
+    public EasyBuyUser register(EasyBuyUser easyBuyUser) {
+        String sql = "SELECT * FROM easyBuyUser WHERE userId=?";
+        Object[] objects = {easyBuyUser.getUserId()};
+        ResultSet resultSet = BaseDao.getBaseDao().executeSQL(sql,objects);
+        StringBuffer buffer = new StringBuffer();
+
+        try {
+            while(resultSet.next()) {
+                buffer.append(resultSet.getString("userId"));
+                buffer.append(",");
+            }
+
+            String names = buffer.toString();
+            String[] name2 = names.split(",");
+            for (int i = 0;i<name2.length;i++) {
+//                if (name2[i].equals(name)) {
+//                    writer.print(true);
+//                    break;
+//                }
+            }
+
+        }catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 
 }

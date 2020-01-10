@@ -81,124 +81,124 @@ $(function(){
     //失去焦点消除背景，且验证信息方法
     function checkItem(dom){
         $(dom).parent().parent().removeClass("current");
-        var eBox=$(dom).parent().find("span");
+        //var eBox=$(dom).parent().find("span");
         var name = $(dom).attr("name");
         var value = $(dom).val();
         var errorMessage="",isError=true;
         switch(name){
             case "userId":
                 if(value == "") {
-                    errorMessage = "用户名不能为空";
+                    name.setCustomValidity = "用户名不能为空";
                 }else if(!/[a-zA-Z0-9]+/.test(value)){
-                    errorMessage = "用户名只能是英文字母或者数字";
+                    name.setCustomValidity = "用户名只能是英文字母或者数字";
                 }else{
                     isError = false ;
-                }
+                 }
                 break;
             case "userName":
                 if(value == "") {
-                    errorMessage = "真实姓名不能为空";
+                    name.setCustomValidity = "真实姓名不能为空";
                 }else if(value.length>10){
-                    errorMessage = "真实姓名长度最长10个汉字";
+                    name.setCustomValidity = "真实姓名长度最长10个汉字";
                 }else{
                     isError = false ;
                 }
                 break;
             case "password":
                 if(value == "") {
-                    errorMessage = "密码不能为空";
+                    name.setCustomValidity = "密码不能为空";
                 }else{
                     isError = false ;
                 }
                 break;
             case "confirmPassword":
                 if(value == "") {
-                    errorMessage = "确认密码不能为空";
+                    name.setCustomValidity = "确认密码不能为空";
                 } else if(value != $("#password").val()) {
-                    errorMessage = "两次输入的密码不相同";
+                    name.setCustomValidity = "两次输入的密码不相同";
                 }else{
                     isError = false ;
                 }
                 break;
             case "address":
                 if(value == "") {
-                    errorMessage = "地址不能为空";
+                    name.setCustomValidity = "地址不能为空";
                 }else{
                     isError = false ;
                 }
                 break;
             case "birthday":
                 if((value != "") && !/\d{4}[-]\d{1,2}[-]\d{1,2}/.test(value)) {
-                    errorMessage = "出生日期格式只能是yyyy-mm-dd";
+                    name.setCustomValidity = "出生日期格式只能是yyyy-mm-dd";
                 }else{
                     isError = false ;
                 }
                 break;
             case "identityCode":
                 if((value != "") && !/((\d{17}\w{1})|(\d{15}))/.test(value)) {
-                    errorMessage = "身份证号码格式不正确";
+                    name.setCustomValidity = "身份证号码格式不正确";
                 }else{
                     isError = false ;
                 }
                 break;
             case "email":
                 if((value != "") && !/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})$/.test(value)) {
-                    errorMessage = "邮件地址格式不正确";
+                    name.setCustomValidity = "邮件地址格式不正确";
                 }else{
                     isError = false ;
                 }
                 break;
             case "mobile":
-                if((value == "") || !/\d{11}/.test(value)) {
-                    errorMessage = "手机号码格式不正确";
+                if((value == "") || !/^[1][3,4,5,7,8][0-9]{9}$/.test(value)) {
+                    name.setCustomValidity = "手机号码格式不正确";
                 }else{
                     isError = false ;
                 }
                 break;
             case "productName":
                 if(value == "") {
-                    errorMessage = "名称不能为空";
+                    name.setCustomValidity = "名称不能为空";
                 }else{
                     isError = false ;
                 }
                 break;
             case "productPrice":
                 if((value == "")||!(/^\d+(\.\d+)?$/.test(value))) {
-                    errorMessage = "不能为空且只能为正数";
+                    name.setCustomValidity = "不能为空且只能为正数";
                 }else{
-                    isError = false ;
+                     isError = false ;
                 }
                 break;
             case "productNumber":
                 if((value == "")||!(/^[0-9]*[1-9][0-9]*$/.test(value))) {
-                    errorMessage = "不能为空且只能为正整数";
+                    name.setCustomValidity = "不能为空且只能为正整数";
                 }else{
                     isError = false ;
                 }
                 break;
             case "photo":
                 if(value == "") {
-                    errorMessage = "不能为空";
+                    name.setCustomValidity = "不能为空";
                 }else{
-                    isError = false ;
+                     isError = false ;
                 }
                 break;
             case "content":
                 if(value == "") {
-                    errorMessage = "不能为空";
+                    name.setCustomValidity = "不能为空";
                 }else if(value.length>500){
-                    errorMessage = "字数不能大于500";
+                    name.setCustomValidity = "字数不能大于500";
                 }else{
-                    isError = false ;
+                     isError = false ;
                 }
                 break;
             case "title":
                 if(value == "") {
-                    errorMessage = "不能为空";
+                    name.setCustomValidity = "不能为空";
                 }else if(value.length>20){
-                    errorMessage = "字数不能大于20";
+                    name.setCustomValidity = "字数不能大于20";
                 }else{
-                    isError = false ;
+                     isError = false ;
                 }
                 break;
             default:

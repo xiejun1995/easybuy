@@ -54,4 +54,9 @@ public class ServiceUserDaoImpl implements ServiceUserDao {
     public EasyBuyUser login(EasyBuyUser easyBuyUser) {
         return userDao.login(easyBuyUser);
     }
+
+    @Override
+    public EasyBuyUser register(EasyBuyUser easyBuyUser) {
+        return userDao.register(easyBuyUser);
+    }
 }

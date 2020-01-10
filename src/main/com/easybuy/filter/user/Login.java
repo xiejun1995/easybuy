@@ -38,7 +38,6 @@ public class Login implements Filter {
 
         //如果是后台页面必须登录才能访问
         String path = request.getServletPath();
-        System.out.println(path);
         if (path.startsWith("/statics/manage")) {
             HttpSession session = request.getSession();
                 //判断是否登录

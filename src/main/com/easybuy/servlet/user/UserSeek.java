@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- *
+ *判断用户能否成为卖家
  * @author Allen
  * @date 2019/12/28 17:25
  */

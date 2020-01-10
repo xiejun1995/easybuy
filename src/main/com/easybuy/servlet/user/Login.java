@@ -32,9 +32,12 @@ public class Login extends HttpServlet {
         //调用方法查询该用户
         ServiceUserDao serviceUserDao = new ServiceUserDaoImpl();
         EasyBuyUser easyBuyuser = serviceUserDao.login(loginuser);
+        //int statuss = easyBuyuser.getStatuss();
+
 
         //判断
         if (easyBuyuser!=null) {
+            //session.setAttribute("statuss",statuss);
             session.setAttribute("userName",userName);
             request.setAttribute("easyBuyuser",easyBuyuser);
             switch (easyBuyuser.getStatuss()) {
@@ -42,20 +45,17 @@ public class Login extends HttpServlet {
                     request.getRequestDispatcher("../statics/loginload.jsp").forward(request,response);
                     break;
                 case 2:
-                    request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
+                    response.sendRedirect("../statics/manage/index.jsp");
+                    //request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
                     break;
                 case 3:
-                    request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
+                    response.sendRedirect("../statics/manage/index.jsp");
+                    //request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
                     break;
                 default:
                     break;
 
             }
-//            if (easyBuyuser.getStatuss()>1) {
-//                request.getRequestDispatcher("../statics/manage/index.jsp").forward(request,response);
-//            }else {
-//                request.getRequestDispatcher("loginload.jsp").forward(request,response);
-//            }
         }else {
             response.sendRedirect("../statics/loginfa.jsp");
             //request.getRequestDispatcher("/statics/loginfa.jsp").forward(request,response);
