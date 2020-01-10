@@ -8,9 +8,9 @@
 <head>
     <title>易买网 - 首页</title>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" rel="stylesheet" href="css/address.css" />
     <script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="scripts/function.js"></script>
+    <script type="text/javascript" src="js/address.js"></script>
 </head>
 <%
     //通过传递的参数获取商品编号和对应的价格
@@ -25,13 +25,13 @@
     request.setAttribute("amount",price);
 %>
 <%
-  /*  String id = request.getParameter("epId");
+    String id = request.getParameter("epId");
     int id1=0;
     if(id != null && !id.equals("")){
         id1 = Integer.parseInt(id);
-    }*/
+    }
     ServiceCommodityDao service = new ServiceCommodityDaoImpl();
-    EasyBuyProduct product = service.getProdusById(15);
+    EasyBuyProduct product = service.getProdusById(id1);
     request.setAttribute("product",product);
 %>
 <body>
@@ -51,11 +51,11 @@
     <div class="navbar">
         <ul class="clearfix">
             <li class="current">
-                <a href="index.jsp?name=首页">首页</a></li>
-            <li><a href="product-list.jsp?name=图书">图书</a></li>
-            <li><a href="product-list.jsp?name=百货">百货</a></li>
-            <li><a href="product-list.jsp?name=品牌">品牌</a></li>
-            <li><a href="product-list.jsp?name=促销">促销</a></li>
+                <a href="#">首页</a></li>
+            <li><a href="#">图书</a></li>
+            <li><a href="#">百货</a></li>
+            <li><a href="#">品牌</a></li>
+            <li><a href="#">促销</a></li>
         </ul>
     </div>
 </div>
@@ -83,7 +83,7 @@
     </div>
 </div>
 <div id="position0" class="wrap">
-    您现在的位置：<a href="index.jsp">易买网</a> &gt; 结账
+    您现在的位置：<a href="../index.jsp   ">易买网</a> &gt; 结账
 </div>
 <div id="main" class="wrap">
     <div class="lefter">
@@ -112,30 +112,66 @@
         </div>
     </div>
 </div>
-<%--<div id="news" class="right-main">
-    <div class="content">
-        <form action="${pageContext.request.contextPath}/statics/manage/alipay.jsp?totalAmounts=${amount}" method="post">
-            收货地址:<input name="addr" id="addr" type="button"  value="添加新地址" />
-            <span id="span"></span> <br />
-            <input name="address" type="radio" id="address0" checked="checked" />
-                <span>北京海淀区中关村大厦202</span><br />
-            <input name="address" id="address1" type="radio" />
-                <span>河北省邯郸市建设大街54号</span><br />
-            <div class="button">  <input type="submit" value="结账" /> </div>
-        </form>
-    </div>
-</div>--%>
 <div class="father-div" style="margin-left: 500px">
+    <p style="font-size: 14px;"><strong>选择收货地址：</strong></p>
     <div class="address-div1" style="padding-bottom: 30px">
-        <p style="font-size: 14px;"><strong>选择收货地址：</strong></p>
-        <ul>
+        <ul class="ulTag">
             <li style="font-size: 12px ">
-                <input class="radio" type="radio" name="sex" value="男" checked="checked" > 北京市海淀区中关村大厦202</input><br>
-                <input class="radio" type="radio" name="sex" value="男" checked="checked" > 河北省邯郸市建设大街54号</input>
+                <label>
+                    <input class="radio" type="radio" name="address" value="address" checked="checked" > 北京市海淀区中关村大厦202</input>
+                </label>
+                <br>
+                <label>
+                    <input class="radio" type="radio" name="address" value="address1" > 河北省邯郸市建设大街54号</input>
+                </label>
             </li>
+            <li class="liTag"> </li>
         </ul>
-        <input id="add-address" type="button" value="使用新地址"/>
+        <input class="address-btn" type="button" value="使用新地址"/>
+
+        <div class="do-address" style="display: none;">
+            <form id="regForm" method="post" action="address.jsp" >
+                <table>
+                    <span style="font-size: 12px">省：</span>
+                    <select id="province" onchange="changeSelect(this);">
+                        <option class="province" value="">-请选择省-</option>
+                    </select>
+                    <span style="font-size: 12px">市：</span>
+                    <select id="city" onchange="changeSelect(this);">
+                        <option class="city" value=""  >-请选择市-</option>
+                    </select>
+                    <span style="font-size: 12px">区：</span>
+                    <select id="district">
+                        <option class="district" value="">-请选区-</option>
+                    </select>
+                    <tr style="width: 75px;height: 50px">
+                        <td style="font-size: 12px">详细地址(*)：</td>
+                        <td>
+                            <input id="careful-address" type="text" placeholder="请输入详细地址信息，如门牌号等" maxlength="200" style="width: 300px;height: 25px" />
+                        </td>
+                    </tr>
+                    <tr style="height: 50px">
+                        <td style="font-size: 12px">邮编：</td>
+                        <td><input id="postcode" type="text" placeholder="请填写邮编" maxlength="6" style="width: 300px;height: 25px"/></td>
+                    </tr>
+                    <tr style="height: 50px">
+                        <td style="font-size: 12px">电话号码(*)：</td>
+                        <td><input id="telephone" type="text" placeholder="请填写正确的电话号码" maxlength="11" style="width: 300px;height: 25px"/></td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 12px">收货人姓名：</td>
+                        <td><input id="name" type="text" placeholder="请填写您的姓名" style="width: 300px;height: 25px"/></td>
+                    </tr>
+                    <tr style="height: 50px">
+                        <td>
+                            <input id="btn" type="button" value="保存" style="text-align: center"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
     </div>
+
     <div class="product-div1" >
         <p style="font-size: 14px;"><strong>订单信息</strong></p>
         <hr style="width: 700px;height: 2px;background-color: #FC7E31">
@@ -155,18 +191,20 @@
         </table>
         <hr style="width: 700px;height: 2px;background-color: #FC7E31">
     </div>
-    <div style="border:0;width: 100px;height: 35px ; font-size:20px; color:#FFFFFF; background:#FC7E31;">
-        提交订单
+    <div>
+       <p class="submit" style="border:0;width: 100px;height: 35px ; font-size:20px; color:#FFFFFF; background:#FC7E31;margin-top: 5px ;padding:10px 0px 0px 10px;float: right ;margin-right: 200px">提交订单</p>
     </div>
 </div>
-
+<div style="border: 0px;height: 50px "></div>
 <div class="clear"></div>
 <div id="position1" class="wrap"></div>
 <div class="wrap">
     <div id="shopping"></div>
 </div>
-<div id="footer">
-    Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
-</div>
 </body>
 </html>
+<script>
+    $(".submit").click(function () {
+        window.location.href="${pageContext.request.contextPath}/statics/manage/alipay.jsp?totalAmounts=${product.epPrice}";
+    });
+</script>
