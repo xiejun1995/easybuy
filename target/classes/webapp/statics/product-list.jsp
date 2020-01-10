@@ -24,11 +24,11 @@
     <script type="text/javascript" src="scripts/function.js"></script>
     <script type="text/javascript">
         $(function () {
-            $(".sw").mousemove(function () {
-                $(this).css("border","2px red solid");
+            $(".product-list ul.product li dl dt img").mousemove(function () {
+                $(this).css("border","1px red solid");
             });
-            $(".sw").mouseout(function () {
-                $(this).css("border","none");
+            $(".product-list ul.product li dl dt img").mouseout(function () {
+                $(this).css("border","1px #ccc solid");
             });
         });
     </script>

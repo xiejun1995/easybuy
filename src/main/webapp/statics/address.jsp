@@ -51,11 +51,11 @@
     <div class="navbar">
         <ul class="clearfix">
             <li class="current">
-                <a href="#">首页</a></li>
-            <li><a href="#">图书</a></li>
-            <li><a href="#">百货</a></li>
-            <li><a href="#">品牌</a></li>
-            <li><a href="#">促销</a></li>
+                <a href="index.jsp?name=首页">首页</a></li>
+            <li><a href="product-list.jsp?name=图书">图书</a></li>
+            <li><a href="product-list.jsp?name=百货">百货</a></li>
+            <li><a href="product-list.jsp?name=品牌">品牌</a></li>
+            <li><a href="product-list.jsp?name=促销">促销</a></li>
         </ul>
     </div>
 </div>
@@ -83,7 +83,7 @@
     </div>
 </div>
 <div id="position0" class="wrap">
-    您现在的位置：<a href="../index.jsp   ">易买网</a> &gt; 结账
+    您现在的位置：<a href="index.jsp">易买网</a> &gt; 结账
 </div>
 <div id="main" class="wrap">
     <div class="lefter">
@@ -165,7 +165,8 @@
 <div class="wrap">
     <div id="shopping"></div>
 </div>
-
+<div id="footer">
+    Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
+</div>
 </body>
-
 </html>
