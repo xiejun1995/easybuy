@@ -154,4 +154,12 @@
         <servlet-name>UserSeek</servlet-name>
         <url-pattern>/servlet/userseek</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>UserUp</servlet-name>
+        <servlet-class>com.easybuy.servlet.user.UserUp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserUp</servlet-name>
+        <url-pattern>/servlet/userup</url-pattern>
+    </servlet-mapping>
 </web-app>

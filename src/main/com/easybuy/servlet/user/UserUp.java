@@ -9,27 +9,28 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
- *
+ * 更改用户权限为卖家
  * @author Allen
- * @date 2019/12/28 17:25
+ * @date 2019/12/27 14:57
  */
-public class UserSeek extends HttpServlet {
+public class UserUp extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ServiceUserDao serviceUserDao = new ServiceUserDaoImpl();
-        String id = request.getParameter("id");
-        EasyBuyUser easyBuyuser = serviceUserDao.getUser(id);
+            String id = request.getParameter("id");
+            int statuss = 2;
+            EasyBuyUser easyBuyuser = new EasyBuyUser();
+            easyBuyuser.setUserId(id);
+            easyBuyuser.setStatuss(statuss);
 
-
-        /**
-         * 判断如果已经是商家或者超级管理员就不能重复成为卖家
-         */
-        if (easyBuyuser.getStatuss()>=2) {
-            response.sendRedirect("../statics/manage/user-maijia.jsp");
-        }else {
-            request.getRequestDispatcher("../statics/manage/user-up.jsp").forward(request,response);
-        }
+            ServiceUserDao serviceUserDao = new ServiceUserDaoImpl();
+            boolean flag = serviceUserDao.userUp(easyBuyuser);
+            if (flag) {
+                response.sendRedirect("../statics/manage/user-upmaijia.jsp");
+            }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -23,6 +23,9 @@ public interface UserDao {
     //修改用户信息(管理员操作)
     boolean updateUser(EasyBuyUser easyBuyUser);
 
+    //用户升级卖家
+    boolean userUp(EasyBuyUser easyBuyUser);
+
     //删除用户(管理员操作)
     boolean deleteUser(EasyBuyUser easyBuyUser);
 

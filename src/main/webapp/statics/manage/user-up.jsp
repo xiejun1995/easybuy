@@ -67,30 +67,13 @@
         <em class="corner lb"></em>
         <em class="corner rt"></em>
         <div class="box">
-            <h1>欢迎成为易买网卖家</h1>
+            <h1 style="text-align: center">欢迎成为易买网卖家</h1>
             <ul class="steps clearfix">
-                <li class="current"><em></em>填写卖家信息</li>
-                <li class="last"><em></em>升级成功</li>
             </ul>
-            <form id="regForm" method="post" action="${pageContext.request.contextPath}/servlet/adduser" >
+            <form id="regForm" method="post" action="${pageContext.request.contextPath}/servlet/userup?id=${userName}" >
                 <table>
                     <tr>
-                        <td class="field">店铺名称(*)：</td>
-                        <td>
-                            <input class="text" type="text" name="dianpuming" placeholder="易买网店铺名称" id="dianpuming" maxlength="10"  />
-                            <span></span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="field">营业执照统一社会信用代码：</td>
-                        <td><input class="text" type="text" placeholder="营业执照内的统一社会信用代码" name="xinyongma" /><span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="field">营业执照原件证件照片上传：</td>
-                        <td><input class="text" type="text" placeholder="营业执照原件照片" id="zhizhao" name="zhizhao" /><span></span></td>
-                    </tr>
-                        <td></td>
-                        <td><label class="ui-green"><input type="submit" name="submit" value="提交信息" /></label></td>
+                        <td style="text-align: center"><label class="ui-green" ><input type="submit"  name="submit" value="免费开店" /></label></td>
                     </tr>
                 </table>
             </form>

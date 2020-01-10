@@ -122,6 +122,19 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    //用户升级卖家
+    public boolean userUp(EasyBuyUser easyBuyUser) {
+        String sql = "UPDATE easyBuyUser SET statuss=? WHERE userId=?";
+        Object[] objects = {easyBuyUser.getStatuss(),easyBuyUser.getUserId()};
+        int i = BaseDao.getBaseDao().executeUpdate(sql,objects);
+        boolean flag = false;
+        if (i>0) {
+            flag = true;
+        }
+        return flag;
+    }
+
+    @Override
     //删除用户
     public boolean deleteUser(EasyBuyUser easyBuyUser) {
         String sql = "DELETE FROM easyBuyUser WHERE userId=?";
@@ -157,9 +170,11 @@ public class UserDaoImpl implements UserDao {
             while (resultSet.next()) {
                 String userId = resultSet.getString("userId");
                 String passWords = resultSet.getString("passWords");
+                int statuss = resultSet.getInt("statuss");
 
                 easyBuyUser.setUserId(userId);
                 easyBuyUser.setPassWords(passWords);
+                easyBuyUser.setStatuss(statuss);
                 return easyBuyUser;
             }
         }catch (SQLException e) {

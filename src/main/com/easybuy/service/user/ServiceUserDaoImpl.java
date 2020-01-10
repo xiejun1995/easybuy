@@ -36,6 +36,11 @@ public class ServiceUserDaoImpl implements ServiceUserDao {
     }
 
     @Override
+    public boolean userUp(EasyBuyUser easyBuyUser) {
+        return userDao.userUp(easyBuyUser);
+    }
+
+    @Override
     public boolean deleteUser(EasyBuyUser easyBuyUser) {
         return userDao.deleteUser(easyBuyUser);
     }
