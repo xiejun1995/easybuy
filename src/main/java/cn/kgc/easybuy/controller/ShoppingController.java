@@ -17,7 +17,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * @author 谢军军
@@ -32,7 +31,7 @@ public class ShoppingController {
     private Logger logger=Logger.getLogger(ShoppingController.class);
     @Resource
     private ShoppingService shoppingService;  //购物业务类
-    @Resource EmptyShoppingCart emptyShoppingCart; //购物车任务定时调度类
+
 
     /**
      * 根据指定页码查询当前页码的订单详情列表
@@ -150,7 +149,7 @@ public class ShoppingController {
             EmptyShoppingCart.minuteMap.put(id,19);
             EmptyShoppingCart.secondMap.put(id,59);
             //执行20分钟的倒计时
-            emptyShoppingCart.emptyShoppingCart(id);
+            new EmptyShoppingCart().emptyShoppingCart();
             return JSON.toJSONString(resultMap);
         }else{
             resultMap.put("messeage", Constants.NO_EP_ID);
@@ -188,7 +187,7 @@ public class ShoppingController {
             EmptyShoppingCart.minuteMap.put(id,19);
             EmptyShoppingCart.secondMap.put(id,59);
             //执行20分钟的倒计时
-            emptyShoppingCart.emptyShoppingCart(id);
+            new EmptyShoppingCart().emptyShoppingCart();
             return JSON.toJSONString(resultMap);
         }else{
             resultMap.put("messeage", Constants.NO_EP_ID);
@@ -201,8 +200,8 @@ public class ShoppingController {
         //将购物车集合数据存储在session中
         session.setAttribute("proMap",proMap);
         session.setAttribute("countMap",countMap);
-        session.setAttribute("minuteMap",EmptyShoppingCart.minuteMap);
-        session.setAttribute("secondMap",EmptyShoppingCart.secondMap);
+        session.setAttribute("minuteMap", EmptyShoppingCart.minuteMap);
+        session.setAttribute("secondMap", EmptyShoppingCart.secondMap);
         return "../shopping";
     }
     @GetMapping("/manage/shoppingCart")
@@ -210,8 +209,8 @@ public class ShoppingController {
         //将购物车集合数据存储在session中
         session.setAttribute("proMap",proMap);
         session.setAttribute("countMap",countMap);
-        session.setAttribute("minuteMap",EmptyShoppingCart.minuteMap);
-        session.setAttribute("secondMap",EmptyShoppingCart.secondMap);
+        session.setAttribute("minuteMap", EmptyShoppingCart.minuteMap);
+        session.setAttribute("secondMap", EmptyShoppingCart.secondMap);
         return "../shopping";
     }
 }
