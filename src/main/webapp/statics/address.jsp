@@ -130,8 +130,13 @@
         <p style="font-size: 14px;"><strong>选择收货地址：</strong></p>
         <ul>
             <li style="font-size: 12px ">
-                <input class="radio" type="radio" name="sex" value="男" checked="checked" > 北京市海淀区中关村大厦202</input><br>
-                <input class="radio" type="radio" name="sex" value="男" checked="checked" > 河北省邯郸市建设大街54号</input>
+                <label>
+                    <input class="radio" type="radio" name="address" value="address" checked="checked" > 北京市海淀区中关村大厦202</input>
+                </label>
+                <br>
+                <label>
+                    <input class="radio" type="radio" name="address" value="address1" > 河北省邯郸市建设大街54号</input>
+                </label>
             </li>
         </ul>
         <input id="add-address" type="button" value="使用新地址"/>
@@ -155,7 +160,7 @@
         </table>
         <hr style="width: 700px;height: 2px;background-color: #FC7E31">
     </div>
-    <div style="border:0;width: 100px;height: 35px ; font-size:20px; color:#FFFFFF; background:#FC7E31;">
+    <div style="border:0;width: 100px;height: 35px ; font-size:20px; color:#FFFFFF; background:#FC7E31;margin-top: 5px ;text-align: center">
         提交订单
     </div>
 </div>
