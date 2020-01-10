@@ -2,6 +2,8 @@
 <%@ page import="com.easybuy.service.user.ServiceUserDao" %>
 <%@ page import="com.easybuy.service.user.ServiceUserDaoImpl" %>
 <%@ page import="com.easybuy.pojo.EasyBuyUser" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
@@ -26,9 +28,16 @@
 		</ul>
 	</div>
 </div>
+</div>
+<%--获取当前时间--%>
+<%
+	Date data = new Date();
+	SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	String now = time.format(data);
+%>
 <div id="childNav">
 	<div class="welcome wrap">
-		管理员pillys您好，今天是2012-12-21，欢迎回到管理后台。
+		管理员您好，当前时间：<%=now %>，欢迎回到管理后台。
 	</div>
 </div>
 <div id="position" class="wrap">

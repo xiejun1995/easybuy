@@ -32,8 +32,6 @@ public class ShoppingController {
     private Logger logger=Logger.getLogger(ShoppingController.class);
     @Resource
     private ShoppingService shoppingService;  //购物业务类
-    @Resource EmptyShoppingCart emptyShoppingCart; //购物车任务定时调度类
-
     /**
      * 根据指定页码查询当前页码的订单详情列表
      * @param ep_id
@@ -150,7 +148,7 @@ public class ShoppingController {
             EmptyShoppingCart.minuteMap.put(id,19);
             EmptyShoppingCart.secondMap.put(id,59);
             //执行20分钟的倒计时
-            emptyShoppingCart.emptyShoppingCart(id);
+            new EmptyShoppingCart().emptyShoppingCart(id);
             return JSON.toJSONString(resultMap);
         }else{
             resultMap.put("messeage", Constants.NO_EP_ID);
@@ -188,7 +186,7 @@ public class ShoppingController {
             EmptyShoppingCart.minuteMap.put(id,19);
             EmptyShoppingCart.secondMap.put(id,59);
             //执行20分钟的倒计时
-            emptyShoppingCart.emptyShoppingCart(id);
+            new EmptyShoppingCart().emptyShoppingCart(id);
             return JSON.toJSONString(resultMap);
         }else{
             resultMap.put("messeage", Constants.NO_EP_ID);

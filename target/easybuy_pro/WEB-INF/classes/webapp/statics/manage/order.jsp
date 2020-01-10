@@ -61,22 +61,29 @@
 			<div class="spacer"></div>
             <form id="orderForm">
                  订单号：<input type="text" class="text" name="entityId" id="entityId" placeholder="请输入订单号" type="number"/>
-                 状态：<input type="text" class="text" name="status" id="eoStatus" placeholder="请输入订单状态" />
+                 状态：<%--<input type="text" class="text" name="status" id="eoStatus" placeholder="请输入订单状态" />--%>
+						<select type="text" class="text" name="status" id="eoStatus" placeholder="请输入订单状态">
+							<option>待审核</option>
+							<option>审核通过</option>
+							<option>配货</option>
+							<option>发货</option>
+							<option>状态未知</option>
+						</select>
                  电话：<input type="text" class="text" name="phone" id="phone" placeholder="请输入电话" pattern="[0-9]{11}"/>
 				<label class="ui-blue"><input type="button" id="btn" name="btn" value="查询" /></label>
             </form>
-			<table class="list" id="orderList">
+			<table class="list" id="orderList" style="font-size: 14px">
 				<%--遍历订单列表集合--%>
 				<%--将遍历的订单嵌入到表格当中--%>
-				<c:forEach items="${orderList}" var="order" varStatus="index">
+				<c:forEach items="${orderList}" var="order" varStatus="index" >
 					<c:if test="${order.eoStatus!=5}">
 						<tr>
-							<th colspan="4">
+							<th colspan="4" style="font-size: 14px; ">
 								单号：${order.eoId}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								订货人姓名：${order.eoUserName}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								创建时间：<fmt:formatDate value="${order.eoCreateTime}" pattern="yyyy-MM-dd HH:mm:ss"></fmt:formatDate>
 							</th>
-							<th colspan="1" id="status">状态:
+							<th colspan="1" id="status" style="font-size: 14px; ">状态:
 								<c:choose >
 									<c:when test="${order.eoStatus==1}">
 										<span><strong>待审核</strong></span>
@@ -98,23 +105,23 @@
 						</tr>
 						<c:forEach items="${order.orderDetailList}" var="orderDetail" varStatus="index">
 							<tr>
-							<td class="first w4 c">
+							<td class="first w4 c" style="font-size: 12px; ">
 								<a href="${pageContext.request.contextPath}/statics/manage/product-careful.jsp?epId=${orderDetail.product.epId}">
 									<img src="${pageContext.request.contextPath}/statics/images/product/${orderDetail.product.epFileName}" />
 								</a>
 								<a href="${pageContext.request.contextPath}/statics/manage/product-careful.jsp?epId=${orderDetail.product.epId}" >${orderDetail.product.epName}</a>
 							</td>
-							<td >
+							<td style="font-size: 12px; ">
 									${orderDetail.product.epPrice}
 							</td>
-							<td>
+							<td style="font-size: 12px; ">
 									${orderDetail.eodQuantity}
-							</td>
-							<td>
+							</td >
+							<td style="font-size: 12px; ">
 								合计：${orderDetail.eodCost}
 							</td>
 							<c:if test="${index.first}">
-								<td class="w1 c" rowspan="${order.orderDetailList.size()}">
+								<td class="w1 c" rowspan="${order.orderDetailList.size()}" style="font-size: 12px; ">
 									总计：${order.eoCost}
 								</td>
 							</c:if>

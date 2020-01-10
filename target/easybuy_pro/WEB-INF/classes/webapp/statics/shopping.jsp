@@ -1,9 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/function.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/statics/scripts/shopping.js"></script>
     <title>易买网 - 首页</title>
     <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/statics/css/style.css" />
 </head>
@@ -11,11 +13,16 @@
 <div id="header" class="wrap">
     <div id="logo"><img src="${pageContext.request.contextPath}/statics/images/logo.gif" /></div>
     <div class="help">
+        <c:if test="${sessionScope.userName==null}">
+            <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
+        </c:if>
+        <c:if test="${sessionScope.userName!=null}">
+            <span>欢迎您:${userName}</span>
+            <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
+        </c:if>
         <a href="${pageContext.request.contextPath}/statics/shopping.jsp" class="shopping">购物车X件</a>
-        <a href="login.jsp">登录</a>
-        <a href="${pageContext.request.contextPath}/statics/register.jsp">注册</a>
         <a href="${pageContext.request.contextPath}/statics/guestbook.jsp">留言</a>
-        <a href="manage/index.jsp">后台管理</a></div>
+    </div>
     <div class="navbar">
         <ul class="clearfix">
             <li class="current"><a href="#">首页</a></li>
@@ -50,7 +57,7 @@
     </div>
 </div>
 <div id="position" class="wrap">
-    您现在的位置：<a href="${pageContext.request.contextPath}/index.jsp   ">易买网</a> &gt; 购物车
+    您现在的位置：<a href="${pageContext.request.contextPath}/statics/index.jsp   ">易买网</a> &gt; 购物车
 </div>
 <div class="wrap">
     <div id="shopping">
@@ -64,7 +71,11 @@
                 </tr>
             </table>
             <div id="total"><span>总计：￥0</span></div>
-            <div class="button"><input id="totalAmount" type="submit" value="" /></div>
+            <div id="button">
+                <button id="totalAmount" type="submit">结算
+                    &nbsp;&nbsp;<span class="min">15</span>&nbsp;:&nbsp;
+                    <span class="sec">20</span></button>
+            </div>
         </form>
     </div>
     <script type="text/javascript">
@@ -74,35 +85,33 @@
 <div id="footer">
     Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
 </div>
-</body>
 <script type="text/javascript">
     //获取表格元素
     var $table=$("#tab");
-    //判断是否是购物车X件访问
-    if(!${product!=null}){
-        //判断购物车中是否已存在当前要加入购物车的商品
-        if($("#tab").find("#proId_${proId}").val()==${proId}){
-            //如果存在则让他的数量加1
-            $("#tab").find("#number_id_${proId}").val()+1;
-        }else{
-            //否则在后面追加一个商品
-            $table.append(
-                "<tr id=\"product_id_${proId}\">" +
-                "<td class=\"thumb\"><img src=\"${pageContext.request.contextPath}/statics/images/product/${product.ep_file_name}\" /><a href=\"${pageContext.request.contextPath}/statics/product-view.jsp?ep_id=${proId}\">${product.ep_name}</a></td>" +
-                "<td class=\"price\" id=\"price_id_${proId}\">" +
-                "<span>${product.ep_price}</span>" +
-                "<input type=\"hidden\" class=\"price\" value=\"${product.ep_price}\" />" +
-                "<input type=\"hidden\" id=\"proId_${proId}\" value=\"${proId}\"/>" +
-                "</td>" +
-                "<td class=\"number\">" +
-                "<span name=\"del\">-</span>" +
-                "<input id=\"number_id_${proId}\" type=\"text\" name=\"number\" value=\"1\" />" +
-                "<span name=\"add\">+</span>" +
-                "</td>" +
-                "<td class=\"delete\"><a href=\"javascript:void(0)\">删除</a></td>" +
-                "</tr>"
-            )
-        }
+    //判断进入购物车时用户是否在购物车中添加过商品
+    var tables="";
+    //判断购物车中的东西是否过期
+    if(${sessionScope.proMap!=null}){
+        //如果有商品则在表格中追加
+        tables+="<c:forEach items='${sessionScope.proMap}' var='product'>"+
+            "<tr id='product_id_${product.key}' >"+
+            "<td class='thumb'><img src='${pageContext.request.contextPath}/statics/images/upload/${product.value.epFileName}' /><a href='${pageContext.request.contextPath}/statics/product-careful.jsp?epId =${product.key}'>${product.value.epName}</a></td>"+
+            "<td class='price' id='price_id_${product.key}' >"+
+            "<span>${product.value.epPrice}</span>"+
+            "<input type='hidden' class='price' value='${product.value.epPrice}' />"+
+            "<input type='hidden' id='proId_${product.key}' value='${product.key}'/>"+
+            "</td>"+
+            "<td class='number'>"+
+            "<span name='del'>-</span>"+
+            "<input id='number_id_${product.key}' type='text' name='number' value=${sessionScope.countMap.get(product.key)} />" +
+            "<span name='add'>+</span>"+
+            "</td>"+
+            "<td class='delete'><a href='javascript:void(0)'>删除</a></td>" +
+            "</tr></c:forEach>";
+        $table.html(tables);
+    }else{
+        $("#button").hide();
     }
 </script>
-</html   >
+</body>
+</html>

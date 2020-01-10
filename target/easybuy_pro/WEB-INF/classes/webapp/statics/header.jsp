@@ -12,16 +12,17 @@
     <div id="logo"><img src="images/logo.gif" /></div>
     <div class="help">
         <c:if test="${sessionScope.userName==null}">
-            <a href="statics/login.jsp">登录</a><a href="statics/register.jsp">注册</a>
+            <a href="login.jsp">登录</a><a href="register.jsp">注册</a>
         </c:if>
         <c:if test="${sessionScope.userName!=null}">
             <span>欢迎您:${userName}</span>
             <a class="button" id="logout" href="${pageContext.request.contextPath}/servlet/invalidate">注销</a>
+            <a href="${pageContext.request.contextPath}/servlet/userseek?id=${userName}">我想升级为卖家</a>
         </c:if>
-        <a href="${pageContext.request.contextPath}/statics/shopping.jsp" id="shoppingBag" class="shopping">购物车X件</a><a href="statics/guestbook.jsp">留言</a></div>
+        <a href="${pageContext.request.contextPath}/statics/shopping.jsp" id="shoppingBag" class="shopping">购物车X件</a><a href="guestbook.jsp">留言</a></div>
     <div class="navbar">
         <ul class="clearfix">
-            <li class="current"><a href="../index.jsp">首页</a></li>
+            <li class="current"><a href="index.jsp">首页</a></li>
             <li><a href="product-list.jsp?name=图书">图书</a></li>
             <li><a href="product-list.jsp?name=百货">百货</a></li>
             <li><a href="product-list.jsp?name=品牌">品牌</a></li>

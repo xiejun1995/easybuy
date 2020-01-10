@@ -1,12 +1,10 @@
 package cn.kgc.easybuy.quartz;
 
-import cn.kgc.easybuy.service.ShoppingService;
-import org.springframework.scheduling.annotation.Async;
+
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
-import java.time.LocalDateTime;
+
 import java.util.HashMap;
 import java.util.Map;
 

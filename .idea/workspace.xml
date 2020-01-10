@@ -7,66 +7,170 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ab478df-b95b-4e87-a815-3cefb326990d" name="Default Changelist" comment="caoyi 5.0">
+      <change afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UserSeek.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UserUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/statics/js/reg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-up.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-upmaijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/UserSeek.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/UserUp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/js/reg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-maijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-up.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-upmaijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/js/reg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-maijia.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-up.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-upmaijia.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/OrderListController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/ShoppingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/controller/ShoppingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/interceptor/SysInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/interceptor/SysInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/mapper/ShoppingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/mapper/ShoppingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/Classify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/Classify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyOrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/EasyBuyUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/PageSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/pojo/PageSupport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/quartz/EmptyShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/quartz/EmptyShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/ShoppingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/ShoppingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/ShoppingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/service/impl/ShoppingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/util/AlipayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/util/AlipayConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/util/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/util/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/kgc/easybuy/util/PageUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/ShoppingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/kgc/easybuy/mapper/ShoppingMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j/log4j.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j/log4j.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/css/alipay.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/alipay.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.close.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.close.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.fastpay.refund.query.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.fastpay.refund.query.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.page.pay.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.page.pay.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.query.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.query.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.refund.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/alipay.trade.refund.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/product-careful.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/product-careful.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/WdatePicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/WdatePicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/lang/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/lang/zh-tw.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/lang/zh-tw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/skin/WdatePicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/skin/WdatePicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/skin/default/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/skin/default/datepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/skin/whyGreen/datepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/My97DatePicker/skin/whyGreen/datepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/alipay.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/alipay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/function.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/function.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/jquery-1.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/jquery-1.8.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/orderList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/orderList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/scripts/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/scripts/shopping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/shopping.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/statics/manage/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/statics/manage/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/ShoppingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/controller/ShoppingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/quartz/EmptyShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/quartz/EmptyShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/AlipayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/AlipayConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/kgc/easybuy/util/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/news/NewsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/news/NewsDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/dao/user/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/filter/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/pojo/EasyBuyComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/massage/addServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/massage/addServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/AddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/AddUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/GetUserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/GetUserList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/LogInvalidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/LogInvalidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/SeekServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/SeekServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UpdateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/easybuy/servlet/user/UpdateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/ckeditor/Image [2].png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/ckeditor/Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/ajax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-maijia.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestt-book-del.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/guestt-book-del.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/manage-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/manage-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/productClass-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/manage/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/scripts/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/shopping-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/statics/shopping.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/OrderListController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/ShoppingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/controller/ShoppingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/quartz/EmptyShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/quartz/EmptyShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/AlipayConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/AlipayConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/cn/kgc/easybuy/util/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/massage/MessageDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/massage/MessageDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/news/NewsDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/news/NewsDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/user/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/user/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/dao/user/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/filter/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/filter/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/pojo/EasyBuyComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/pojo/EasyBuyComment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/service/user/ServiceUserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/massage/addServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/massage/addServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/AddUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/AddUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/GetUserList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/GetUserList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/LogInvalidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/LogInvalidate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/SeekServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/SeekServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/UpdateUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/com/easybuy/servlet/user/UpdateUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/addLoad.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/addLoad.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/address.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/childnav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guesload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guesload.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guest-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guest-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/loginfa.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/loginfa.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/logout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/logout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guest-book-do-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guest-book-do-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestt-book-del.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/guestt-book-del.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/manage-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/manage-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/productClass-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/manage/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/product-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-fail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/reg-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/scripts/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/scripts/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/classes/webapp/statics/shopping.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/addLoad.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/addLoad.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/address.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/childnav.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/guesload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/guesload.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/guest-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/guest-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guest-book-do-update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guest-book-do-update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestt-book-del.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/guestt-book-del.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/manage-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/manage-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/news.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/order.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/productClass-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user-modify.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/manage/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/news-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/product-careful.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/product-careful.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/product-view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/product-view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-fail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-fail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/reg-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/shopping.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/scripts/shopping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping-result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping-result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/easybuy_pro/statics/shopping.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideInfoMessages" value="true" />
@@ -91,6 +195,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -132,7 +237,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -158,12 +263,12 @@
   <component name="RunManager">
     <configuration name="Tomcat 9.0.29" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER" value="false" />
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/easybuy_war_exploded/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="easybuy:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/easybuy_war_exploded" />
+            <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
       </deployment>
@@ -319,6 +424,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -366,6 +476,9 @@
       <workItem from="1578557508613" duration="18733000" />
       <workItem from="1578633200592" duration="506000" />
       <workItem from="1578633940252" duration="325000" />
+      <workItem from="1578639142597" duration="544000" />
+      <workItem from="1578639700419" duration="550000" />
+      <workItem from="1578640264601" duration="1399000" />
     </task>
     <task id="LOCAL-00001" summary="hebing">
       <created>1578278250398</created>
@@ -487,9 +600,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="391" y="0" key="#Web_Browsers/0.0.1920.1040@0.0.1920.1040" timestamp="1578557296441" />
-    <state x="353" y="0" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578577893295">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="251" y="0" width="859" height="576" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578641082621">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="251" y="0" width="859" height="576" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1578641082621" />
     <state x="282" y="2" width="1089" height="822" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578543393287" />
     <state x="353" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578577893295" />
     <state x="530" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1578486684125">
@@ -531,64 +645,76 @@
     </state>
     <state x="524" y="65" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1578360000498" />
     <state x="655" y="82" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578557600229" />
-    <state width="1458" height="764" key="GridCell.Tab.0.bottom" timestamp="1578577985289">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.0.bottom" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="764" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="764" key="GridCell.Tab.0.center" timestamp="1578577985289">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.0.center" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578544880972" />
     <state width="1458" height="764" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="764" key="GridCell.Tab.0.left" timestamp="1578577985289">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.0.left" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578544880972" />
     <state width="1458" height="764" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="764" key="GridCell.Tab.0.right" timestamp="1578577985289">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.0.right" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578544880972" />
     <state width="1458" height="764" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578577985289" />
-    <state width="1458" height="223" key="GridCell.Tab.1.bottom" timestamp="1578578054059">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.1.bottom" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="223" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="223" key="GridCell.Tab.1.center" timestamp="1578578054059">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.1.center" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="223" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="223" key="GridCell.Tab.1.left" timestamp="1578578054059">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.1.left" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="223" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="223" key="GridCell.Tab.1.right" timestamp="1578578054059">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.1.right" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="223" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578578054059" />
-    <state width="1458" height="179" key="GridCell.Tab.2.bottom" timestamp="1578576772774">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.2.bottom" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="179" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772774" />
-    <state width="1458" height="179" key="GridCell.Tab.2.center" timestamp="1578576772773">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.2.center" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="179" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772773" />
-    <state width="1458" height="179" key="GridCell.Tab.2.left" timestamp="1578576772773">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.2.left" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="179" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772773" />
-    <state width="1458" height="179" key="GridCell.Tab.2.right" timestamp="1578576772774">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1157" height="190" key="GridCell.Tab.2.right" timestamp="1578641664728">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1157" height="190" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1578641664728" />
     <state width="1252" height="156" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578544880973" />
     <state width="1458" height="179" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578576772774" />
     <state width="1252" height="478" key="GridCell.Tab.3.bottom" timestamp="1578271270579">
@@ -641,9 +767,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="378" y="44" width="790" height="735" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1577528277769" />
-    <state x="151" y="0" key="SettingsEditor" timestamp="1578562811162">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="107" y="0" key="SettingsEditor" timestamp="1578641574297">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="107" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578641574297" />
     <state x="85" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578543357510" />
     <state x="151" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578562811162" />
     <state x="261" y="79" key="Vcs.Push.Dialog.v2" timestamp="1578538514945">
@@ -670,6 +797,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="335" y="88" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1536.824@0.0.1536.824" timestamp="1578538421575" />
+    <state x="475" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578640981048">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="475" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1578640981048" />
     <state x="257" y="109" width="1077" height="666" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1578039776687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -682,9 +813,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="170" key="git4idea.merge.GitMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1577525231226" />
-    <state x="551" y="215" key="git4idea.merge.GitPullDialog" timestamp="1578558531923">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="392" y="151" key="git4idea.merge.GitPullDialog" timestamp="1578641623522">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="392" y="151" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1578641623522" />
     <state x="441" y="170" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578538445464" />
     <state x="551" y="215" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578558531923" />
     <state x="121" y="46" key="new project wizard" timestamp="1577528262995">

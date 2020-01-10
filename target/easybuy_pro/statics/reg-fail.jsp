@@ -13,7 +13,7 @@
 <body>
 <script>
     alert("信息填写有误，注册失败请重新注册");
-    window.location="register.jsp";
+    window.location="../statics/register.jsp";
 </script>
 </body>
 </html>

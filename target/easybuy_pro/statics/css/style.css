@@ -217,7 +217,14 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #menu-mng dl dd a { display:block; }
 #menu-mng em { float:right; padding:0 5px; font-style:normal; }
 #welcomeImage{position:relative;width:100%;top:0;margin:0 auto;text-align:center;text-align:center;z-index:99;display:none}
-
 #header #floatBag{position:absolute;background:#fff;z-index:100;display:none;border:1px #c0c0c0 solid}
 #status strong{color: #dc6b04}
 #list{position: fixed;top:300px;right:100px;z-index: revert;font-size: 12px}
+#button button{
+    background: lightseagreen;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-size: 10px;
+    margin-left: 800px;
+}

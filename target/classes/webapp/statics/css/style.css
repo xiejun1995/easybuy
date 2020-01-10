@@ -159,7 +159,7 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #product .infos .buy .button { border:1px solid #ffefd2; padding:10px; background:#fff8e7; margin:20px auto; text-align:center; }
 /*#product .infos .buy .button input { border:0; margin:0 10px; background:url(../images/bg.png) left -176px; height:35px; width:144px; cursor:pointer; }*/
 
-#product .infos .buy .button input { border:0; margin:0 10px; font-size:20px; color:#FFFFFF; background:#FC7E31; left:176px; height:35px; width:144px; cursor:pointer;}
+#product .infos .buy .button input { border:0; margin:0 10px; font-size:20px; color:#FFFFFF; background:#FF835A; left:176px; height:35px; width:144px; cursor:pointer;}
 
 #product .introduce .text { padding:20px; font-size:14px; line-height:25px; }
 
@@ -194,15 +194,15 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 .manage { padding:20px; overflow:hidden; }
 .manage .list { width:100%; border-top:2px solid #dfc9b2; border-bottom:2px solid #dfc9b2; }
 .manage .list th { background:#f7f4eb; color:#8a7152; }
-.manage .list td { padding:8px; border-top:1px solid #dfc9b2; font-size: 12px;}
-.manage .list td { border-left:1px solid #e1e1e1; font-size: 12px;}
+.manage .list td { padding:8px; border-top:1px solid #dfc9b2; }
+.manage .list td { border-left:1px solid #e1e1e1; }
 .manage .list td.c { text-align:center; }
 .manage .list td.first { border-left:0; }
 .manage .list td.childClass { text-indent:4em; }
-.manage .list td.w1 { width:80px; font-size: 12px;}
-.manage .list td.w2 { width:120px; font-size: 12px;}
-.manage .list td.w3 { width:200px; font-size: 12px;}
-.manage .list td.w4 { width:100px; font-size: 12px;}
+.manage .list td.w1 { width:80px; }
+.manage .list td.w2 { width:120px; }
+.manage .list td.w3 { width:200px; }
+.manage .list td.w4 { width:100px; }
 .manage .list td.thumb img { border:1px solid #dfdfe0; margin:0 10px; vertical-align:middle; }
 .manage .form { width:100%; }
 .manage .form td { padding:5px 2px; }
@@ -217,7 +217,14 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #menu-mng dl dd a { display:block; }
 #menu-mng em { float:right; padding:0 5px; font-style:normal; }
 #welcomeImage{position:relative;width:100%;top:0;margin:0 auto;text-align:center;text-align:center;z-index:99;display:none}
-
 #header #floatBag{position:absolute;background:#fff;z-index:100;display:none;border:1px #c0c0c0 solid}
 #status strong{color: #dc6b04}
 #list{position: fixed;top:300px;right:100px;z-index: revert;font-size: 12px}
+#button button{
+    background: lightseagreen;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-size: 10px;
+    margin-left: 800px;
+}

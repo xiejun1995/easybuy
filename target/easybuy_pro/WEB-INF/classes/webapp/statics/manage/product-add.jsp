@@ -1,3 +1,5 @@
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
@@ -6,21 +8,11 @@
 <head>
 	<title>后台管理 - 易买网</title>
 	<script type="text/javascript" src="<%=request.getContextPath()%>/statics/ckeditor/ckeditor.js"></script>
-	<%--<script type="text/javascript">
-		$(function () {
-			$("#two").click(function () {
-				alert(123);
-				$("#on").css("dispaly","block");
-				$("#on").css("visibility;","visible;");
-			});
-
-		});
-	</script>--%>
 </head>
 <body>
 <div id="header" class="wrap">
 	<div id="logo"><img src="../images/logo.gif" /></div>
-	<div class="help"><a href="../../index.jsp">返回前台页面</a></div>
+	<div class="help"><a href="../index.jsp">返回前台页面</a></div>
 	<div class="navbar">
 		<ul class="clearfix">
 			<li><a href="index.jsp">首页</a></li>
@@ -32,9 +24,17 @@
 		</ul>
 	</div>
 </div>
+
+</div>
+<%--获取当前时间--%>
+<%
+	Date data = new Date();
+	SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	String now = time.format(data);
+%>
 <div id="childNav">
 	<div class="welcome wrap">
-		管理员pillys您好，今天是2012-12-21，欢迎回到管理后台。
+		管理员您好，当前时间：<%=now %>，欢迎回到管理后台。
 	</div>
 </div>
 <div id="position" class="wrap">
@@ -60,9 +60,8 @@
 	</div>
 	<div class="main">
 		<h2>添加商品</h2>
-
 		<div class="manage">
-			<form id="add" action="product-do-add.jsp" enctype="multipart/form-data" method="post">
+			<form id="Add" action="product-do-add.jsp" enctype="multipart/form-data" method="post">
 				<table class="form">
 					<tr>
 						<td class="field">商品名称(*)：</td>
@@ -70,8 +69,7 @@
 					</tr>
                     <tr>
 						<td class="field">描述：</td>
-						<td><textarea style="display: block"   class="ckeditor" name="productDetail"  cols="50" rows="10"></textarea></td>
-						<%--<td><input type="button" value="显示" id="two"/></td>--%>
+						<td><textarea  class="ckeditor" name="productDetail"  cols="50" rows="10"></textarea></td>
 						<%--<td><input type="text" class="text" name="productDetail" /></td>--%>
 					</tr>
 					<tr>
@@ -118,7 +116,6 @@
 					</tr>
 				</table>
 			</form>
-
 		</div>
 	</div>
 	<div class="clear"></div>
