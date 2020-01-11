@@ -196,20 +196,10 @@ public class UserDaoImpl implements UserDao {
                 buffer.append(resultSet.getString("userId"));
                 buffer.append(",");
             }
-
-            String names = buffer.toString();
-            String[] name2 = names.split(",");
-            for (int i = 0;i<name2.length;i++) {
-//                if (name2[i].equals(name)) {
-//                    writer.print(true);
-//                    break;
-//                }
-            }
-
         }catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return easyBuyUser;
     }
 
 

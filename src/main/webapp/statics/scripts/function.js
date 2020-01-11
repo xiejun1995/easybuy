@@ -81,9 +81,9 @@ $(function(){
     //失去焦点消除背景，且验证信息方法
     function checkItem(dom){
         $(dom).parent().parent().removeClass("current");
-        //var eBox=$(dom).parent().find("span");
+        var eBox=$(dom).parent().find("span");
         var name = $(dom).attr("name");
-        var value = $(dom).val();
+        //var value = $(dom).val();
         var errorMessage="",isError=true;
         switch(name){
             case "userId":
@@ -206,8 +206,8 @@ $(function(){
                 break;
         }
         if(isError){
-            eBox.text(errorMessage);
-            eBox.addClass("error");
+            eBox.setCustomValidity(errorMessage);
+            eBox.setCustomValidity("error");
             return false;
         }
         return true;

@@ -79,15 +79,15 @@
                     </tr>
                     <tr>
                         <td class="field">真实姓名(*)：</td>
-                        <td><input class="text" type="text" placeholder="您的中文姓名" name="userName" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="您的中文姓名" name="userName" maxlength="10"/><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">登录密码(*)：</td>
-                        <td><input class="text" type="password" placeholder="密码由6-20位,数字或字母组合" id="password" name="password" pattern="[a-zA-Z0-9]{6,20}" /><span></span></td>
+                        <td><input class="text" type="password" placeholder="密码由6-20位,数字或字母组合" id="password" name="password" maxlength="20" pattern="[a-zA-Z0-9]{6,20}" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">确认密码(*)：</td>
-                        <td><input class="text" type="password" placeholder="密码由6-20位,数字或字母组合" name="confirmPassword" pattern="[a-zA-Z0-9]{6,20}" /><span></span></td>
+                        <td><input class="text" type="password" placeholder="密码由6-20位,数字或字母组合" name="confirmPassword" maxlength="20" pattern="[a-zA-Z0-9]{6,20}" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">性别(*)：</td>
@@ -107,19 +107,19 @@
                     </tr>
                     <tr>
                         <td class="field">身份证：</td>
-                        <td><input class="text" type="text" placeholder="请填写本人有效身份证号码" name="identityCode" pattern="[1-9]\d{5}(18|19|20)\d{2}((0[1-9])|(1[0-2]))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="请填写本人有效身份证号码" name="identityCode" maxlength="18" pattern="[1-9]\d{5}(18|19|20)\d{2}((0[1-9])|(1[0-2]))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">电子邮件：</td>
-                        <td><input class="text" type="text" id="eamil" placeholder="请填写常用邮箱" name="email" pattern="([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})" /><span></span></td>
+                        <td><input class="text" type="text" id="eamil" placeholder="请填写常用邮箱" name="email" maxlength="25" pattern="([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">手机(*)：</td>
-                        <td><input class="text" type="text" placeholder="请填写常用电话" name="mobile" pattern="[1][3,4,5,7,8][0-9]{9}" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="请填写常用电话" name="mobile" maxlength="11" pattern="[1][3,4,5,7,8][0-9]{9}" /><span></span></td>
                     </tr>
                     <tr>
                         <td class="field">收货地址(*)：</td>
-                        <td><input class="text" type="text" placeholder="方便取件的地址" name="address" /><span></span></td>
+                        <td><input class="text" type="text" placeholder="方便取件的地址" maxlength="30" name="address" /><span></span></td>
                     </tr>
                     <tr>
                         <td></td>

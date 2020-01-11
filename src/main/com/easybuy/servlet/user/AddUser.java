@@ -38,7 +38,7 @@ public class AddUser extends HttpServlet {
             EasyBuyUser easyBuyUser = new EasyBuyUser();
             if (!userId.equals(userId)) {
                 easyBuyUser.setUserId(userId);
-            }else {
+            } else {
                 response.sendRedirect("../statics/reg-fail.jsp");
             }
             easyBuyUser.setUserName(userName);
@@ -46,11 +46,7 @@ public class AddUser extends HttpServlet {
             easyBuyUser.setSex(sex);
             easyBuyUser.setBirthday(birthday);
             easyBuyUser.setIdentityCode(identityCode);
-            if (email.length()<20) {
-                easyBuyUser.setEmail(email);
-            }else {
-                response.sendRedirect("../statics/reg-fail.jsp");
-            }
+            easyBuyUser.setEmail(email);
             easyBuyUser.setMobile(mobile);
             easyBuyUser.setAddress(address);
             easyBuyUser.setLogin(login);
@@ -60,8 +56,9 @@ public class AddUser extends HttpServlet {
             boolean flag = serviceUserDao.setUser(easyBuyUser);
             if (flag) {
                 response.sendRedirect("../statics/reg-result.jsp");
+            } else {
+                response.sendRedirect("../statics/reg-fail.jsp");
             }
-
 
         } catch (ParseException e) {
             e.printStackTrace();
