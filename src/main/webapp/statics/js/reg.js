@@ -6,9 +6,9 @@ $("#birthday").click(function(){
         ,dateFmt:'yyyy-MM-dd'
     });
 });
-//验证账号是否为空
+//表单验证
 $(function () {
-    $('#userId').blur(function () {
+    $("#userId").blur(function () {
         var user = document.getElementById("userId");
         //判断是否是空的
         if (user.value){
@@ -22,3 +22,4 @@ $(function () {
         }
     })
 })
+

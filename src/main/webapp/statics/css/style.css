@@ -169,7 +169,7 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #shopping table td { padding:10px 0; border-top:1px solid #dfc9b2; }
 #shopping table td.thumb img { border:1px solid #dfdfe0; margin:0 10px; vertical-align:middle; }
 #shopping table td.price,
-#shopping table td.number { text-align:center; width:100px; border-left:1px solid #e1e1e1; }
+#shopping table td.number{ text-align:center; width:100px; border-left:1px solid #e1e1e1; }
 #shopping table td.price { color:#cc3300; font-weight:bold; }
 #shopping table td.delete { width:60px; text-align:center; border-left:1px solid #e1e1e1; }
 #shopping table td.number span {padding:0 2px;border:1px #c0c0c0 solid;cursor:pointer;}
@@ -220,11 +220,19 @@ ul.product li dl dd.price { color:#c30; font-weight:bold; }
 #header #floatBag{position:absolute;background:#fff;z-index:100;display:none;border:1px #c0c0c0 solid}
 #status strong{color: #dc6b04}
 #list{position: fixed;top:300px;right:100px;z-index: revert;font-size: 12px}
-#button button{
+#totalAmount{
     background: lightseagreen;
-    width: 100px;
+    width: 80px;
     height: 30px;
     color: white;
     font-size: 10px;
     margin-left: 800px;
+}
+.MinAndSec{
+     color: #02aaf1;
+     font-size: 10px;
+    margin-left: 50px;
+ }
+#button{
+    display: inline;
 }

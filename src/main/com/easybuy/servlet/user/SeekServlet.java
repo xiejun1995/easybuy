@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- *
+ *点击修改后传来用户ID查询后显示在修改页面
  * @author Allen
  * @date 2019/12/28 17:25
  */

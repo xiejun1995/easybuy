@@ -135,7 +135,7 @@ $(function(){
                 }
                 break;
             case "identityCode":
-                if((value != "") && !/((\d{17}\w{1})|(\d{15}))/.test(value)) {
+                if((value != "") && !/^[1-9]\d{5}(19|20)\d{2}((0[1-9])|(1[0-2]))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/.test(value)) {
                     errorMessage = "身份证号码格式不正确";
                 }else{
                     isError = false ;
@@ -212,7 +212,7 @@ $(function(){
         }
         return true;
     }
-    //提交表单方法
+    提交表单方法
     function checkForm(){
         var flag=true;
         $(this).find("input[class='text']").each(function(i,dom){

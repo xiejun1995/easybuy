@@ -16,7 +16,7 @@
 <body>
 <div id="header" class="wrap">
 	<div id="logo"><img src="${pageContext.request.contextPath}/statics/images/logo.gif" /></div>
-	<div class="help"><a href="${pageContext.request.contextPath}/index.jsp">返回前台页面</a></div>
+	<div class="help"><a href="${pageContext.request.contextPath}/statics/index.jsp">返回前台页面</a></div>
 	<div class="navbar">
 		<ul class="clearfix">
 			<li><a href="index.jsp">首页</a></li>
@@ -64,7 +64,7 @@
 	<%
 		EasyBuyUser easyBuyuser = new EasyBuyUser();
 		ServiceUserDao serviceUserDao = new ServiceUserDaoImpl();
-		int id = Integer.parseInt(request.getParameter("id"));
+		String id = request.getParameter("id");
 		easyBuyuser = serviceUserDao.getUser(id);
 
 	%>

@@ -1,4 +1,5 @@
-
+<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link type="text/css" rel="stylesheet" href="../css/style.css" />
 <script type="text/javascript" src="../scripts/jquery-1.8.3.min.js"></script>
@@ -22,9 +23,15 @@
 		</ul>
 	</div>
 </div>
+<%
+	Date data = new Date();
+	SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	String now = time.format(data);
+%>
+
 <div id="childNav">
 	<div class="welcome wrap">
-		管理员pillys您好，今天是2012-12-21，欢迎回到管理后台。
+		管理员您好，今天是<%=now%>，欢迎回到管理后台。
 	</div>
 </div>
 <div id="position" class="wrap">

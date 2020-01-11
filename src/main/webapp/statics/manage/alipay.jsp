@@ -11,9 +11,9 @@
 <%
 	//获取订单金额
 	String totalAmounts=request.getParameter("totalAmounts");
-	Integer amounts=0;
+	double amounts=0.0;
 	if (StringUtils.isNoneEmpty(totalAmounts)) {
-		amounts=Integer.valueOf(totalAmounts);
+		amounts=Double.valueOf(totalAmounts);
 	}
 	//方便EL表达式获取
 	request.setAttribute("amounts",amounts);
