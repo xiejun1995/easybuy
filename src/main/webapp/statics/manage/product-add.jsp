@@ -95,6 +95,7 @@
 								<option value="17">├ 玩具文具</option>
 								<option value="18">└汽车用品</option>
 							</select>
+							<div id="sanji"></div>
 						</td>
 					</tr>					
 					<tr>

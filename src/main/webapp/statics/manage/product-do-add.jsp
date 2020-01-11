@@ -28,7 +28,6 @@
 	if(flag){
 		FileItemFactory factory=new DiskFileItemFactory();
 		ServletFileUpload upload=new ServletFileUpload(factory);
-
 		try {
 			List<FileItem> items=upload.parseRequest(request);
 			Iterator<FileItem> iter=items.iterator();
@@ -52,7 +51,6 @@
 						case "productNumber":
 							buy.setEpStock(Integer.parseInt(item.getString()));
 							break;
-
 					}
 				}else{//文件
 					String fileName=item.getName();//获取文件名
@@ -60,7 +58,11 @@
 					if (fileName!=null||!fileName.equals("")){
 						File fulFile=new File(fileName);
 						File saveFile=new File(uploadFilepath,fulFile.getName());
-						item.write(saveFile);
+						try {
+							item.write(saveFile);
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
 						String uploadFileName=fulFile.getName();
 						buy.setEpFileName(uploadFileName);
 					}
@@ -71,7 +73,8 @@
 		}
 		System.out.println("上传成功之后的文件名：" + buy.getEpFileName());
 		ServiceCommodityDao service=new ServiceCommodityDaoImpl();
-		service.addCommodity(buy);
+		int result=service.addCommodity(buy);
+		System.out.println(result+"~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		request.setAttribute("info","添加成功！");
 		request.getRequestDispatcher("hint.jsp").forward(request,response);
 	}

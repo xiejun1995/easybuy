@@ -8,6 +8,7 @@
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
+	<script type="text/javascript" src="<%=request.getContextPath()%>/statics/ckeditor/ckeditor.js"></script>
 </head>
 <body>
 <div id="header" class="wrap">
@@ -77,7 +78,10 @@
 					</tr>
                     <tr>
 						<td class="field">描述：</td>
+						<td><textarea  class="ckeditor" name="productDetail"  cols="50" rows="10"><%=buy.getEpDescription()%></textarea></td>
+					<%--
 						<td><input type="text" class="text" name="productDetail" value="<%=buy.getEpDescription()%>" /></td>
+--%>
 					</tr>
 					<tr>
 						<td class="field">所属分类：</td>

@@ -11,6 +11,7 @@
 <html>
 <head>
 	<title>后台管理 - 易买网</title>
+
 </head>
 <body>
 <div id="header" class="wrap">
@@ -81,6 +82,12 @@
 								<%--<option value="<%=i+%>">衣服</option>--%>
 								<%}%>
 							</select>
+
+							<select style="width: 100px;" id="pre" onchange="chg(this);">
+								<option value="-1">请选择</option>
+							</select>
+							<select style="width: 100px;" id="city" onchange="chg2(this)" ;></select>
+							<select style="width: 100px;" id="area"></select>
 						</td>
 					</tr>
 					<tr>
@@ -100,5 +107,69 @@
 <div id="footer">
 	Copyright &copy; 2013 北大青鸟 All Rights Reserved. 京ICP证1000001号
 </div>
+<script type="text/javascript">
+	//声明省
+	var pres = ["图书音像", "百货"]; //直接声明Array
+	//声明市
+	var cities = [
+		["图书", "音乐"],
+		["运动健康", "服装","家居","美妆","母婴","食品","手机数码","家具首饰","手表饰品","鞋包","家电","电脑办公","玩具文具","汽车用品","风衣"]
+	];
+	var areas = [
+		[
+			["玄幻", "言情", "都市"],
+			["麻雀", "勇气", "理想三旬"]
+		],
+		[
+			["生命在于运动的八大理由", "运动的十大作用", "运动助你更健康"],
+			["", "", ""]
+		]
+	]
+	//设置一个省的公共下标
+	var pIndex = -1;
+	var preEle = document.getElementById("pre");
+	var cityEle = document.getElementById("city");
+	var areaEle = document.getElementById("area");
+	//先设置省的值
+	for (var i = 0; i < pres.length; i++) {
+		//声明option.<option value="pres[i]">Pres[i]</option>
+		var op = new Option(pres[i], i);
+		//添加
+		preEle.options.add(op);
+	}
+	function chg(obj) {
+		if (obj.value == -1) {
+			cityEle.options.length = 0;
+			areaEle.options.length = 0;
+		}
+		//获取值
+		var val = obj.value;
+		pIndex = obj.value;
+		//获取ctiry
+		var cs = cities[val];
+		//获取默认区
+		var as = areas[val][0];
+		//先清空市
+		cityEle.options.length = 0;
+		areaEle.options.length = 0;
+		for (var i = 0; i < cs.length; i++) {
+			var op = new Option(cs[i], i);
+			cityEle.options.add(op);
+		}
+		for (var i = 0; i < as.length; i++) {
+			var op = new Option(as[i], i);
+			areaEle.options.add(op);
+		}
+	}
+	function chg2(obj) {
+		var val = obj.selectedIndex;
+		var as = areas[pIndex][val];
+		areaEle.options.length = 0;
+		for (var i = 0; i < as.length; i++) {
+			var op = new Option(as[i], i);
+			areaEle.options.add(op);
+		}
+	}
+</script>
 </body>
 </html>
