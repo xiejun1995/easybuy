@@ -11,7 +11,7 @@
     <name>easybuy_pro Maven Webapp</name>
     <properties>
         <!-- spring版本号 -->
-        <spring.version>5.2.1.RELEASE</spring.version>
+        <spring.version>5.3.18</spring.version>
         <!-- mybatis版本号 -->
         <mybatis.version>3.5.3</mybatis.version>
         <!--Spring面向切面编程中切入点表达式所需jar包-->
